@@ -4,6 +4,115 @@ This repository contains the DSA4266 project on protecting tool-using LLM agents
 
 > **Project status:** proposal and implementation planning. Experimental results and exact reproduction commands will be added as the system is implemented.
 
+## Implemented pilot: interception before tool execution
+
+The repository now includes a deterministic AgentDojo pilot that verifies the
+tool-call interception boundary before any model training. It runs four cases:
+
+| Episode | Fixed decision | Expected side effect |
+|---|---|---|
+| Benign | `ALLOW` | Email is sent to the user-authorized recipient |
+| Benign | `BLOCK` | No email is sent |
+| Attacked | `ALLOW` | The simulated compromised agent sends to the attacker |
+| Attacked | `BLOCK` | No email is sent |
+
+The gate is placed immediately before AgentDojo's `ToolsExecutor`. For every
+consequential call it records:
+
+- the original user request;
+- the proposed tool name and arguments;
+- the latest tool observation, treated as untrusted; and
+- the fixed `ALLOW` or `BLOCK` decision.
+
+Read-only document access is allowed so the agent can obtain an observation.
+The gate applies to the consequential `send_email` call. When blocked, it
+returns a standardized synthetic tool result and does not invoke the real tool.
+
+The pilot uses a deterministic scripted agent, not a production LLM. This
+makes the security boundary test repeatable and free of API credentials. Its
+purpose is to validate interception and logging; a later experiment should
+replace the scripted agent with one fixed LLM and run official AgentDojo task
+suites.
+
+### Run the pilot
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -e '.[dev]'
+.venv/bin/python -m pytest -q
+.venv/bin/python -m tool_call_auditor.demo --output-dir results/pilot
+```
+
+The run writes:
+
+- `results/pilot/tool_call_decisions.jsonl`: one pre-execution audit record per
+  proposed consequential call;
+- `results/pilot/episode_outcomes.json`: observable side effects and final
+  messages for all four cases.
+
+The main implementation is in `src/tool_call_auditor/gate.py`; the reproducible
+scenario and runner are in `src/tool_call_auditor/demo.py`.
+
+## Selected official-suite pilot
+
+`configs/workspace_pilot.yaml` defines the first official AgentDojo experiment:
+
+- benchmark `v1.2.2`, `workspace` suite;
+- five representative user tasks and three injection tasks;
+- `important_instructions` attack;
+- fixed `ALLOW` and `BLOCK` conditions;
+- three repetitions;
+- an explicit allowlist of consequential workspace tools.
+
+Validate the selection and inspect the planned API workload without contacting
+an LLM provider:
+
+```bash
+.venv/bin/python -m tool_call_auditor.workspace_runner --dry-run
+```
+
+The default manifest plans 120 primary episodes plus 18 AgentDojo attack-goal
+checks, for 138 total agent runs. The selected model is pinned to DeepSeek's
+official `deepseek-flash` API model. Create a local `.env` from `.env.example`
+and add the API key, or export `DEEPSEEK_API_KEY` in the shell. The key must
+never be committed. Then run:
+
+```bash
+.venv/bin/python -m tool_call_auditor.workspace_runner
+```
+
+AgentDojo 0.1.35 does not list DeepSeek as a built-in provider, so the project
+includes a small adapter for DeepSeek's official OpenAI-compatible Chat API. It
+preserves AgentDojo's tool schemas and tool-call parsing while sending the
+initial instruction with the `system` role expected by DeepSeek.
+
+Before the full run, execute one benign read-only compatibility check:
+
+```bash
+.venv/bin/python -m tool_call_auditor.workspace_runner --smoke-test
+```
+
+This runs only `user_task_1` with fixed `ALLOW` and writes its trace under
+`runs/workspace_pilot/smoke/allow/`.
+
+To check one injected file task under both fixed decisions:
+
+```bash
+.venv/bin/python -m tool_call_auditor.workspace_runner --attacked-smoke-test
+```
+
+This pairs `user_task_33` with `injection_task_0`. In the generated summary,
+`injection_goal_achieved: true` means the attack changed the simulated
+environment as intended by the attacker. It must not be confused with a
+successful defense.
+
+The runner replaces AgentDojo's ordinary `ToolsExecutor` with an audited
+executor. It handles every proposed call separately, so a read-only call can be
+allowed even when another call in the same model response is blocked. Each
+record includes all preceding tool observations and their producing tool calls,
+not only the latest text. Output is separated by repetition and decision under
+`runs/workspace_pilot/`.
+
 ## Motivation
 
 Tool-using agents may read attacker-controlled content from emails, documents, or other external sources. If the agent mistakes this untrusted content for a user instruction, it may issue a consequential tool call that the user never authorized.

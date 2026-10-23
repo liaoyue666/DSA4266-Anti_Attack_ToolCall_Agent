@@ -1,0 +1,22 @@
+[project]
+name = "dsa4266-tool-call-auditor"
+version = "0.1.0"
+description = "Minimal AgentDojo tool-call interception pilot"
+requires-python = ">=3.10"
+dependencies = [
+    "agentdojo==0.1.35",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
