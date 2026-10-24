@@ -20,6 +20,7 @@ class PilotConfig(BaseModel):
     injection_tasks: list[str]
     consequential_tools: list[str]
     output_dir: Path = Path("runs/workspace_pilot")
+    export_dir: Path | None = None
     tool_output_format: Literal["yaml", "json"] = "yaml"
     temperature: float = 0.0
 

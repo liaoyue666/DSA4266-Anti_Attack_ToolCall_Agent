@@ -39,4 +39,5 @@ consequential_tools:
   - share_file
 
 tool_output_format: yaml
-output_dir: runs/data_collection/important_instructions/batch-001
+output_dir: runs/data_collection/important_instructions/batch-002
+export_dir: data/exports/important_instructions/batch-002
