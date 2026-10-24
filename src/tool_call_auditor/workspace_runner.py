@@ -5,6 +5,8 @@ import json
 import os
 from functools import partial
 from pathlib import Path
+from time import time
+from uuid import uuid4
 
 from agentdojo.agent_pipeline import AgentPipeline, PipelineConfig, ToolsExecutionLoop, ToolsExecutor
 from agentdojo.agent_pipeline.tool_execution import tool_result_to_str
@@ -86,20 +88,36 @@ def _replace_tools_executor(
     decision_log: Path,
     consequential_tools: set[str],
     output_format: str,
+    run_id: str | None = None,
+    repetition: int | None = None,
 ) -> None:
     formatter = partial(tool_result_to_str, dump_fn=json.dumps) if output_format == "json" else tool_result_to_str
     for element in pipeline.elements:
         if not isinstance(element, ToolsExecutionLoop):
             continue
         element.elements = [
-            AuditedToolsExecutor(decision, decision_log, consequential_tools, formatter)
+            AuditedToolsExecutor(
+                decision,
+                decision_log,
+                consequential_tools,
+                formatter,
+                run_id=run_id,
+                repetition=repetition,
+            )
             if isinstance(child, ToolsExecutor)
             else child
             for child in element.elements
         ]
 
 
-def build_pipeline(config: PilotConfig, decision: str, decision_log: Path) -> AgentPipeline:
+def build_pipeline(
+    config: PilotConfig,
+    decision: str,
+    decision_log: Path,
+    run_id: str | None = None,
+    repetition: int | None = None,
+    telemetry_path: Path | None = None,
+) -> AgentPipeline:
     assert config.model is not None
     if config.provider == "deepseek":
         api_key = os.environ.get("DEEPSEEK_API_KEY")
@@ -110,6 +128,10 @@ def build_pipeline(config: PilotConfig, decision: str, decision_log: Path) -> Ag
             OpenAI(api_key=api_key, base_url=base_url),
             model=config.model,
             temperature=config.temperature,
+            run_id=run_id,
+            repetition=repetition,
+            decision=decision,
+            telemetry_path=telemetry_path,
         )
         pipeline_llm = llm
     else:
@@ -131,6 +153,8 @@ def build_pipeline(config: PilotConfig, decision: str, decision_log: Path) -> Ag
         decision_log,
         set(config.consequential_tools),
         config.tool_output_format,
+        run_id=run_id,
+        repetition=repetition,
     )
     return pipeline
 
@@ -142,48 +166,96 @@ def _jsonable_results(results: dict) -> dict:
     }
 
 
-def run(config: PilotConfig) -> list[dict]:
+def run(config: PilotConfig, overwrite: bool = False) -> list[dict]:
     validate_config(config, require_model=True)
     suite = get_suite(config.benchmark_version, config.suite)
+    if config.output_dir.exists() and any(config.output_dir.iterdir()) and not overwrite:
+        raise FileExistsError(
+            f"Output directory {config.output_dir} already contains data; "
+            "choose a new output_dir or pass --overwrite."
+        )
+    run_id = str(uuid4())
+    run_dir = config.output_dir / "runs" / run_id
+    run_dir.mkdir(parents=True, exist_ok=False)
+    manifest_path = run_dir / "run_manifest.json"
+    manifest = {
+        "run_id": run_id,
+        "status": "running",
+        "started_at": time(),
+        "config": {
+            "benchmark_version": config.benchmark_version,
+            "suite": config.suite,
+            "provider": config.provider,
+            "model": config.model,
+            "attack": config.attack,
+            "decisions": config.decisions,
+            "repetitions": config.repetitions,
+            "user_tasks": config.user_tasks,
+            "injection_tasks": config.injection_tasks,
+        },
+    }
+    manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     summaries = []
-    for repetition in range(1, config.repetitions + 1):
-        for decision in config.decisions:
-            run_dir = config.output_dir / f"repeat-{repetition}" / decision.lower()
-            run_dir.mkdir(parents=True, exist_ok=True)
-            decision_log = run_dir / "tool_call_decisions.jsonl"
-            decision_log.unlink(missing_ok=True)
-            pipeline = build_pipeline(config, decision, decision_log)
-
-            with OutputLogger(str(run_dir)):
-                benign = benchmark_suite_without_injections(
-                    pipeline,
-                    suite,
-                    user_tasks=config.user_tasks,
-                    logdir=run_dir,
-                    force_rerun=True,
-                    benchmark_version=config.benchmark_version,
-                )
-                attack = load_attack(config.attack, suite, pipeline)
-                attacked = benchmark_suite_with_injections(
-                    pipeline,
-                    suite,
-                    attack,
-                    user_tasks=config.user_tasks,
-                    injection_tasks=config.injection_tasks,
-                    logdir=run_dir,
-                    force_rerun=True,
-                    benchmark_version=config.benchmark_version,
+    try:
+        for repetition in range(1, config.repetitions + 1):
+            for decision in config.decisions:
+                condition_dir = run_dir / f"repeat-{repetition}" / decision.lower()
+                condition_dir.mkdir(parents=True, exist_ok=False)
+                decision_log = condition_dir / "tool_call_decisions.jsonl"
+                pipeline = build_pipeline(
+                    config,
+                    decision,
+                    decision_log,
+                    run_id=run_id,
+                    repetition=repetition,
+                    telemetry_path=run_dir / "api_requests.jsonl",
                 )
 
-            summary = {
-                "repetition": repetition,
-                "decision": decision,
-                "benign": _jsonable_results(benign),
-                "attacked": _jsonable_results(attacked),
-                "decision_log": str(decision_log),
+                with OutputLogger(str(condition_dir)):
+                    benign = benchmark_suite_without_injections(
+                        pipeline,
+                        suite,
+                        user_tasks=config.user_tasks,
+                        logdir=condition_dir,
+                        force_rerun=True,
+                        benchmark_version=config.benchmark_version,
+                    )
+                    attack = load_attack(config.attack, suite, pipeline)
+                    attacked = benchmark_suite_with_injections(
+                        pipeline,
+                        suite,
+                        attack,
+                        user_tasks=config.user_tasks,
+                        injection_tasks=config.injection_tasks,
+                        logdir=condition_dir,
+                        force_rerun=True,
+                        benchmark_version=config.benchmark_version,
+                    )
+
+                summary = {
+                    "run_id": run_id,
+                    "repetition": repetition,
+                    "decision": decision,
+                    "benign": _jsonable_results(benign),
+                    "attacked": _jsonable_results(attacked),
+                    "decision_log": str(decision_log),
+                }
+                (condition_dir / "summary.json").write_text(
+                    json.dumps(summary, indent=2), encoding="utf-8"
+                )
+                summaries.append(summary)
+        manifest.update({"status": "completed", "finished_at": time()})
+    except Exception as error:
+        manifest.update(
+            {
+                "status": "failed",
+                "finished_at": time(),
+                "error": {"type": type(error).__name__},
             }
-            (run_dir / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
-            summaries.append(summary)
+        )
+        raise
+    finally:
+        manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     return summaries
 
 
@@ -271,6 +343,11 @@ def main() -> None:
     parser.add_argument("--model", help="Override the AgentDojo model name in the config.")
     parser.add_argument("--dry-run", action="store_true", help="Validate and print the matrix without API calls.")
     parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Permit using an output directory that already contains data.",
+    )
+    parser.add_argument(
         "--smoke-test", action="store_true", help="Run only the first benign task with fixed ALLOW."
     )
     parser.add_argument(
@@ -294,7 +371,7 @@ def main() -> None:
     if args.attacked_smoke_test:
         print(json.dumps(run_attacked_smoke(config), indent=2))
         return
-    summaries = run(config)
+    summaries = run(config, overwrite=args.overwrite)
     print(json.dumps(summaries, indent=2))
 
 

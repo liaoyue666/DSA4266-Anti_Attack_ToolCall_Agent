@@ -40,7 +40,7 @@ suites.
 python3 -m venv .venv
 .venv/bin/python -m pip install -e '.[dev]'
 .venv/bin/python -m pytest -q
-.venv/bin/python -m tool_call_auditor.demo --output-dir results/pilot
+PYTHONPATH=src .venv/bin/python -m tool_call_auditor.demo --output-dir results/pilot
 ```
 
 The run writes:
@@ -68,7 +68,7 @@ Validate the selection and inspect the planned API workload without contacting
 an LLM provider:
 
 ```bash
-.venv/bin/python -m tool_call_auditor.workspace_runner --dry-run
+PYTHONPATH=src .venv/bin/python -m tool_call_auditor.workspace_runner --dry-run
 ```
 
 The default manifest plans 120 primary episodes plus 18 AgentDojo attack-goal
@@ -78,8 +78,12 @@ and add the API key, or export `DEEPSEEK_API_KEY` in the shell. The key must
 never be committed. Then run:
 
 ```bash
-.venv/bin/python -m tool_call_auditor.workspace_runner
+PYTHONPATH=src .venv/bin/python -m tool_call_auditor.workspace_runner
 ```
+
+Full runs now refuse a non-empty output directory by default. If it already
+contains smoke-test output, select a fresh configured directory or explicitly
+add `--overwrite`; previous run-ID-scoped traces are retained.
 
 AgentDojo 0.1.35 does not list DeepSeek as a built-in provider, so the project
 includes a small adapter for DeepSeek's official OpenAI-compatible Chat API. It
@@ -89,7 +93,7 @@ initial instruction with the `system` role expected by DeepSeek.
 Before the full run, execute one benign read-only compatibility check:
 
 ```bash
-.venv/bin/python -m tool_call_auditor.workspace_runner --smoke-test
+PYTHONPATH=src .venv/bin/python -m tool_call_auditor.workspace_runner --smoke-test
 ```
 
 This runs only `user_task_1` with fixed `ALLOW` and writes its trace under
@@ -98,7 +102,7 @@ This runs only `user_task_1` with fixed `ALLOW` and writes its trace under
 To check one injected file task under both fixed decisions:
 
 ```bash
-.venv/bin/python -m tool_call_auditor.workspace_runner --attacked-smoke-test
+PYTHONPATH=src .venv/bin/python -m tool_call_auditor.workspace_runner --attacked-smoke-test
 ```
 
 This pairs `user_task_33` with `injection_task_0`. In the generated summary,
@@ -122,6 +126,90 @@ The project asks:
 > Can a trained, context-aware verifier block unauthorized tool calls while preserving legitimate task completion?
 
 The main contribution will be a trained authorization model, its integration at the tool-execution boundary in AgentDojo, and a controlled evaluation of the resulting security–utility trade-off.
+
+## AgentDojo data collection and export
+
+Install the project and development dependencies in a virtual environment:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -e '.[dev]'
+```
+
+Keep one config per attack (the supplied `configs/experiment.yaml` uses
+`important_instructions`). `output_dir` holds immutable, run-ID-scoped AgentDojo
+traces and audit/API logs; `export_dir` controls the exported dataset location.
+The latter defaults to `<output_dir>/data` and can be set separately for each
+attack batch.
+
+Validate the matrix without contacting a model provider:
+
+```bash
+PYTHONPATH=src .venv/bin/python scripts/collect_data.py --config configs/experiment.yaml --dry-run
+```
+
+Collect the experiment and create `raw_calls.jsonl` and `episodes.jsonl`:
+
+```bash
+DEEPSEEK_API_KEY=... PYTHONPATH=src .venv/bin/python scripts/collect_data.py --config configs/experiment.yaml --overwrite
+```
+
+Real collection calls the configured provider and may incur cost. This command
+has **not** been run as part of local verification. Existing non-empty output
+or export directories are rejected by default. Use a new batch/export path, or
+explicitly pass `--overwrite` to allow the operation; run-ID-scoped source
+traces are retained rather than deleted.
+
+Export already-collected traces without making any API request:
+
+```bash
+PYTHONPATH=src .venv/bin/python scripts/collect_data.py --config configs/experiment.yaml --export-only
+```
+
+`--export-only` reads AgentDojo JSON traces and `tool_call_decisions.jsonl`
+under `output_dir`. It can also export a partially completed run. To replace
+existing exports explicitly, add `--overwrite`. The exports contain:
+
+- `raw_calls.jsonl`: by default, consequential calls from primary user-task
+  episodes only. Each row has `run_id`, `episode_id`, unique `call_id`, the
+  provider call ID, repetition/decision/task/attack identifiers, tool name,
+  original arguments and request, observations available **before** the call,
+  gate decision, execution status, tool result/error, and `label: null`.
+- `episodes.jsonl`: primary episodes and separate `attack_goal_check` records,
+  with run/task identifiers, completion status, utility/security and attack
+  outcomes, duration, error, observed API usage, and the original AgentDojo
+  context. The source `.json` traces are retained unchanged for full review.
+
+The audit log records a pre-execution proposal and subsequent execution
+attempt/result events under the same `call_id`. `execution_status` distinguishes
+`blocked`, `not_attempted`, `attempted`, `succeeded`, and `error`; the legacy
+`executed` field is true only when the tool succeeded. Call labels remain null
+until manually verified; episode-level results are never copied into call
+labels. DeepSeek request duration and returned token usage are recorded when
+available. Cost and unavailable usage are null; this adapter does not estimate
+provider cost. AgentDojo helper attack-goal checks are not treated as primary
+episodes or mixed into the default call export.
+
+### Local verification and limitations
+
+Commands actually verified locally:
+
+```bash
+.venv/bin/pytest -q
+PYTHONPATH=src .venv/bin/python scripts/collect_data.py --config configs/experiment.yaml --dry-run
+```
+
+The export-only path was exercised by the automated test
+`test_export_only_does_not_call_runner`, which uses a temporary trace and
+replaces the runner with a failing stub. The actual export-only CLI was also
+run against a temporary config/trace, and existing `batch-001` logs were
+exported to a temporary directory without modifying the batch. No paid API
+collection was performed. AgentDojo's own traces and package behavior
+depend on the pinned `agentdojo==0.1.35`; DeepSeek token usage is whatever the
+API response exposes, and monetary cost remains unknown (`null`). Old
+pre-feature logs cannot recover original run IDs or tool-call correlation;
+the exporter assigns deterministic `legacy-*` identifiers where needed and
+does not infer missing labels or usage.
 
 ## Threat model
 
@@ -283,4 +371,3 @@ The structure above is a plan and will be updated as implementation files are ad
 ## Team
 
 DSA4266 group project. Team-member names and responsibilities will be added here.
-
