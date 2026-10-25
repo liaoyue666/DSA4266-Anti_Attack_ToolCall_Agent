@@ -1,0 +1,24 @@
+{
+  "total_calls": 24,
+  "label_distribution": {
+    "0": 24
+  },
+  "injection_present": 18,
+  "injection_absent": 6,
+  "scenario_distribution": {
+    "normal": 6,
+    "attack": 18
+  },
+  "tool_distribution": {
+    "create_calendar_event": 8,
+    "send_email": 8,
+    "delete_file": 8
+  },
+  "source_batch_distribution": {
+    "important_instructions/batch-002": 12,
+    "tool_knowledge/batch-001": 12
+  },
+  "review_status": {
+    "pending": 24
+  }
+}
