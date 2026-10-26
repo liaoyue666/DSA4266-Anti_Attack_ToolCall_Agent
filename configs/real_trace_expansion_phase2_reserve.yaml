@@ -1,0 +1,176 @@
+plan_id: workspace-real-traces-phase-2-reserve
+source_id: agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2-reserve
+benchmark_version: v1.2.2
+suite: workspace
+provider: deepseek
+model: deepseek-flash
+model_id: null
+temperature: 0.0
+decisions:
+- ALLOW
+repetitions: 1
+max_episode_attempts: 1
+consequential_tools:
+- send_email
+- delete_email
+- create_calendar_event
+- cancel_calendar_event
+- reschedule_calendar_event
+- add_calendar_event_participants
+- append_to_file
+- create_file
+- delete_file
+- share_file
+tool_output_format: yaml
+stop_policy:
+  max_primary_episodes: 29
+  max_unique_observed_calls: 250
+  stop_at_batch_boundary_when_unique_observed_calls_reaches: 250
+  no_retries: true
+  no_repeat_task_injection_pair: true
+  no_benign_reruns: true
+  run_attack_goal_checks: false
+batches:
+- id: phase2-reserve-important-01
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_20
+  - user_task_21
+  - user_task_29
+  - user_task_31
+  - user_task_32
+  - user_task_34
+  - user_task_37
+  - user_task_4
+  - user_task_7
+  - user_task_8
+  injection_tasks:
+  - injection_task_10
+  - injection_task_11
+  - injection_task_6
+  - injection_task_0
+  - injection_task_5
+  - injection_task_4
+  - injection_task_7
+  attacked_task_pairs:
+  - - user_task_20
+    - injection_task_10
+  - - user_task_21
+    - injection_task_11
+  - - user_task_29
+    - injection_task_6
+  - - user_task_31
+    - injection_task_0
+  - - user_task_32
+    - injection_task_5
+  - - user_task_34
+    - injection_task_11
+  - - user_task_37
+    - injection_task_5
+  - - user_task_4
+    - injection_task_4
+  - - user_task_7
+    - injection_task_4
+  - - user_task_8
+    - injection_task_7
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2-reserve/phase2-reserve-important-01
+  export_dir: data/exports/real-traces-phase-2-reserve/phase2-reserve-important-01
+- id: phase2-reserve-tool-knowledge-01
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_20
+  - user_task_21
+  - user_task_29
+  - user_task_31
+  - user_task_32
+  - user_task_34
+  - user_task_37
+  - user_task_4
+  - user_task_7
+  - user_task_9
+  injection_tasks:
+  - injection_task_12
+  - injection_task_7
+  - injection_task_8
+  - injection_task_6
+  - injection_task_4
+  attacked_task_pairs:
+  - - user_task_20
+    - injection_task_12
+  - - user_task_21
+    - injection_task_7
+  - - user_task_29
+    - injection_task_7
+  - - user_task_31
+    - injection_task_8
+  - - user_task_32
+    - injection_task_8
+  - - user_task_34
+    - injection_task_8
+  - - user_task_37
+    - injection_task_6
+  - - user_task_4
+    - injection_task_8
+  - - user_task_7
+    - injection_task_6
+  - - user_task_9
+    - injection_task_4
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2-reserve/phase2-reserve-tool-knowledge-01
+  export_dir: data/exports/real-traces-phase-2-reserve/phase2-reserve-tool-knowledge-01
+- id: phase2-reserve-important-02
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_9
+  - user_task_19
+  - user_task_12
+  - user_task_18
+  - user_task_38
+  injection_tasks:
+  - injection_task_6
+  - injection_task_9
+  - injection_task_7
+  - injection_task_10
+  - injection_task_5
+  attacked_task_pairs:
+  - - user_task_9
+    - injection_task_6
+  - - user_task_19
+    - injection_task_9
+  - - user_task_12
+    - injection_task_7
+  - - user_task_18
+    - injection_task_10
+  - - user_task_38
+    - injection_task_5
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2-reserve/phase2-reserve-important-02
+  export_dir: data/exports/real-traces-phase-2-reserve/phase2-reserve-important-02
+- id: phase2-reserve-tool-knowledge-02
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_15
+  - user_task_36
+  - user_task_13
+  - user_task_25
+  injection_tasks:
+  - injection_task_9
+  - injection_task_11
+  - injection_task_12
+  attacked_task_pairs:
+  - - user_task_15
+    - injection_task_9
+  - - user_task_36
+    - injection_task_9
+  - - user_task_13
+    - injection_task_11
+  - - user_task_25
+    - injection_task_12
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2-reserve/phase2-reserve-tool-knowledge-02
+  export_dir: data/exports/real-traces-phase-2-reserve/phase2-reserve-tool-knowledge-02

@@ -1,0 +1,208 @@
+plan_id: workspace-real-traces-phase-1
+source_id: agentdojo-0.1.35-workspace-v1.2.2-real-traces-phase-1
+benchmark_version: v1.2.2
+suite: workspace
+provider: deepseek
+model: deepseek-flash
+model_id: null
+decisions: [ALLOW]
+repetitions: 1
+consequential_tools:
+  - send_email
+  - delete_email
+  - create_calendar_event
+  - cancel_calendar_event
+  - reschedule_calendar_event
+  - add_calendar_event_participants
+  - append_to_file
+  - create_file
+  - delete_file
+  - share_file
+max_episode_attempts: 2
+temperature: 0.0
+tool_output_format: yaml
+batches:
+  - id: benign-01
+    run_mode: benign_only
+    attack: important_instructions
+    user_tasks: [user_task_0, user_task_1, user_task_3, user_task_2, user_task_5]
+    injection_tasks: []
+    attacked_task_pairs: []
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/benign-01
+    export_dir: data/exports/real-traces-phase-1/benign-01
+  - id: benign-02
+    run_mode: benign_only
+    attack: important_instructions
+    user_tasks: [user_task_6, user_task_7, user_task_8, user_task_9, user_task_10]
+    injection_tasks: []
+    attacked_task_pairs: []
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/benign-02
+    export_dir: data/exports/real-traces-phase-1/benign-02
+  - id: benign-03
+    run_mode: benign_only
+    attack: important_instructions
+    user_tasks: [user_task_11, user_task_12, user_task_21, user_task_14, user_task_16]
+    injection_tasks: []
+    attacked_task_pairs: []
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/benign-03
+    export_dir: data/exports/real-traces-phase-1/benign-03
+  - id: benign-04
+    run_mode: benign_only
+    attack: important_instructions
+    user_tasks: [user_task_17, user_task_22, user_task_24, user_task_26, user_task_27]
+    injection_tasks: []
+    attacked_task_pairs: []
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/benign-04
+    export_dir: data/exports/real-traces-phase-1/benign-04
+  - id: benign-05
+    run_mode: benign_only
+    attack: important_instructions
+    user_tasks: [user_task_28, user_task_35, user_task_29, user_task_30, user_task_31]
+    injection_tasks: []
+    attacked_task_pairs: []
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/benign-05
+    export_dir: data/exports/real-traces-phase-1/benign-05
+  - id: benign-06
+    run_mode: benign_only
+    attack: important_instructions
+    user_tasks: [user_task_32, user_task_15, user_task_18, user_task_34, user_task_20]
+    injection_tasks: []
+    attacked_task_pairs: []
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/benign-06
+    export_dir: data/exports/real-traces-phase-1/benign-06
+  - id: benign-07
+    run_mode: benign_only
+    attack: important_instructions
+    user_tasks: [user_task_33, user_task_25, user_task_13, user_task_23, user_task_4]
+    injection_tasks: []
+    attacked_task_pairs: []
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/benign-07
+    export_dir: data/exports/real-traces-phase-1/benign-07
+  - id: benign-08
+    run_mode: benign_only
+    attack: important_instructions
+    user_tasks: [user_task_19, user_task_36, user_task_37, user_task_38, user_task_39]
+    injection_tasks: []
+    attacked_task_pairs: []
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/benign-08
+    export_dir: data/exports/real-traces-phase-1/benign-08
+  - id: important-instructions-01
+    run_mode: attacked_only
+    attack: important_instructions
+    user_tasks: [user_task_33, user_task_25, user_task_13, user_task_15, user_task_18]
+    injection_tasks: [injection_task_0, injection_task_3, injection_task_4, injection_task_5, injection_task_13]
+    attacked_task_pairs:
+      - [user_task_33, injection_task_0]
+      - [user_task_25, injection_task_3]
+      - [user_task_13, injection_task_4]
+      - [user_task_15, injection_task_5]
+      - [user_task_18, injection_task_13]
+    run_attack_goal_checks: true
+    output_dir: runs/data_collection/real-traces-phase-1/important-instructions-01
+    export_dir: data/exports/real-traces-phase-1/important-instructions-01
+  - id: important-instructions-02
+    run_mode: attacked_only
+    attack: important_instructions
+    user_tasks: [user_task_35, user_task_32, user_task_31, user_task_34, user_task_29]
+    injection_tasks: [injection_task_1, injection_task_10, injection_task_11, injection_task_12]
+    attacked_task_pairs:
+      - [user_task_35, injection_task_1]
+      - [user_task_32, injection_task_10]
+      - [user_task_31, injection_task_11]
+      - [user_task_34, injection_task_12]
+      - [user_task_29, injection_task_1]
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/important-instructions-02
+    export_dir: data/exports/real-traces-phase-1/important-instructions-02
+  - id: important-instructions-03
+    run_mode: attacked_only
+    attack: important_instructions
+    user_tasks: [user_task_6, user_task_9, user_task_12, user_task_21, user_task_20]
+    injection_tasks: [injection_task_2, injection_task_9, injection_task_13]
+    attacked_task_pairs:
+      - [user_task_6, injection_task_2]
+      - [user_task_9, injection_task_2]
+      - [user_task_12, injection_task_2]
+      - [user_task_21, injection_task_9]
+      - [user_task_20, injection_task_13]
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/important-instructions-03
+    export_dir: data/exports/real-traces-phase-1/important-instructions-03
+  - id: important-instructions-04
+    run_mode: attacked_only
+    attack: important_instructions
+    user_tasks: [user_task_14, user_task_16, user_task_17, user_task_22, user_task_24]
+    injection_tasks: [injection_task_4, injection_task_5, injection_task_6, injection_task_7, injection_task_8]
+    attacked_task_pairs:
+      - [user_task_14, injection_task_4]
+      - [user_task_16, injection_task_5]
+      - [user_task_17, injection_task_6]
+      - [user_task_22, injection_task_7]
+      - [user_task_24, injection_task_8]
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/important-instructions-04
+    export_dir: data/exports/real-traces-phase-1/important-instructions-04
+  - id: tool-knowledge-01
+    run_mode: attacked_only
+    attack: tool_knowledge
+    user_tasks: [user_task_0, user_task_1, user_task_3, user_task_2, user_task_5]
+    injection_tasks: [injection_task_2, injection_task_13]
+    attacked_task_pairs:
+      - [user_task_0, injection_task_2]
+      - [user_task_1, injection_task_2]
+      - [user_task_3, injection_task_2]
+      - [user_task_2, injection_task_13]
+      - [user_task_5, injection_task_13]
+    run_attack_goal_checks: true
+    output_dir: runs/data_collection/real-traces-phase-1/tool-knowledge-01
+    export_dir: data/exports/real-traces-phase-1/tool-knowledge-01
+  - id: tool-knowledge-02
+    run_mode: attacked_only
+    attack: tool_knowledge
+    user_tasks: [user_task_7, user_task_8, user_task_10, user_task_11, user_task_26]
+    injection_tasks: [injection_task_2, injection_task_6, injection_task_10, injection_task_13]
+    attacked_task_pairs:
+      - [user_task_7, injection_task_2]
+      - [user_task_8, injection_task_13]
+      - [user_task_10, injection_task_2]
+      - [user_task_11, injection_task_6]
+      - [user_task_26, injection_task_10]
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/tool-knowledge-02
+    export_dir: data/exports/real-traces-phase-1/tool-knowledge-02
+  - id: tool-knowledge-03
+    run_mode: attacked_only
+    attack: tool_knowledge
+    user_tasks: [user_task_27, user_task_28, user_task_30, user_task_23, user_task_4]
+    injection_tasks: [injection_task_7, injection_task_10, injection_task_11, injection_task_12, injection_task_13]
+    attacked_task_pairs:
+      - [user_task_27, injection_task_11]
+      - [user_task_28, injection_task_12]
+      - [user_task_30, injection_task_10]
+      - [user_task_23, injection_task_7]
+      - [user_task_4, injection_task_13]
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/tool-knowledge-03
+    export_dir: data/exports/real-traces-phase-1/tool-knowledge-03
+  - id: tool-knowledge-04
+    run_mode: attacked_only
+    attack: tool_knowledge
+    user_tasks: [user_task_19, user_task_36, user_task_37, user_task_38, user_task_39]
+    injection_tasks: [injection_task_1, injection_task_3, injection_task_4, injection_task_10, injection_task_12]
+    attacked_task_pairs:
+      - [user_task_19, injection_task_3]
+      - [user_task_36, injection_task_10]
+      - [user_task_37, injection_task_12]
+      - [user_task_38, injection_task_1]
+      - [user_task_39, injection_task_4]
+    run_attack_goal_checks: false
+    output_dir: runs/data_collection/real-traces-phase-1/tool-knowledge-04
+    export_dir: data/exports/real-traces-phase-1/tool-knowledge-04

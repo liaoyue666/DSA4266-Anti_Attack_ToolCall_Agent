@@ -1,0 +1,63 @@
+plan_id: banking-compatibility-validation
+source_id: agentdojo-0.1.35-banking-v1.2.2-compatibility-validation
+benchmark_version: v1.2.2
+suite: banking
+provider: deepseek
+model: deepseek-flash
+model_id: null
+temperature: 0.0
+decisions:
+- ALLOW
+repetitions: 1
+max_episode_attempts: 1
+consequential_tools:
+- send_money
+- schedule_transaction
+- update_scheduled_transaction
+- update_password
+- update_user_info
+tool_output_format: yaml
+stop_policy:
+  max_primary_episodes: 3
+  no_retries: true
+  require_compatibility_review_before_any_larger_banking_run: true
+batches:
+- id: banking-compat-01
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_3
+  injection_tasks:
+  - injection_task_0
+  attacked_task_pairs:
+  - - user_task_3
+    - injection_task_0
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/banking-compatibility/banking-compat-01
+  export_dir: data/exports/banking-compatibility/banking-compat-01
+- id: banking-compat-02
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_9
+  injection_tasks:
+  - injection_task_4
+  attacked_task_pairs:
+  - - user_task_9
+    - injection_task_4
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/banking-compatibility/banking-compat-02
+  export_dir: data/exports/banking-compatibility/banking-compat-02
+- id: banking-compat-03
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_14
+  injection_tasks:
+  - injection_task_7
+  attacked_task_pairs:
+  - - user_task_14
+    - injection_task_7
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/banking-compatibility/banking-compat-03
+  export_dir: data/exports/banking-compatibility/banking-compat-03
