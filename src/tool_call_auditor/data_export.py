@@ -4,7 +4,6 @@ import hashlib
 import json
 import os
 from pathlib import Path
-from typing import Any
 from uuid import UUID, uuid5
 
 from .identifiers import episode_identifier
@@ -102,6 +101,14 @@ def _episode_record(
         status = "completed"
 
     events = api_events.get(episode_id, [])
+    injections = raw_context.get("injections")
+    injection_exposure = (
+        "exposed"
+        if injection_task_id and isinstance(injections, dict) and any(injections.values())
+        else "not_observed"
+        if injection_task_id
+        else "not_applicable"
+    )
     usage_fields = ("prompt_tokens", "completion_tokens", "total_tokens")
     summed_usage: dict[str, int | None] = {}
     for field in usage_fields:
@@ -112,6 +119,10 @@ def _episode_record(
     durations = [event.get("request_duration_seconds") for event in events]
     return {
         "run_id": run_id,
+        "source_id": manifest.get("source_id") or run_id,
+        "task_group_id": (
+            f"{raw_context.get('suite_name')}:{user_task_id}" if user_task_id else None
+        ),
         "episode_id": episode_id,
         "repetition": repetition,
         "decision_condition": decision,
@@ -128,6 +139,7 @@ def _episode_record(
         "user_task_id": user_task_id,
         "injection_task_id": injection_task_id,
         "injection_id": injection_task_id or (user_task_id if is_attack_goal_check else None),
+        "injection_exposure": injection_exposure,
         "attack_type": attack_type,
         "episode_status": status,
         "task_result": utility,
@@ -172,11 +184,21 @@ def _collect_call_records(root: Path) -> list[dict]:
     for path in root.rglob("tool_call_decisions.jsonl"):
         manifest = _manifest_for(path, root)
         fallback_run_id = manifest.get("run_id") or _legacy_run_id(path, root)
+        source_id = manifest.get("source_id") or fallback_run_id
         for index, event in enumerate(_read_jsonl(path)):
             call_id = event.get("call_id")
             if not call_id:
                 call_id = str(uuid5(_ID_NAMESPACE, f"{path}:{index}"))
                 event = {**event, "call_id": call_id, "run_id": fallback_run_id}
+            user_task_id = event.get("user_task_id")
+            event = {
+                **event,
+                "source_id": event.get("source_id") or source_id,
+                "task_group_id": event.get("task_group_id")
+                or (
+                    f"{event.get('suite_name')}:{user_task_id}" if user_task_id else None
+                ),
+            }
             if "episode_kind" not in event:
                 event["episode_kind"] = (
                     "attack_goal_check"
@@ -192,6 +214,115 @@ def _collect_call_records(root: Path) -> list[dict]:
         if record.get("consequential") is True
         and record.get("episode_kind", "primary") == "primary"
     ]
+
+
+def _collection_summary(root: Path, episodes: list[dict], raw_calls: list[dict]) -> dict:
+    primary_episodes = [row for row in episodes if row.get("episode_kind") == "primary"]
+    attack_episodes = [
+        row
+        for row in primary_episodes
+        if row.get("scenario_type") == "attack"
+    ]
+    usage_fields = ("prompt_tokens", "completion_tokens", "total_tokens")
+    token_usage = {}
+    for field in usage_fields:
+        values = [(row.get("api_usage") or {}).get(field) for row in episodes]
+        known_values = [value for value in values if isinstance(value, int)]
+        token_usage[field] = sum(known_values) if known_values else None
+        token_usage[f"{field}_known_episode_count"] = len(known_values)
+        token_usage[f"{field}_missing_episode_count"] = len(values) - len(known_values)
+    status_records = [
+        record
+        for path in root.rglob("task_status.jsonl")
+        for record in _read_jsonl(path)
+    ]
+    confirmed_exposures = [
+        row for row in attack_episodes if row.get("injection_exposure") == "exposed"
+    ]
+    not_observed_exposures = [
+        row for row in attack_episodes if row.get("injection_exposure") == "not_observed"
+    ]
+    durations = [
+        row.get("duration_seconds")
+        for row in episodes
+        if isinstance(row.get("duration_seconds"), (int, float))
+    ]
+    api_durations = [
+        (row.get("api_usage") or {}).get("request_duration_seconds")
+        for row in episodes
+        if isinstance((row.get("api_usage") or {}).get("request_duration_seconds"), (int, float))
+    ]
+
+    def counts(rows: list[dict], field: str) -> dict[str, int]:
+        result: dict[str, int] = {}
+        for row in rows:
+            value = row.get(field)
+            if value is not None:
+                result[str(value)] = result.get(str(value), 0) + 1
+        return dict(sorted(result.items()))
+
+    return {
+        "source_ids": sorted({row.get("source_id") for row in episodes if row.get("source_id")}),
+        "primary_episode_count": len(primary_episodes),
+        "attack_goal_check_count": sum(
+            row.get("episode_kind") == "attack_goal_check" for row in episodes
+        ),
+        "candidate_consequential_call_count": len(raw_calls),
+        "task_group_coverage": sorted(
+            {row.get("task_group_id") for row in primary_episodes if row.get("task_group_id")}
+        ),
+        "attack_coverage": counts(attack_episodes, "attack_type"),
+        "tool_coverage": counts(raw_calls, "tool_name"),
+        "provider_api_request_count": (
+            sum(
+                (row.get("api_usage") or {}).get("api_call_count") or 0
+                for row in episodes
+            )
+            if any(
+                (row.get("api_usage") or {}).get("api_call_count") is not None
+                for row in episodes
+            )
+            else None
+        ),
+        "injection_exposure": {
+            "requested_attack_episode_count": len(attack_episodes),
+            "injection_task_coverage": counts(attack_episodes, "injection_task_id"),
+            "confirmed_exposure_count": len(confirmed_exposures),
+            "not_observed_count": len(not_observed_exposures),
+            "confirmed_by_injection_task": counts(confirmed_exposures, "injection_task_id"),
+        },
+        "errors": {
+            "failed_task_attempt_count": sum(
+                record.get("status") == "failed" for record in status_records
+            ),
+            "failed_episode_count": sum(
+                row.get("episode_status") == "failed" for row in episodes
+            ),
+        },
+        "duration_seconds": {
+            "episode_sum": sum(durations) if durations else None,
+            "episode_mean": sum(durations) / len(durations) if durations else None,
+            "episode_count": len(durations),
+            "api_request_duration_sum_seconds": (
+                sum(api_durations) if api_durations else None
+            ),
+            "episodes_with_api_request_duration": len(api_durations),
+            "mean_api_request_duration_seconds_per_episode": (
+                sum(api_durations) / len(api_durations) if api_durations else None
+            ),
+            "task_attempt_sum": (
+                sum(
+                    record.get("duration_seconds", 0)
+                    for record in status_records
+                    if isinstance(record.get("duration_seconds"), (int, float))
+                )
+                if status_records
+                else None
+            ),
+        },
+        "token_usage": token_usage,
+        "labels": {"all_null": all(row.get("label") is None for row in raw_calls)},
+    }
 
 
 def _write_jsonl(path: Path, records: list[dict]) -> None:
@@ -228,9 +359,14 @@ def export_dataset(
         episodes.append(_episode_record(trace_path, source_dir, raw_context, api_events))
 
     raw_calls = _collect_call_records(source_dir)
+    summary = _collection_summary(source_dir, episodes, raw_calls)
     export_dir.mkdir(parents=True, exist_ok=True)
     calls_path = export_dir / "raw_calls.jsonl"
     episodes_path = export_dir / "episodes.jsonl"
     _write_jsonl(calls_path, raw_calls)
     _write_jsonl(episodes_path, episodes)
+    (export_dir / "collection_summary.json").write_text(
+        json.dumps(summary, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
     return calls_path, episodes_path

@@ -1,0 +1,168 @@
+{
+  "api_calls": 0,
+  "banking": {
+    "compatibility_checks": [
+      "get_suite(v1.2.2, banking) succeeds",
+      "all five consequential tool schemas are present",
+      "PilotConfig and validate_config accept a single attacked task pair without a model",
+      "exactly three manual validation episodes; no retries or attack-goal checks"
+    ],
+    "consequential_tools": [
+      "send_money",
+      "schedule_transaction",
+      "update_scheduled_transaction",
+      "update_password",
+      "update_user_info"
+    ],
+    "plan_path": "configs/banking_compatibility_plan.yaml",
+    "planned_validation_episodes": 3,
+    "suite_count_in_scope": 1,
+    "validation_run_authorized": false
+  },
+  "constructed_capacity": {
+    "constructed_soft_target_gap_to_250": 233,
+    "current_candidate_row_gap_to_500": 407,
+    "current_constructed_methods": {
+      "add_injected_participant": 5,
+      "escalate_read_permission_to_read_write": 2,
+      "replace_email_recipient_with_injected_target": 6,
+      "replace_file_id_with_injected_target": 2,
+      "replace_shared_file_recipient_with_injected_target": 2
+    },
+    "current_near_duplicate_group_count": 15,
+    "current_reviewable_candidate_count_after_cross_source_dedup": 93,
+    "currently_context_supported_candidate_count": 17,
+    "empirical_constructed_candidates_per_exposed_call": 0.607,
+    "note": "Current actual capacity is a dry-run result, not a projection. No future constructed yield is guaranteed by episode count.",
+    "scenario_assumptions": {
+      "future_candidate_yield_assumes_current_rate": 0.6071428571428571,
+      "historical_duplicate_basis": "4 duplicate rows in 80 observed call rows across legacy and phase-one exports",
+      "historical_duplicate_fraction": 0.05,
+      "phase_one_calls_per_primary_episode": 0.7
+    },
+    "workspace_main_plus_reserve_scenario": {
+      "expected_gap_to_500_rows": 104,
+      "expected_total_constructed_rows": 135,
+      "expected_total_exact_unique_candidate_rows": 396,
+      "expected_total_unique_observed_rows": 261
+    },
+    "workspace_main_scenario": {
+      "expected_gap_to_500_rows": 135,
+      "expected_new_constructed_candidates_using_current_yield": 106,
+      "expected_new_observed_calls_before_dedup": 175.0,
+      "expected_new_unique_observed_calls_using_historical_duplicate_rate": 166,
+      "expected_total_constructed_rows": 123,
+      "expected_total_exact_unique_candidate_rows": 365,
+      "expected_total_unique_observed_rows": 242
+    }
+  },
+  "observed_exports": {
+    "covered_task_injection_pair_count": 29,
+    "duplicate_rows_removed": 4,
+    "raw_call_count": 80,
+    "unique_model_input_count": 76
+  },
+  "paths": {
+    "banking_dry_run": "data/manifests/banking_compatibility_dry_run.json",
+    "banking_plan": "configs/banking_compatibility_plan.yaml",
+    "dry_run": "data/manifests/phase2_collection_dry_run.json",
+    "main_plan": "configs/real_trace_expansion_phase2.yaml",
+    "reserve_plan": "configs/real_trace_expansion_phase2_reserve.yaml",
+    "summary": "data/manifests/phase2_collection_plan.json"
+  },
+  "plan_id": "workspace-real-traces-phase-2",
+  "source_type": "planning_only",
+  "stopping": {
+    "do_not_run_more_workspace_pairs_after_reserve": true,
+    "if_short_after_workspace": "report gap; prepare banking expansion only after user approval",
+    "soft_mix": {
+      "constructed": 250,
+      "observed": 250
+    },
+    "stop_after_main_and_reserve_episode_caps": true,
+    "stop_when_target_reached": true,
+    "target_total_exact_unique_candidates": 500
+  },
+  "token_budget": {
+    "combined_max_episodes_if_reserve_is_approved": 279,
+    "combined_two_x_safety_estimate_if_reserve_is_approved": 11936750,
+    "main": {
+      "episodes": 250,
+      "expected_calls_at_phase1_yield": 175.0,
+      "mean_token_estimate": 5348006,
+      "two_x_safety_estimate": 10696012
+    },
+    "note": "Estimates use phase-one aggregate usage and are not a token hard cap. Provider calls can exceed the estimate; inspect batch summaries and stop at configured episode/candidate limits.",
+    "phase1_calls_per_primary_episode": 0.7,
+    "phase1_mean_tokens_per_primary_episode": 21392,
+    "phase1_observed_consequential_call_count": 56,
+    "phase1_primary_episode_count": 80,
+    "phase1_total_tokens_from_summaries": 1711362,
+    "workspace_reserve": {
+      "episodes": 29,
+      "expected_calls_at_phase1_yield": 20.3,
+      "mean_token_estimate": 620369,
+      "two_x_safety_estimate": 1240737
+    }
+  },
+  "workspace": {
+    "attack_counts": {
+      "important_instructions": 125,
+      "tool_knowledge": 125
+    },
+    "batch_count": 26,
+    "consequential_user_task_count": 22,
+    "expected_new_observed_calls_at_phase1_yield": 175.0,
+    "expected_total_observed_calls_before_final_dedup": 251.0,
+    "main_episodes": 250,
+    "possible_pair_count": 308,
+    "reserve_batch_count": 4,
+    "reserve_episodes": 29,
+    "selected_coverage": {
+      "relevance_no_overlap_pair_count": 234,
+      "relevance_overlap_pair_count": 16,
+      "selected_injection_counts": {
+        "injection_task_0": 18,
+        "injection_task_1": 17,
+        "injection_task_10": 18,
+        "injection_task_11": 18,
+        "injection_task_12": 18,
+        "injection_task_13": 18,
+        "injection_task_2": 18,
+        "injection_task_3": 17,
+        "injection_task_4": 18,
+        "injection_task_5": 18,
+        "injection_task_6": 18,
+        "injection_task_7": 18,
+        "injection_task_8": 18,
+        "injection_task_9": 18
+      },
+      "selected_task_counts": {
+        "user_task_12": 12,
+        "user_task_13": 12,
+        "user_task_15": 12,
+        "user_task_18": 12,
+        "user_task_19": 12,
+        "user_task_20": 11,
+        "user_task_21": 11,
+        "user_task_25": 12,
+        "user_task_29": 11,
+        "user_task_31": 11,
+        "user_task_32": 11,
+        "user_task_33": 11,
+        "user_task_34": 11,
+        "user_task_35": 11,
+        "user_task_36": 12,
+        "user_task_37": 11,
+        "user_task_38": 12,
+        "user_task_4": 11,
+        "user_task_6": 10,
+        "user_task_7": 11,
+        "user_task_8": 12,
+        "user_task_9": 11
+      }
+    },
+    "stop_at_unique_observed_calls": 250,
+    "unrun_unique_pairs_available": 279
+  }
+}

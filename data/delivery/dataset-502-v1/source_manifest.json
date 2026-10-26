@@ -1,0 +1,724 @@
+{
+  "code_version": {
+    "branch": "dhy/data-expansion",
+    "commit": "81e1471fdd36b28d1001cbadc837f3f0d086f4d6",
+    "dirty_paths": [
+      "EADME.md",
+      "scripts/collect_data.py",
+      "src/tool_call_auditor/config.py",
+      "src/tool_call_auditor/data_export.py",
+      "src/tool_call_auditor/workspace_runner.py",
+      "tests/test_workspace_runner.py",
+      ".DS_Store",
+      ".vscode/",
+      "configs/banking_compatibility_plan.yaml",
+      "configs/real_trace_expansion_phase2.yaml",
+      "configs/real_trace_expansion_phase2_reserve.yaml",
+      "configs/real_trace_expansion_plan.yaml",
+      "data/.DS_Store",
+      "data/constructed/",
+      "data/exports/.DS_Store",
+      "data/exports/important_instructions/.DS_Store",
+      "data/exports/real-traces-phase-1/",
+      "data/exports/real-traces-phase-2/",
+      "data/exports/tool_knowledge/.DS_Store",
+      "data/exports/validation/",
+      "data/manifests/",
+      "scripts/build_constructed_candidates.py",
+      "scripts/build_workspace_task_catalog.py",
+      "scripts/check_candidate_progress.py",
+      "scripts/package_dataset_delivery.py",
+      "scripts/prepare_phase2_plan.py",
+      "scripts/summarize_collection_plan.py",
+      "tests/test_constructed_candidates.py",
+      "tests/test_dataset_delivery.py",
+      "tests/test_phase2_plan.py"
+    ],
+    "working_tree_dirty": true
+  },
+  "delivery_id": "dataset-502-v1",
+  "excluded_unmatched_review_count": 76,
+  "expected_unauthorized_review_source_count": 196,
+  "included_review_count": 120,
+  "observed_input_summary": {
+    "attacked_context_call_count": 334,
+    "call_count": 386,
+    "episode_count": 373,
+    "export_roots": [
+      "data/exports/important_instructions",
+      "data/exports/tool_knowledge",
+      "data/exports/real-traces-phase-1",
+      "data/exports/real-traces-phase-2"
+    ],
+    "parent_tasks_with_attacked_calls": 22
+  },
+  "source_file_hashes": [
+    {
+      "path": "data/constructed/delivery-001/constructed_candidates.jsonl",
+      "sha256": "4b938f81878b6936b93fb60621b116dd4b5d10aec59c5cec29afcd486048d958",
+      "size_bytes": 2137350
+    },
+    {
+      "path": "data/constructed/delivery-001/construction_report.json",
+      "sha256": "dbea2592553bec8bee71a804ca48e6c82dc2aa1dc42f3a66804cc5a1df86a2f7",
+      "size_bytes": 8899
+    },
+    {
+      "path": "data/constructed/delivery-001/expected_unauthorized_review.jsonl",
+      "sha256": "39a6902013f6df656624ec2d0002ba8511f6799ebb97b42616a3f692a39da70e",
+      "size_bytes": 604902
+    },
+    {
+      "path": "data/exports/important_instructions/batch-002/episodes.jsonl",
+      "sha256": "74a9004e66969f2f9c432e4dbad8471b5b8d98a0775fe606e51b79c45cc747f7",
+      "size_bytes": 317313
+    },
+    {
+      "path": "data/exports/important_instructions/batch-002/raw_calls.jsonl",
+      "sha256": "dee486c5cf30b67008e73ef7f43ce82526b81c1ba467c81c98713a1bbd66ca17",
+      "size_bytes": 314168
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-01/collection_summary.json",
+      "sha256": "00b6174adbaf86eff392e3a0c98711d43586d90b8627feaf6166408494835a5a",
+      "size_bytes": 1424
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-01/episodes.jsonl",
+      "sha256": "48b2eabdbb6a1048bf28f31ce362187b33bc7334e6f3245497cc4683f4827449",
+      "size_bytes": 20762
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-01/raw_calls.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-02/collection_summary.json",
+      "sha256": "98702746585d2d71c47b117a4e981b5ce8db35f6848edb87ea85e11bed6c554b",
+      "size_bytes": 1645
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-02/episodes.jsonl",
+      "sha256": "82e47729476a32f0eeaef7fdb335e686aab721817fb2aaba0478bb08b73bb500",
+      "size_bytes": 24559
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-02/raw_calls.jsonl",
+      "sha256": "80f9f8f47c4892f056395159d91c63a0273352cf0ec4868bc65ad1deb75f81ad",
+      "size_bytes": 12779
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-03/collection_summary.json",
+      "sha256": "3ce50af010c49454e7b7db1f6496854e84a4adc57c98a699c4375b79524797d5",
+      "size_bytes": 1569
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-03/episodes.jsonl",
+      "sha256": "d30b984aa172b3b939ae1fe9db3888967c0e4a4cb76571dd20b0d08a6906bd94",
+      "size_bytes": 25461
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-03/raw_calls.jsonl",
+      "sha256": "f0b775b1a5cd506b4d23abbea7bd6912c56ee3d72c537d5b4787e576831aee3f",
+      "size_bytes": 7811
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-04/collection_summary.json",
+      "sha256": "d7ad3ecdcaeea271c2bc33426fddf7c06996c21954652ef116e8aac4d344e0b1",
+      "size_bytes": 1534
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-04/episodes.jsonl",
+      "sha256": "6d55775f1a906caaaa2cc56df87bce211f57825d82e87e9d18af37ad3b6fa361",
+      "size_bytes": 93222
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-04/raw_calls.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-05/collection_summary.json",
+      "sha256": "4895e9f285e7f43cecc8d440452bead3e1dab337f57b5bcffbf0bc2db71818e8",
+      "size_bytes": 1607
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-05/episodes.jsonl",
+      "sha256": "cfb98cd5d3899004badb35f7c9db8578b3425fe9fa85799778504d7295f24e08",
+      "size_bytes": 106345
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-05/raw_calls.jsonl",
+      "sha256": "64efdd80d3563f9ec07aceb4ee34c6e7890fff94cfa9e2441b5115f2a9c6ec48",
+      "size_bytes": 139964
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-06/collection_summary.json",
+      "sha256": "50a100b1875db4340bdc64ff36af145e9e2319c3fdb802d3703b7f732bfb9640",
+      "size_bytes": 1640
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-06/episodes.jsonl",
+      "sha256": "8b10ba5d8ff5bbb83e626c3d63c0d68df35eee5e9536002e4b3e7529198e397e",
+      "size_bytes": 93910
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-06/raw_calls.jsonl",
+      "sha256": "61621a36f45fb5090d929181497c65300152819dd5d75fad606cfbbe019285bb",
+      "size_bytes": 173088
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-07/collection_summary.json",
+      "sha256": "2c9255d40b5f64ba7f1dddd035ac6aa8f7422b128b819dddb37d0f5f77cd4726",
+      "size_bytes": 1618
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-07/episodes.jsonl",
+      "sha256": "111daf52ca563e86017d5870a8a1382b0f4dbb680d501aebc36819af92ab0907",
+      "size_bytes": 113346
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-07/raw_calls.jsonl",
+      "sha256": "330cc6542868e821cfb25d05d5d483356d198d46ed3eadb8f8d373396854c2cf",
+      "size_bytes": 197047
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-08/collection_summary.json",
+      "sha256": "cc13137846f79f1807520a4122e5c19706a3cb9cb7a59fcd2d8877d8cef30015",
+      "size_bytes": 1649
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-08/episodes.jsonl",
+      "sha256": "f02a8fa6d5d36b7dc70afc73221fc9a4911b78961461f86b2b14c1735745d379",
+      "size_bytes": 135137
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/benign-08/raw_calls.jsonl",
+      "sha256": "99bab1e20f98935bfda17cf61c6440d269f999474d0597788aa9837f503d5684",
+      "size_bytes": 243968
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-01/collection_summary.json",
+      "sha256": "4c4c888ee2296d40331510eb164600a9c8ee98e58091577047e033a47634b83f",
+      "size_bytes": 1972
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-01/episodes.jsonl",
+      "sha256": "9d1a36239648d97c7daf09fd526e541318bd86f19eaa839588ad7c7469ff8074",
+      "size_bytes": 156782
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-01/raw_calls.jsonl",
+      "sha256": "014a1c3d05308759edfbbee7362328acb90d01cc25bebc18b0f2ebed4f6e4e35",
+      "size_bytes": 215224
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-02/collection_summary.json",
+      "sha256": "b2e81fbc5196b0e8b0cf31e60ee620ad1b609db6f4b685d04ab7bf61aeff0e2e",
+      "size_bytes": 1924
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-02/episodes.jsonl",
+      "sha256": "addf7216d10de91ef2e3bd144018741f213ee1baba7215a38f4dfc57d8cb9732",
+      "size_bytes": 150074
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-02/raw_calls.jsonl",
+      "sha256": "fc3df533d0c803d0ffa8496b4e552cff19a5e8f865b4e028bba1705cd57d02eb",
+      "size_bytes": 255223
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-03/collection_summary.json",
+      "sha256": "75f1904c48c6f6793b87bf518f6b7ce72cd8911596b41dfe9d88696cbf1f4745",
+      "size_bytes": 1802
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-03/episodes.jsonl",
+      "sha256": "94ed73ce155024a44dbd70b838ca5151ec5b93310861148bae59d4b0c815d788",
+      "size_bytes": 39212
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-03/raw_calls.jsonl",
+      "sha256": "7b7d33cef7ddff37c492b2ac15063fea9c23aece42db9d5543cf93b0b7f2850f",
+      "size_bytes": 27579
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-04/collection_summary.json",
+      "sha256": "45e23786c7833c037492fc26f879b8024ef6e636b9c5678ec623a9914cfc9234",
+      "size_bytes": 1885
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-04/episodes.jsonl",
+      "sha256": "e515d3746deed2fa19b2fcfbfe997c591c3d3d742993ed13979f6d10b3c3076b",
+      "size_bytes": 35103
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/important-instructions-04/raw_calls.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/phase_summary.json",
+      "sha256": "4814cea73d529ba2a164ffab058c7ad07d3df93cb2898b4ffd5d8e4aacfc75d0",
+      "size_bytes": 39820
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-01/collection_summary.json",
+      "sha256": "75ccafab667a2614bbf6027335491402eaa93e9334d7d0dd94445454adef3b34",
+      "size_bytes": 1691
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-01/episodes.jsonl",
+      "sha256": "aab0abb40a2e8e524f3b2a26acf65314191f37c227be49f540286412b56f69d9",
+      "size_bytes": 50405
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-01/raw_calls.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-02/collection_summary.json",
+      "sha256": "87d58440d7f3733a81de952090b03a4e5e5e9888d0a8b888a749ae931f6e2a49",
+      "size_bytes": 1892
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-02/episodes.jsonl",
+      "sha256": "79021118a73dccaeabe4b279b2f11e6fb7c5006a216287f9480ef3417d0b85ac",
+      "size_bytes": 64189
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-02/raw_calls.jsonl",
+      "sha256": "6734ef7fc78bb2dbd86fd829562e805c487ac79df4fa45e33f7efc184412834e",
+      "size_bytes": 12263
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-03/collection_summary.json",
+      "sha256": "044ce764488bbff9467dd1fe8603e1bc124e4a63b29501fb23e992256654fd4e",
+      "size_bytes": 1909
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-03/episodes.jsonl",
+      "sha256": "b846744ee2f1e1fb4a62cb4175942103874769046c353095ff032dcedee5eed4",
+      "size_bytes": 74775
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-03/raw_calls.jsonl",
+      "sha256": "cde67326f14bb0740e43eb61e78e14cca322d46e9ac3d5093039a71d28eba467",
+      "size_bytes": 9238
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-04/collection_summary.json",
+      "sha256": "22989943ba20a66ce45b4687f7a76a2fa8a5f90557a8bf8c6a06d4f980794e25",
+      "size_bytes": 1985
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-04/episodes.jsonl",
+      "sha256": "1e20aa561c3e92816f6e0c5fffba01e6d20f888e5d222263c66cab449c2916aa",
+      "size_bytes": 163148
+    },
+    {
+      "path": "data/exports/real-traces-phase-1/tool-knowledge-04/raw_calls.jsonl",
+      "sha256": "c20148c6f1529c6f8ea615f997abe95a58eb233af525068b778e083bc8aadc6e",
+      "size_bytes": 247355
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-01/collection_summary.json",
+      "sha256": "b34e314b3c202e922261a15d9cb7892420237f656299997eeb659258722e0f2c",
+      "size_bytes": 2095
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-01/episodes.jsonl",
+      "sha256": "8decb37495d020f3dbfaf02026ef7bce98deb637e29e8d0ceb960f20794a005f",
+      "size_bytes": 274285
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-01/raw_calls.jsonl",
+      "sha256": "be9025187aeb3bf648b8f6771bda64173aff44f7eaf70de94b075defe1beb8fa",
+      "size_bytes": 492853
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-02/collection_summary.json",
+      "sha256": "568fe2aa6358cbbc44721030c65ce0638625919194c25be5c0f1298be44c6b79",
+      "size_bytes": 2329
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-02/episodes.jsonl",
+      "sha256": "49e60c9dd062a56f4d6b03cf1ac133a40e9b8dc3f5bb348b3b142671a0e4363d",
+      "size_bytes": 254416
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-02/raw_calls.jsonl",
+      "sha256": "33d2b23b6ddc3e5dcf56056475a1836e6df6bb7498e8c63b83ad919f24530b3a",
+      "size_bytes": 377818
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-03/collection_summary.json",
+      "sha256": "eff8c7a8ef0f84957e2d2f33a90b67a8c7aa7aafafdded07e92202b564086b60",
+      "size_bytes": 2301
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-03/episodes.jsonl",
+      "sha256": "9d92a97a383e4c58178d14a7763a32d01df16d20f17e0e3d9dcb668ab371e107",
+      "size_bytes": 220241
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-03/raw_calls.jsonl",
+      "sha256": "e4537922699ea81fa2a54048bb8ea854839a7c3fc4b1205692140f05409a52f8",
+      "size_bytes": 376594
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-04/collection_summary.json",
+      "sha256": "78b57c695124f857038dca9f082f20f8e89505afd12b9c563470126f2a98854d",
+      "size_bytes": 2533
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-04/episodes.jsonl",
+      "sha256": "599fabcc0183fb01274d5243cf3e07a6672a110382d6a7221b52d4014fbab508",
+      "size_bytes": 208187
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-04/raw_calls.jsonl",
+      "sha256": "6aaeb48dc2d70d9cbdd0b9210cadf33ba8cfbdeb0402f5b2547712ba34e213c2",
+      "size_bytes": 315639
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-05/collection_summary.json",
+      "sha256": "2bb363bbf59673312d73d9482963d2658d2b0883a8027854712346c3ae8d2d5f",
+      "size_bytes": 2468
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-05/episodes.jsonl",
+      "sha256": "5b78eed66ada1cd054eba04dc8a0a0784126c2977c85af0f13a551bfa0710211",
+      "size_bytes": 197664
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-05/raw_calls.jsonl",
+      "sha256": "913849b34c17d800c59de10a33e3504a71b558d1a66817aa37db95eca6cb0949",
+      "size_bytes": 272021
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-06/collection_summary.json",
+      "sha256": "1e9d9c49328a767f03a7ec0e8e2e88674516ee5459a0f8073d7119d22463a115",
+      "size_bytes": 2451
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-06/episodes.jsonl",
+      "sha256": "5c6fd6f292228f78352c7f8ee3e182a8663aea83a92fe57cc5cdaa6399881bf9",
+      "size_bytes": 170196
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-06/raw_calls.jsonl",
+      "sha256": "4dc127fdb5f190fd053497761330b319656da6fef0234024ec6a0fa8b2e4ac16",
+      "size_bytes": 214425
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-07/collection_summary.json",
+      "sha256": "006988eedaeff23d91e3f5c2600b999cab85afec86b770fda894eed59dbb698e",
+      "size_bytes": 2470
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-07/episodes.jsonl",
+      "sha256": "e1313d27149294a2545acf612c5f0e02a3fc7de2dc4b2e0794a42c23f20753a9",
+      "size_bytes": 227790
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-07/raw_calls.jsonl",
+      "sha256": "879d91795e167bb4ef06d82316ef15a58ff45e7575178a39cdb34c35cc50f215",
+      "size_bytes": 368139
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-08/collection_summary.json",
+      "sha256": "11b5a61e21434ba04f2b7b021f264e3cead86fa653efbc4f587c72452767268d",
+      "size_bytes": 2411
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-08/episodes.jsonl",
+      "sha256": "7add22e4a33997567e676e32ecd0994db2236debc6d136b75bf7347a4f3fa7f0",
+      "size_bytes": 230734
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-08/raw_calls.jsonl",
+      "sha256": "b4d89c369cbe41e3d665ebe3321ef6c7f514ed47309fc99f3fce08a566d47353",
+      "size_bytes": 368878
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-09/collection_summary.json",
+      "sha256": "ecbf8d3dfd5bf19da4c222d6d36880b133fa2e1a3dd2b314a4ae5a148106f3db",
+      "size_bytes": 2448
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-09/episodes.jsonl",
+      "sha256": "42233474e02c6058ef5315c2ff05a3ef7904b6a53fbe116972eaca07bf54c16d",
+      "size_bytes": 190951
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-09/raw_calls.jsonl",
+      "sha256": "131a9a061a26a99f5376c49e76add1f08e29aa094f22248acdb884c0fd93a8f1",
+      "size_bytes": 289676
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-10/collection_summary.json",
+      "sha256": "549f5b7a003062d7ffea0d1bc9e890d1ce697ef07a1b569f9731b42617cab94d",
+      "size_bytes": 2472
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-10/episodes.jsonl",
+      "sha256": "d3d9aaa28ce78ccb5411ee3612e2d133b0d575ad1e4e20de3613bbcfc0b16327",
+      "size_bytes": 204108
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-10/raw_calls.jsonl",
+      "sha256": "95f80cfe34413abd93d7cb21bbd73084312e155a6db27fed24c99e9a9ce22471",
+      "size_bytes": 286081
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-11/collection_summary.json",
+      "sha256": "9d9aa92cf7417f9749928c56ad2e23d7533ce5afcf8915f50e359e7588d85006",
+      "size_bytes": 2407
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-11/episodes.jsonl",
+      "sha256": "deac8bdea14b11e644f9bec69ca191a661af3666ccfa6200a0be6ec3dff1d40a",
+      "size_bytes": 239457
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-11/raw_calls.jsonl",
+      "sha256": "dc3ad5ba5305492db8798718e3dc0d763e8f7a551bc838c93da5f6be3bee9f96",
+      "size_bytes": 374192
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-12/collection_summary.json",
+      "sha256": "f27fc1859855320e219a64e62a176a44b79436861a383047341d742b60354460",
+      "size_bytes": 2406
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-12/episodes.jsonl",
+      "sha256": "18dc9b0ae5791cfb6bfecacc809476ba21f7cbbddb0df111821e4aed59012f77",
+      "size_bytes": 291192
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-important-12/raw_calls.jsonl",
+      "sha256": "9b14564c17f98a573d8928fcc2287919f4471b071c4473ffff58a2072c1b1557",
+      "size_bytes": 551226
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-01/collection_summary.json",
+      "sha256": "376351a8603b4e2a66fe69419bebaed6223d991b109a48b2dd417a756131daf8",
+      "size_bytes": 2174
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-01/episodes.jsonl",
+      "sha256": "e7585bb239bdb5c95fd2c7053945e061aff92c049457dcb184f4be446619c412",
+      "size_bytes": 196435
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-01/raw_calls.jsonl",
+      "sha256": "faea1639b6e025f501a84aa9efa9ee0ebbd53f0a84e09d42d0c7e8ee84437b55",
+      "size_bytes": 283202
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-02/collection_summary.json",
+      "sha256": "7e832fcdbfdbb66c9c7301760ca6dc9873941586a0b68ab7b137d76486ee8758",
+      "size_bytes": 2273
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-02/episodes.jsonl",
+      "sha256": "159e70071e025cc688642b3c370a300101fc4b3992e88a5fbd0e72eaee51b0f4",
+      "size_bytes": 246776
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-02/raw_calls.jsonl",
+      "sha256": "ec8ed5a9e05353ec2d6e280bb3b8bc1176128941065b1e77f92c02be3ea580cf",
+      "size_bytes": 402245
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-03/collection_summary.json",
+      "sha256": "4851cd6247a10b2deff1a18965d4fbd1a92b61777a4ef9cb785b7d980480e29c",
+      "size_bytes": 2326
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-03/episodes.jsonl",
+      "sha256": "fcdca09e9edd95f8ea930a20f34744297df9451be08ebaa043c37c615f17849c",
+      "size_bytes": 225510
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-03/raw_calls.jsonl",
+      "sha256": "9f4ea6fd7397e59b1b6f3d8e7a1780a9da7d792a8dacbbcbed9f13792149036b",
+      "size_bytes": 291765
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-04/collection_summary.json",
+      "sha256": "a1746a837f86ae483e7eb72cd0c09ec750f22c2e1ea41b622a2207daf8d8a6b3",
+      "size_bytes": 2496
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-04/episodes.jsonl",
+      "sha256": "4285de7c7525074a300b568bbf081386d97a7a46711f09ba3e764bf09a9347e9",
+      "size_bytes": 215938
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-04/raw_calls.jsonl",
+      "sha256": "c7d593ee0774c97dd799bf0c4d980946b600d364a37d8a8c115d3b9f03306a1a",
+      "size_bytes": 331096
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-05/collection_summary.json",
+      "sha256": "d9351fa73da61898cda9b593157256d49286a4597873f04c0940a07cb3ce8ac4",
+      "size_bytes": 2323
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-05/episodes.jsonl",
+      "sha256": "b469323c71af75c897c46c4cafa606f74fe46d2d91338598036925bea5b957dc",
+      "size_bytes": 197358
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-05/raw_calls.jsonl",
+      "sha256": "155b50964bbe33e7c62debb1a7fbc5033ef96cb97ac41e051bd6beb047215afc",
+      "size_bytes": 334262
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-06/collection_summary.json",
+      "sha256": "f2f89bd83e77f4126de238957b0d025b7d89b6209e8816fca9544e751b10a6f2",
+      "size_bytes": 2402
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-06/episodes.jsonl",
+      "sha256": "aadfa1519014cd609686684f4d1e1b259c902c3733f1d7f090bb3e36230d9e35",
+      "size_bytes": 256346
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-06/raw_calls.jsonl",
+      "sha256": "65b1b721966ddcac4f4cbae326b06e34c30faff83b0e327dc767d7407037cd69",
+      "size_bytes": 462216
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-07/collection_summary.json",
+      "sha256": "f341fece7dce52041e23f23ed0a7c0a32b162a52d409b0cb67b8878fa7f3636f",
+      "size_bytes": 2402
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-07/episodes.jsonl",
+      "sha256": "f6378c89fe564c12da465935d1a522caa8749a4722fd2cf15f8f6835b0e5308c",
+      "size_bytes": 235031
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-07/raw_calls.jsonl",
+      "sha256": "dd0ff078a91fd31966e495c39e57283e9c68b3ba96f2a3fc57e5dd813620a85f",
+      "size_bytes": 419085
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-08/collection_summary.json",
+      "sha256": "f1de53ea570aeb405d05d92f4bee09c09076d711f5a0c285b2e48cdab311d0da",
+      "size_bytes": 2403
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-08/episodes.jsonl",
+      "sha256": "a1f415b65264ad3cbec277075a3c22b748e3d4d59f9573918b15dd00eefdc17c",
+      "size_bytes": 201679
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-08/raw_calls.jsonl",
+      "sha256": "d6ef5d47f366f572b1b5a714b71fcbf90e6695dcb543d124386afbff9d559177",
+      "size_bytes": 315615
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-09/collection_summary.json",
+      "sha256": "6b30809b73d8b6a9a6995e20a9f312db82f9fc7068406d76b4396ff45e3b0b3a",
+      "size_bytes": 2445
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-09/episodes.jsonl",
+      "sha256": "0a1dcc2faf606f66d97057339a416b44bab5c7bee8826c9b0e5ecc5c78873fad",
+      "size_bytes": 257575
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-09/raw_calls.jsonl",
+      "sha256": "32107b4361226b54b6b2d037eaf197ba55060289d2295edd805474219c8cb6c6",
+      "size_bytes": 457528
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-10/collection_summary.json",
+      "sha256": "31335656f75157a27bb66f2aa2efb7a75911b4a5e8eff4dc661b94f8019c7eb6",
+      "size_bytes": 2460
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-10/episodes.jsonl",
+      "sha256": "2d29e3407940e561d95cbb073f57d67ef9437e68dd7f2f2710e173db7d6ab4b8",
+      "size_bytes": 225987
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-10/raw_calls.jsonl",
+      "sha256": "6dc6321f82d8e5314c44bcf177602ad2d702d6854e5f59d4ba93b282538f7fa0",
+      "size_bytes": 363956
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-11/collection_summary.json",
+      "sha256": "53487393eeea7afc6e1a7234221549f4d8bd6132b1d00bd17c291f8858aef8b6",
+      "size_bytes": 2323
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-11/episodes.jsonl",
+      "sha256": "65aefc1450c0c3200fbc12819987d07a29f0a6b928b982b038f64434cfd11428",
+      "size_bytes": 246397
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-11/raw_calls.jsonl",
+      "sha256": "cc5e080a7b29495137aeed255e5dfeec3e7fd421f3411107cac3c517a15a6f27",
+      "size_bytes": 430399
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-12/collection_summary.json",
+      "sha256": "d6b1f36bd422cb768e6cb96daf4e24e688002d72c2cd31856de1378b8c26f4bf",
+      "size_bytes": 2477
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-12/episodes.jsonl",
+      "sha256": "aca6125e2c7d395ae32af96996a13bd6d427771f94461b0fe3e91437f9f3c35d",
+      "size_bytes": 186861
+    },
+    {
+      "path": "data/exports/real-traces-phase-2/phase2-tool-knowledge-12/raw_calls.jsonl",
+      "sha256": "7cdc0d799a914c47e30585be7bd272cbf4908a5611c76f66783a9778a485c097",
+      "size_bytes": 236484
+    },
+    {
+      "path": "data/exports/tool_knowledge/batch-001/episodes.jsonl",
+      "sha256": "97d95c1d7941149915f18dc0b002367aa4f1a43e1520f7bf77750ebbfd793792",
+      "size_bytes": 311157
+    },
+    {
+      "path": "data/exports/tool_knowledge/batch-001/raw_calls.jsonl",
+      "sha256": "c1991e87faa30e28837475561cec7325ad181dd42d4533e10430fe270995dc36",
+      "size_bytes": 330950
+    },
+    {
+      "path": "data/manifests/agentdojo_workspace_v1.2.2_catalog.json",
+      "sha256": "230cabf4ee86d4ae5d7e66194d7f0fb93a37f14af3076fd14eefb32ef43bdae4",
+      "size_bytes": 50952
+    },
+    {
+      "path": "scripts/build_constructed_candidates.py",
+      "sha256": "ca8e539c7e1f0460c00c6e3a11ed53f0fde5b0b2463d2a1a13ceb91ece4d3079",
+      "size_bytes": 39736
+    },
+    {
+      "path": "scripts/package_dataset_delivery.py",
+      "sha256": "1edbfb752db608f3150cc3bfc619e0512c1a40321286d1cdb88289b5c00a7364",
+      "size_bytes": 19918
+    }
+  ],
+  "source_paths": {
+    "catalog": "data/manifests/agentdojo_workspace_v1.2.2_catalog.json",
+    "constructed_candidates": "data/constructed/delivery-001/constructed_candidates.jsonl",
+    "constructed_review_source": "data/constructed/delivery-001/expected_unauthorized_review.jsonl",
+    "construction_report": "data/constructed/delivery-001/construction_report.json",
+    "observed_export_roots": [
+      "data/exports/important_instructions",
+      "data/exports/tool_knowledge",
+      "data/exports/real-traces-phase-1",
+      "data/exports/real-traces-phase-2"
+    ]
+  }
+}

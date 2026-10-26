@@ -1,0 +1,51 @@
+{
+  "attack_coverage": {},
+  "attack_goal_check_count": 0,
+  "candidate_consequential_call_count": 0,
+  "duration_seconds": {
+    "api_request_count": 5,
+    "api_request_sum": 13.329227918031393,
+    "episode_count": 5,
+    "episode_mean": 2.752066230773926,
+    "episode_sum": 13.760331153869629,
+    "task_attempt_sum": 13.927900075912476
+  },
+  "errors": {
+    "failed_episode_count": 0,
+    "failed_task_attempt_count": 0
+  },
+  "injection_exposure": {
+    "confirmed_by_injection_task": {},
+    "confirmed_exposure_count": 0,
+    "injection_task_coverage": {},
+    "not_observed_count": 0,
+    "requested_attack_episode_count": 0
+  },
+  "labels": {
+    "all_null": true
+  },
+  "primary_episode_count": 5,
+  "provider_api_request_count": 11,
+  "source_ids": [
+    "agentdojo-0.1.35-workspace-v1.2.2-real-traces-phase-1:benign-01"
+  ],
+  "task_group_coverage": [
+    "workspace:user_task_0",
+    "workspace:user_task_1",
+    "workspace:user_task_2",
+    "workspace:user_task_3",
+    "workspace:user_task_5"
+  ],
+  "token_usage": {
+    "completion_tokens": 917,
+    "completion_tokens_known_episode_count": 5,
+    "completion_tokens_missing_episode_count": 0,
+    "prompt_tokens": 42975,
+    "prompt_tokens_known_episode_count": 5,
+    "prompt_tokens_missing_episode_count": 0,
+    "total_tokens": 43892,
+    "total_tokens_known_episode_count": 5,
+    "total_tokens_missing_episode_count": 0
+  },
+  "tool_coverage": {}
+}

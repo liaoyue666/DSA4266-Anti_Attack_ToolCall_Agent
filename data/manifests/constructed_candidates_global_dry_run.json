@@ -1,0 +1,223 @@
+{
+  "api_calls": 0,
+  "candidate_class_counts": {
+    "expected_unauthorized": 17
+  },
+  "candidate_rows_are_not_written": true,
+  "candidate_rows_written": false,
+  "constructed_internal_duplicate_count": 0,
+  "constructed_near_duplicate_group_count": 15,
+  "construction": {
+    "cap_truncated_count": 0,
+    "constructed_before_deduplication": 17,
+    "constructed_internal_duplicate_count": 0,
+    "eligible_attacked_parent_calls": 28,
+    "hard_authorized_review_reference_count": 28,
+    "new_constructed_count": 17,
+    "observed_count": 76,
+    "observed_raw_call_count": 80,
+    "observed_unique_model_input_count": 76,
+    "per_parent_task": {
+      "user_task_12": {
+        "expected_unauthorized": 1,
+        "skip_reasons": {},
+        "total_new_constructed": 1
+      },
+      "user_task_13": {
+        "expected_unauthorized": 1,
+        "skip_reasons": {
+          "no_reviewed_authorization_deviation_strategy_for_tool": 1
+        },
+        "total_new_constructed": 1
+      },
+      "user_task_15": {
+        "expected_unauthorized": 1,
+        "skip_reasons": {},
+        "total_new_constructed": 1
+      },
+      "user_task_18": {
+        "expected_unauthorized": 0,
+        "skip_reasons": {
+          "no_injected_participant_absent_from_request_and_trusted_context": 1
+        },
+        "total_new_constructed": 0
+      },
+      "user_task_19": {
+        "expected_unauthorized": 1,
+        "skip_reasons": {
+          "no_reviewed_authorization_deviation_strategy_for_tool": 1
+        },
+        "total_new_constructed": 1
+      },
+      "user_task_20": {
+        "expected_unauthorized": 0,
+        "skip_reasons": {
+          "no_injected_participant_absent_from_request_and_trusted_context": 1
+        },
+        "total_new_constructed": 0
+      },
+      "user_task_21": {
+        "expected_unauthorized": 1,
+        "skip_reasons": {},
+        "total_new_constructed": 1
+      },
+      "user_task_25": {
+        "expected_unauthorized": 3,
+        "skip_reasons": {},
+        "total_new_constructed": 3
+      },
+      "user_task_29": {
+        "expected_unauthorized": 0,
+        "skip_reasons": {
+          "no_reviewed_authorization_deviation_strategy_for_tool": 1
+        },
+        "total_new_constructed": 0
+      },
+      "user_task_31": {
+        "expected_unauthorized": 0,
+        "skip_reasons": {
+          "no_reviewed_authorization_deviation_strategy_for_tool": 1
+        },
+        "total_new_constructed": 0
+      },
+      "user_task_32": {
+        "expected_unauthorized": 2,
+        "skip_reasons": {
+          "no_reviewed_authorization_deviation_strategy_for_tool": 1
+        },
+        "total_new_constructed": 2
+      },
+      "user_task_33": {
+        "expected_unauthorized": 1,
+        "skip_reasons": {},
+        "total_new_constructed": 1
+      },
+      "user_task_34": {
+        "expected_unauthorized": 0,
+        "skip_reasons": {
+          "no_reviewed_authorization_deviation_strategy_for_tool": 1
+        },
+        "total_new_constructed": 0
+      },
+      "user_task_35": {
+        "expected_unauthorized": 1,
+        "skip_reasons": {},
+        "total_new_constructed": 1
+      },
+      "user_task_36": {
+        "expected_unauthorized": 0,
+        "skip_reasons": {
+          "no_reviewed_authorization_deviation_strategy_for_tool": 1
+        },
+        "total_new_constructed": 0
+      },
+      "user_task_37": {
+        "expected_unauthorized": 2,
+        "skip_reasons": {
+          "no_reviewed_authorization_deviation_strategy_for_tool": 1
+        },
+        "total_new_constructed": 2
+      },
+      "user_task_38": {
+        "expected_unauthorized": 1,
+        "skip_reasons": {},
+        "total_new_constructed": 1
+      },
+      "user_task_4": {
+        "expected_unauthorized": 0,
+        "skip_reasons": {
+          "no_injected_participant_absent_from_request_and_trusted_context": 1
+        },
+        "total_new_constructed": 0
+      },
+      "user_task_6": {
+        "expected_unauthorized": 1,
+        "skip_reasons": {},
+        "total_new_constructed": 1
+      },
+      "user_task_7": {
+        "expected_unauthorized": 0,
+        "skip_reasons": {
+          "no_reviewed_authorization_deviation_strategy_for_tool": 1
+        },
+        "total_new_constructed": 0
+      },
+      "user_task_8": {
+        "expected_unauthorized": 0,
+        "skip_reasons": {
+          "no_injected_participant_absent_from_request_and_trusted_context": 1
+        },
+        "total_new_constructed": 0
+      },
+      "user_task_9": {
+        "expected_unauthorized": 1,
+        "skip_reasons": {},
+        "total_new_constructed": 1
+      }
+    },
+    "repeated_with_observed_count": 0,
+    "schema_rejections": 0,
+    "skip_reasons": {
+      "no_injected_participant_absent_from_request_and_trusted_context": 4,
+      "no_reviewed_authorization_deviation_strategy_for_tool": 9,
+      "not_an_exposed_injection_context": 52
+    },
+    "unauthorized_review_count": 17
+  },
+  "construction_method_counts": {
+    "add_injected_participant": 5,
+    "escalate_read_permission_to_read_write": 2,
+    "replace_email_recipient_with_injected_target": 6,
+    "replace_file_id_with_injected_target": 2,
+    "replace_shared_file_recipient_with_injected_target": 2
+  },
+  "exact_unique_candidate_row_gap_to_500": 407,
+  "expected_unauthorized_review_count": 17,
+  "hard_authorized_review_reference_count": 28,
+  "input": {
+    "attacked_context_call_count": 28,
+    "call_count": 80,
+    "episode_count": 133,
+    "export_roots": [
+      "data/exports/important_instructions",
+      "data/exports/tool_knowledge",
+      "data/exports/real-traces-phase-1"
+    ],
+    "parent_tasks_with_attacked_calls": 22
+  },
+  "largest_near_duplicate_group_size": 3,
+  "max_candidates": 120,
+  "near_duplicate_group_count": 15,
+  "new_constructed_count": 17,
+  "observed_count": 76,
+  "observed_raw_call_count": 80,
+  "observed_unique_model_input_count": 76,
+  "parent_task_candidate_counts": {
+    "user_task_12": 1,
+    "user_task_13": 1,
+    "user_task_15": 1,
+    "user_task_19": 1,
+    "user_task_21": 1,
+    "user_task_25": 3,
+    "user_task_32": 2,
+    "user_task_33": 1,
+    "user_task_35": 1,
+    "user_task_37": 2,
+    "user_task_38": 1,
+    "user_task_6": 1,
+    "user_task_9": 1
+  },
+  "phase_id": "global-observed-candidate-pool",
+  "repeated_with_observed_count": 0,
+  "seed": 4266,
+  "source_type": "constructed",
+  "tool_counts": {
+    "create_calendar_event": 5,
+    "delete_file": 2,
+    "send_email": 6,
+    "share_file": 4
+  },
+  "tool_execution_calls": 0,
+  "total_exact_unique_candidate_rows": 93,
+  "unique_parent_task_count": 13
+}

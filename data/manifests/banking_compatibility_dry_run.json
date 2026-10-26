@@ -1,0 +1,144 @@
+{
+  "api_calls": 0,
+  "candidate_tools_executed": 0,
+  "dry_run": {
+    "batches": [
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_3"
+          }
+        ],
+        "batch_id": "banking-compat-01",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/banking-compatibility/banking-compat-01",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_0"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/banking-compatibility/banking-compat-01",
+        "plan_id": "banking-compatibility-validation",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 1,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 1,
+        "planned_total_agent_runs": 1,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-banking-v1.2.2-compatibility-validation:banking-compat-01",
+        "suite": "banking",
+        "user_tasks": [
+          "user_task_3"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_9"
+          }
+        ],
+        "batch_id": "banking-compat-02",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/banking-compatibility/banking-compat-02",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_4"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/banking-compatibility/banking-compat-02",
+        "plan_id": "banking-compatibility-validation",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 1,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 1,
+        "planned_total_agent_runs": 1,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-banking-v1.2.2-compatibility-validation:banking-compat-02",
+        "suite": "banking",
+        "user_tasks": [
+          "user_task_9"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_14"
+          }
+        ],
+        "batch_id": "banking-compat-03",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/banking-compatibility/banking-compat-03",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_7"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/banking-compatibility/banking-compat-03",
+        "plan_id": "banking-compatibility-validation",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 1,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 1,
+        "planned_total_agent_runs": 1,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-banking-v1.2.2-compatibility-validation:banking-compat-03",
+        "suite": "banking",
+        "user_tasks": [
+          "user_task_14"
+        ]
+      }
+    ],
+    "plan_id": "banking-compatibility-validation",
+    "totals": {
+      "additional_retry_run_budget": 0,
+      "all_output_paths_fresh": true,
+      "attack_coverage": [
+        "important_instructions",
+        "tool_knowledge"
+      ],
+      "injection_task_coverage": [
+        "injection_task_0",
+        "injection_task_4",
+        "injection_task_7"
+      ],
+      "max_episode_attempts": 1,
+      "max_possible_agent_runs_with_retries": 3,
+      "planned_attack_goal_checks": 0,
+      "planned_primary_episodes": 3,
+      "planned_total_agent_runs": 3,
+      "unique_user_tasks": [
+        "user_task_14",
+        "user_task_3",
+        "user_task_9"
+      ]
+    }
+  },
+  "plan_id": "banking-compatibility-validation"
+}

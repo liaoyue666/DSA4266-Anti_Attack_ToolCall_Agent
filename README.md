@@ -2,7 +2,7 @@
 
 This repository contains the DSA4266 project on protecting tool-using LLM agents from **indirect prompt injection**. The project studies whether a trained, context-aware verifier can detect unauthorized tool calls before execution while preserving the agent's ability to complete legitimate user tasks.
 
-> **Project status:** proposal and implementation planning. Experimental results and exact reproduction commands will be added as the system is implemented.
+> **Project status:** the interception pilot and real-trace expansion preparation are implemented. Phase-one collection is planned but has not been run; no new experimental results or labels are claimed.
 
 ## Implemented pilot: interception before tool execution
 
@@ -190,13 +190,242 @@ available. Cost and unavailable usage are null; this adapter does not estimate
 provider cost. AgentDojo helper attack-goal checks are not treated as primary
 episodes or mixed into the default call export.
 
+## Real-trace expansion preparation
+
+The installed AgentDojo 0.1.35 registry for benchmark `v1.2.2`, suite
+`workspace`, contains 40 user tasks, 14 injection tasks, and 24 tools. The
+machine-enumerated task instructions, reference calls, injection goals, and
+tool descriptions are saved in
+[`data/manifests/agentdojo_workspace_v1.2.2_catalog.json`](data/manifests/agentdojo_workspace_v1.2.2_catalog.json).
+Reference calls describe benchmark behavior only; they are **not** call-level
+authorization labels. `possible_consequential_tools` in that catalog is the
+intersection of each task's reference tools with the project's explicit
+consequential-tool allowlist.
+
+`configs/real_trace_expansion_plan.yaml` is the immutable phase-one plan.
+Its verified plan-wide dry-run output is saved in
+[`data/manifests/real_trace_expansion_dry_run.json`](data/manifests/real_trace_expansion_dry_run.json).
+It uses `deepseek-flash`, fixed `ALLOW`, one repetition, and the
+`important_instructions` and `tool_knowledge` attacks. Each of the 40 user
+tasks is scheduled once in a benign-only batch. A separate 40 attacked
+task/injection pairs provide attack coverage, for **80 planned primary
+episodes** total. No benign sample is repeated for the second attack family.
+The 16 batches each contain at most five primary episodes and have distinct
+run and export directories. Seven explicitly scheduled auxiliary injection
+goal checks bring the first-pass planned workload to 87 AgentDojo task runs.
+At most one additional retry per task is allowed, so the configured retry
+budget is bounded; actual provider request counts and cost depend on model
+turns and are not inferred from episode counts.
+The 80 figure is an episode plan, **not** a consequential-call target: one
+episode may produce zero or multiple candidate calls. The later approximately
+250-call goal will be reported from actual exported candidates; this phase
+does not append extra API runs or duplicate samples if it falls short.
+
+Inspect the full plan, with exact task-pair selections and directories, without
+reading credentials or contacting a provider:
+
+```bash
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/collect_data.py \
+  --plan configs/real_trace_expansion_plan.yaml --dry-run
+```
+
+Check just the first batch:
+
+```bash
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/collect_data.py \
+  --plan configs/real_trace_expansion_plan.yaml --batch benign-01 --dry-run
+```
+
+The first batch is `benign_only`: `user_task_0`, `user_task_1`, `user_task_3`,
+`user_task_2`, and `user_task_5`; five main episodes, zero attack-goal checks;
+outputs go to `runs/data_collection/real-traces-phase-1/benign-01` and
+`data/exports/real-traces-phase-1/benign-01`. The dry run reports zero provider
+requests. To explicitly start that real batch later (not part of local
+verification), use the same immutable plan selector without `--dry-run`:
+
+```bash
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/collect_data.py \
+  --plan configs/real_trace_expansion_plan.yaml --batch benign-01
+```
+
+`run_mode: benign_only` requires an explicit empty `injection_tasks: []`;
+`attacked_only` requires explicit injection selections and exact task/injection
+pairs. Neither mode interprets an empty list as “run everything.” The legacy
+`both` default remains available for existing configs. Each work item gets a
+separate attempt directory and a `task_status.jsonl` record. Errors are saved
+and do not stop later tasks; each item has at most two attempts in this plan.
+For a continuation, pass the original batch and `--resume-run-id <id>` to skip
+completed items. Alternatively, `--remaining-tasks-file <json>` accepts an
+explicit non-empty JSON list such as
+`[{"scenario":"attacked","user_task_id":"user_task_33","injection_task_id":"injection_task_0"}]`.
+Planned batch directories are rejected if they already contain data; the
+expansion-plan interface does not permit overwrite.
+
+Exports add `task_group_id` and `source_id`. Every consequential call keeps
+`label: null`; episode utility, security, or attack outcomes are never used to
+create call labels. Each batch writes `collection_summary.json` with candidate
+counts, task/attack/tool coverage, observed injection exposure, errors,
+elapsed time, and returned token usage. Injection exposure is reported from
+the AgentDojo trace's actual injection context, not inferred from attack
+success. `provider_api_request_count` counts recorded provider requests;
+`duration_seconds.episodes_with_api_request_duration` counts episodes that had
+request timing data, and is not a request count. The independent
+[`data/manifests/pending_task_split.csv`](data/manifests/pending_task_split.csv)
+lists all task groups for later split review; no train/validation/test
+assignment is claimed or made automatically.
+
+After all planned batch exports exist, aggregate their observed results without
+modifying the batch files:
+
+```bash
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/summarize_collection_plan.py \
+  --plan configs/real_trace_expansion_plan.yaml
+```
+
+This creates `data/exports/real-traces-phase-1/phase_summary.json` and refuses
+to replace an existing phase summary.
+
+To regenerate the installed-package catalog without any model calls:
+
+```bash
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/build_workspace_task_catalog.py
+```
+
+### Constructed candidate preparation (no model/API calls)
+
+`scripts/build_constructed_candidates.py` reads the legacy `important_instructions`
+and `tool_knowledge` exports plus phase-one exports. The canonical fingerprint
+contains only the original request, ordered pre-call observations, tool name,
+and arguments; it excludes source IDs, candidate class, and review metadata.
+Exact observed duplicates are collapsed while all their parent references are
+retained. Constructed rows that match any observed action or another constructed
+action do not count as new rows.
+
+Hard-authorized examples are call-ID review references, never copied training
+rows. Expected-unauthorized candidates have per-item review records with the
+original/proposed action, changed fields, user authorization boundary, parent
+sources, and installed-schema validation. All labels remain `null`; intent is
+not a Label 1. Review metadata is not model input. Constructed actions are not
+claims about what the agent proposed and never enter real-episode ASR.
+
+The global observed-pool dry run is:
+
+```bash
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/build_constructed_candidates.py \
+  --seed 4266 --max-candidates 120 \
+  --report-file data/manifests/constructed_candidates_global_dry_run.json
+```
+
+Current verified global counts: 80 observed call rows collapse to 76 exact
+unique observed model inputs (four duplicate rows in three duplicate groups).
+The current strategies support 17 new constructed rows, with zero matches to
+observed actions, across 13 parent tasks, 4 tools, and 5 construction methods.
+Those 17 rows form 15 near-duplicate groups; **row counts and near-duplicate
+groups are distinct measures**. The exact unique candidate-row pool is
+currently 93, leaving a 407-row gap to 500. The plan does not project the
+current 17 supported actions into a 250-row constructed quota.
+
+### Phase-two collection plan and stop policy
+
+`scripts/prepare_phase2_plan.py --write` creates immutable, exclusive-create
+plans and their local dry-run reports:
+
+```bash
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/prepare_phase2_plan.py --write
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/collect_data.py \
+  --plan configs/real_trace_expansion_phase2.yaml --dry-run
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/collect_data.py \
+  --plan configs/real_trace_expansion_phase2_reserve.yaml --dry-run
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/collect_data.py \
+  --plan configs/banking_compatibility_plan.yaml --dry-run
+```
+
+The workspace plan selects 250 of the 279 still-unrun consequential-task /
+injection pairs (22 possible-consequential tasks, 14 injection tasks; 29 pairs
+already covered across legacy and phase one). All 22 tasks and 14 injection
+contexts remain represented; each task appears 10–12 times and each injection
+17–18 times. The main plan has 26 independent ten-or-fewer-episode batches,
+balanced 125/125 across `important_instructions` and `tool_knowledge`; the
+29-pair reserve is split into four batches. It is attacked-only, `ALLOW`,
+`deepseek-flash`, one repetition, one attempt, no auxiliary goal-check runs,
+and no benign reruns. All output and export directories are new phase-two
+paths. Direct reference-tool overlap ranks first, but only 16 selected pairs
+have that direct overlap; other pairs are lower-confidence coverage probes,
+not a claim that each injection matches the user task.
+
+The intended first batch is ten attacked episodes. Dry-run it before any later
+user-approved run:
+
+```bash
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/collect_data.py \
+  --plan configs/real_trace_expansion_phase2.yaml \
+  --batch phase2-important-01 --dry-run
+```
+
+If approved later, execute only that batch by removing `--dry-run`. Then run
+the progress check before choosing another batch:
+
+```bash
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/check_candidate_progress.py
+```
+
+This checker uses the same exact cross-source fingerprint and reports the
+next planned batch or a stop decision. Stop once 500 exact unique rows are
+available; stop the workspace phase after its 250 main episodes and at most 29
+reserve episodes. If the unique-observed target of 250 is reached but the
+combined candidate target is not, do not keep expanding workspace indefinitely;
+report the gap and consider the separately gated banking validation. All runs
+are one batch per command, so the stop check is applied before the next batch.
+
+The current token estimate uses phase-one totals: 56 consequential calls from
+80 primary episodes (0.70 calls/episode) and 1,711,362 reported tokens
+(21,392 tokens/primary episode). The 250-episode main plan therefore estimates
+175 new call rows and 5.35M tokens; a 2x planning margin is 10.70M tokens.
+Running all 29 reserve episodes would add an estimated 20 calls and 0.62M
+tokens; the 2x combined estimate is 11.94M. These are planning estimates, not
+hard provider token caps. No retries are planned, and actual duplicate
+fingerprints and call yield will be measured after each batch.
+
+At the phase-one measured construction yield (17 supported candidates per 28
+exposed consequential calls), the scenario estimate is approximately 365
+exact candidate rows after the main plan, or 396 after the reserve plan,
+leaving approximate gaps of 135 or 104. This is an extrapolation, not a
+guarantee; workspace alone does not currently support the 200–250 constructed
+target. The current actual production is 17—not 200–250. No amount cap change
+can increase that evidence-based capacity.
+
+### Banking compatibility contingency
+
+The installed banking suite is available in AgentDojo v1.2.2. The bounded
+three-episode compatibility plan uses `send_money`, `schedule_transaction`,
+`update_scheduled_transaction`, `update_password`, and `update_user_info`;
+read-only banking tools are excluded from the consequential list. Local
+preflight has verified suite loading, schema presence, and `PilotConfig` /
+runner dry-run compatibility. The proposed small validation pairs are
+`user_task_3`/`injection_task_0`, `user_task_9`/`injection_task_4`, and
+`user_task_14`/`injection_task_7`, across both existing attack families.
+This is a compatibility plan only, not permission to run it or a full banking
+collection. Review its dry-run and obtain approval before any model call.
+
+The 500-row handoff target is not the same as obtaining enough Label 1
+examples. All labels remain null until human review. The final evaluation-task
+isolation and leakage test split remain unconfirmed by the group; no completed
+train/validation/test split is claimed.
+
+No review list or final candidate dataset is written by the dry-run commands.
+Writing constructed data remains a separate explicit opt-in and refuses to
+overwrite its output directory.
+
 ### Local verification and limitations
 
 Commands actually verified locally:
 
 ```bash
-.venv/bin/pytest -q
-PYTHONPATH=src .venv/bin/python scripts/collect_data.py --config configs/experiment.yaml --dry-run
+PYTHONPATH="$PWD/src" ./.venv/bin/python -m pytest -q
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/build_constructed_candidates.py --seed 4266 --max-candidates 120
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/collect_data.py --plan configs/real_trace_expansion_plan.yaml --dry-run
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/collect_data.py --plan configs/real_trace_expansion_plan.yaml --batch benign-01 --dry-run
+PYTHONPATH="$PWD/src" ./.venv/bin/python scripts/build_workspace_task_catalog.py
 ```
 
 The export-only path was exercised by the automated test
@@ -209,7 +438,9 @@ depend on the pinned `agentdojo==0.1.35`; DeepSeek token usage is whatever the
 API response exposes, and monetary cost remains unknown (`null`). Old
 pre-feature logs cannot recover original run IDs or tool-call correlation;
 the exporter assigns deterministic `legacy-*` identifiers where needed and
-does not infer missing labels or usage.
+does not infer missing labels or usage. The expansion dry-run reports 80
+planned primary episodes and seven auxiliary checks; this is not a claim about
+the eventual number of successful episodes or consequential calls.
 
 ## Threat model
 

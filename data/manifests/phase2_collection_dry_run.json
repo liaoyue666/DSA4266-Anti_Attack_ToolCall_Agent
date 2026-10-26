@@ -1,0 +1,2658 @@
+{
+  "api_calls": 0,
+  "candidate_tools_executed": 0,
+  "main": {
+    "batches": [
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_31"
+          }
+        ],
+        "batch_id": "phase2-important-01",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-01",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_0",
+          "injection_task_4",
+          "injection_task_2",
+          "injection_task_1",
+          "injection_task_12"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-01",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-01",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_13",
+          "user_task_19",
+          "user_task_18",
+          "user_task_20",
+          "user_task_4",
+          "user_task_25",
+          "user_task_12",
+          "user_task_31"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_33"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_33"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_32"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-01",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-01",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_2",
+          "injection_task_5",
+          "injection_task_4",
+          "injection_task_3",
+          "injection_task_10",
+          "injection_task_11"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-01",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-01",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_15",
+          "user_task_25",
+          "user_task_33",
+          "user_task_21",
+          "user_task_13",
+          "user_task_19",
+          "user_task_29",
+          "user_task_32"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_35"
+          }
+        ],
+        "batch_id": "phase2-important-02",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-02",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_13",
+          "injection_task_7",
+          "injection_task_9",
+          "injection_task_1",
+          "injection_task_12",
+          "injection_task_3",
+          "injection_task_11"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-02",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-02",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_34",
+          "user_task_36",
+          "user_task_38",
+          "user_task_7",
+          "user_task_9",
+          "user_task_15",
+          "user_task_20",
+          "user_task_29",
+          "user_task_32",
+          "user_task_35"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_35"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_6"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_36"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-02",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-02",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_6",
+          "injection_task_8",
+          "injection_task_10",
+          "injection_task_11",
+          "injection_task_13",
+          "injection_task_1"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-02",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-02",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_35",
+          "user_task_37",
+          "user_task_6",
+          "user_task_8",
+          "user_task_12",
+          "user_task_18",
+          "user_task_21",
+          "user_task_31",
+          "user_task_34",
+          "user_task_36"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_36"
+          }
+        ],
+        "batch_id": "phase2-important-03",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-03",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_3",
+          "injection_task_7",
+          "injection_task_9",
+          "injection_task_1",
+          "injection_task_11",
+          "injection_task_4",
+          "injection_task_0"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-03",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-03",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_37",
+          "user_task_4",
+          "user_task_7",
+          "user_task_9",
+          "user_task_15",
+          "user_task_20",
+          "user_task_29",
+          "user_task_32",
+          "user_task_34",
+          "user_task_36"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_6"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_33"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_35"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_37"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-03",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-03",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_6",
+          "injection_task_8",
+          "injection_task_0",
+          "injection_task_10",
+          "injection_task_12",
+          "injection_task_13",
+          "injection_task_1"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-03",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-03",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_38",
+          "user_task_6",
+          "user_task_8",
+          "user_task_12",
+          "user_task_18",
+          "user_task_21",
+          "user_task_31",
+          "user_task_33",
+          "user_task_35",
+          "user_task_37"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_6"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_34"
+          }
+        ],
+        "batch_id": "phase2-important-04",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-04",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_11",
+          "injection_task_13",
+          "injection_task_4",
+          "injection_task_6",
+          "injection_task_8",
+          "injection_task_1",
+          "injection_task_10",
+          "injection_task_12",
+          "injection_task_2",
+          "injection_task_3"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-04",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-04",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_38",
+          "user_task_6",
+          "user_task_8",
+          "user_task_12",
+          "user_task_15",
+          "user_task_19",
+          "user_task_21",
+          "user_task_29",
+          "user_task_32",
+          "user_task_34"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_33"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_35"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-04",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-04",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_12",
+          "injection_task_3",
+          "injection_task_5",
+          "injection_task_7",
+          "injection_task_9",
+          "injection_task_0",
+          "injection_task_11",
+          "injection_task_13",
+          "injection_task_6",
+          "injection_task_4"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-04",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-04",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_4",
+          "user_task_7",
+          "user_task_9",
+          "user_task_13",
+          "user_task_18",
+          "user_task_20",
+          "user_task_25",
+          "user_task_31",
+          "user_task_33",
+          "user_task_35"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_6"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_32"
+          }
+        ],
+        "batch_id": "phase2-important-05",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-05",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_5",
+          "injection_task_8",
+          "injection_task_11",
+          "injection_task_1",
+          "injection_task_12",
+          "injection_task_4",
+          "injection_task_2",
+          "injection_task_6",
+          "injection_task_0"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-05",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-05",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_36",
+          "user_task_38",
+          "user_task_6",
+          "user_task_8",
+          "user_task_12",
+          "user_task_15",
+          "user_task_19",
+          "user_task_21",
+          "user_task_29",
+          "user_task_32"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_33"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-05",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-05",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_7",
+          "injection_task_9",
+          "injection_task_0",
+          "injection_task_10",
+          "injection_task_13",
+          "injection_task_3",
+          "injection_task_5"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-05",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-05",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_37",
+          "user_task_4",
+          "user_task_7",
+          "user_task_9",
+          "user_task_13",
+          "user_task_18",
+          "user_task_20",
+          "user_task_25",
+          "user_task_31",
+          "user_task_33"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_6"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_29"
+          }
+        ],
+        "batch_id": "phase2-important-06",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-06",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_1",
+          "injection_task_11",
+          "injection_task_2",
+          "injection_task_4",
+          "injection_task_6",
+          "injection_task_8",
+          "injection_task_0",
+          "injection_task_10",
+          "injection_task_12"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-06",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-06",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_34",
+          "user_task_36",
+          "user_task_38",
+          "user_task_6",
+          "user_task_8",
+          "user_task_12",
+          "user_task_15",
+          "user_task_19",
+          "user_task_21",
+          "user_task_29"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_35"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_31"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-06",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-06",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_12",
+          "injection_task_13",
+          "injection_task_3",
+          "injection_task_5",
+          "injection_task_7",
+          "injection_task_9",
+          "injection_task_1",
+          "injection_task_11"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-06",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-06",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_35",
+          "user_task_37",
+          "user_task_4",
+          "user_task_7",
+          "user_task_9",
+          "user_task_13",
+          "user_task_18",
+          "user_task_20",
+          "user_task_25",
+          "user_task_31"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_6"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_21"
+          }
+        ],
+        "batch_id": "phase2-important-07",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-07",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_4",
+          "injection_task_5",
+          "injection_task_6",
+          "injection_task_0",
+          "injection_task_12",
+          "injection_task_2",
+          "injection_task_3",
+          "injection_task_13",
+          "injection_task_7"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-07",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-07",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_32",
+          "user_task_34",
+          "user_task_36",
+          "user_task_38",
+          "user_task_6",
+          "user_task_8",
+          "user_task_12",
+          "user_task_15",
+          "user_task_19",
+          "user_task_21"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_33"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_35"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_25"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-07",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-07",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_7",
+          "injection_task_8",
+          "injection_task_9",
+          "injection_task_1",
+          "injection_task_10",
+          "injection_task_11",
+          "injection_task_6",
+          "injection_task_4"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-07",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-07",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_33",
+          "user_task_35",
+          "user_task_37",
+          "user_task_4",
+          "user_task_7",
+          "user_task_9",
+          "user_task_13",
+          "user_task_18",
+          "user_task_20",
+          "user_task_25"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_6"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_19"
+          }
+        ],
+        "batch_id": "phase2-important-08",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-08",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_0",
+          "injection_task_1",
+          "injection_task_2",
+          "injection_task_12",
+          "injection_task_3",
+          "injection_task_6",
+          "injection_task_8",
+          "injection_task_10"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-08",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-08",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_29",
+          "user_task_32",
+          "user_task_34",
+          "user_task_36",
+          "user_task_38",
+          "user_task_6",
+          "user_task_8",
+          "user_task_12",
+          "user_task_15",
+          "user_task_19"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_33"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_35"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_20"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-08",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-08",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_10",
+          "injection_task_11",
+          "injection_task_13",
+          "injection_task_4",
+          "injection_task_5",
+          "injection_task_7",
+          "injection_task_9",
+          "injection_task_1"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-08",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-08",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_31",
+          "user_task_33",
+          "user_task_35",
+          "user_task_37",
+          "user_task_4",
+          "user_task_7",
+          "user_task_9",
+          "user_task_13",
+          "user_task_18",
+          "user_task_20"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_35"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_6"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_15"
+          }
+        ],
+        "batch_id": "phase2-important-09",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-09",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_3",
+          "injection_task_13",
+          "injection_task_6",
+          "injection_task_7",
+          "injection_task_2",
+          "injection_task_10",
+          "injection_task_5",
+          "injection_task_4",
+          "injection_task_1"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-09",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-09",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_21",
+          "user_task_29",
+          "user_task_32",
+          "user_task_34",
+          "user_task_35",
+          "user_task_38",
+          "user_task_6",
+          "user_task_8",
+          "user_task_12",
+          "user_task_15"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_33"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_18"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-09",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-09",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_2",
+          "injection_task_5",
+          "injection_task_9",
+          "injection_task_8",
+          "injection_task_0",
+          "injection_task_11",
+          "injection_task_12",
+          "injection_task_13",
+          "injection_task_7"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-09",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-09",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_25",
+          "user_task_31",
+          "user_task_33",
+          "user_task_36",
+          "user_task_37",
+          "user_task_4",
+          "user_task_7",
+          "user_task_9",
+          "user_task_13",
+          "user_task_18"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_6"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_12"
+          }
+        ],
+        "batch_id": "phase2-important-10",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-10",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_6",
+          "injection_task_0",
+          "injection_task_11",
+          "injection_task_13",
+          "injection_task_4",
+          "injection_task_3",
+          "injection_task_7",
+          "injection_task_9",
+          "injection_task_10"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-10",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-10",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_19",
+          "user_task_21",
+          "user_task_29",
+          "user_task_32",
+          "user_task_34",
+          "user_task_36",
+          "user_task_38",
+          "user_task_6",
+          "user_task_8",
+          "user_task_12"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_33"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_35"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_13"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-10",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-10",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_9",
+          "injection_task_1",
+          "injection_task_2",
+          "injection_task_12",
+          "injection_task_5",
+          "injection_task_10",
+          "injection_task_6",
+          "injection_task_8",
+          "injection_task_0"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-10",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-10",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_20",
+          "user_task_25",
+          "user_task_31",
+          "user_task_33",
+          "user_task_35",
+          "user_task_37",
+          "user_task_4",
+          "user_task_7",
+          "user_task_9",
+          "user_task_13"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_9"
+          }
+        ],
+        "batch_id": "phase2-important-11",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-11",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_6",
+          "injection_task_13",
+          "injection_task_4",
+          "injection_task_3",
+          "injection_task_9",
+          "injection_task_0",
+          "injection_task_1",
+          "injection_task_12"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-11",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-11",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_15",
+          "user_task_19",
+          "user_task_21",
+          "user_task_29",
+          "user_task_32",
+          "user_task_34",
+          "user_task_36",
+          "user_task_38",
+          "user_task_7",
+          "user_task_9"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_33"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_35"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_6"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-11",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-11",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_5",
+          "injection_task_1",
+          "injection_task_8",
+          "injection_task_7",
+          "injection_task_2",
+          "injection_task_11",
+          "injection_task_10"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-11",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-11",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_18",
+          "user_task_20",
+          "user_task_25",
+          "user_task_31",
+          "user_task_33",
+          "user_task_35",
+          "user_task_37",
+          "user_task_4",
+          "user_task_8",
+          "user_task_6"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_3",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_37"
+          }
+        ],
+        "batch_id": "phase2-important-12",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-12",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_9",
+          "injection_task_8",
+          "injection_task_4",
+          "injection_task_11",
+          "injection_task_10",
+          "injection_task_3",
+          "injection_task_6",
+          "injection_task_2",
+          "injection_task_0"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-12",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-12",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_12",
+          "user_task_18",
+          "user_task_31",
+          "user_task_19",
+          "user_task_25",
+          "user_task_32",
+          "user_task_34",
+          "user_task_36",
+          "user_task_4",
+          "user_task_37"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_2",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_1",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_33"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_35"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_38"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_7"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-12",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-12",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_2",
+          "injection_task_6",
+          "injection_task_12",
+          "injection_task_1",
+          "injection_task_5",
+          "injection_task_13",
+          "injection_task_9",
+          "injection_task_4",
+          "injection_task_8",
+          "injection_task_11"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-12",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-12",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_13",
+          "user_task_20",
+          "user_task_15",
+          "user_task_21",
+          "user_task_29",
+          "user_task_33",
+          "user_task_35",
+          "user_task_38",
+          "user_task_9",
+          "user_task_7"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_8"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_25"
+          },
+          {
+            "injection_task_id": "injection_task_13",
+            "user_task_id": "user_task_38"
+          }
+        ],
+        "batch_id": "phase2-important-13",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-important-13",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_12",
+          "injection_task_10",
+          "injection_task_0",
+          "injection_task_6",
+          "injection_task_13"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-important-13",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 5,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 5,
+        "planned_total_agent_runs": 5,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-important-13",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_8",
+          "user_task_13",
+          "user_task_18",
+          "user_task_25",
+          "user_task_38"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_8"
+          }
+        ],
+        "batch_id": "phase2-tool-knowledge-13",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2/phase2-tool-knowledge-13",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_5",
+          "injection_task_7",
+          "injection_task_8",
+          "injection_task_4",
+          "injection_task_9"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-13",
+        "plan_id": "workspace-real-traces-phase-2",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 5,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 5,
+        "planned_total_agent_runs": 5,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2:phase2-tool-knowledge-13",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_12",
+          "user_task_15",
+          "user_task_19",
+          "user_task_36",
+          "user_task_8"
+        ]
+      }
+    ],
+    "plan_id": "workspace-real-traces-phase-2",
+    "totals": {
+      "additional_retry_run_budget": 0,
+      "all_output_paths_fresh": true,
+      "attack_coverage": [
+        "important_instructions",
+        "tool_knowledge"
+      ],
+      "injection_task_coverage": [
+        "injection_task_0",
+        "injection_task_1",
+        "injection_task_10",
+        "injection_task_11",
+        "injection_task_12",
+        "injection_task_13",
+        "injection_task_2",
+        "injection_task_3",
+        "injection_task_4",
+        "injection_task_5",
+        "injection_task_6",
+        "injection_task_7",
+        "injection_task_8",
+        "injection_task_9"
+      ],
+      "max_episode_attempts": 1,
+      "max_possible_agent_runs_with_retries": 250,
+      "planned_attack_goal_checks": 0,
+      "planned_primary_episodes": 250,
+      "planned_total_agent_runs": 250,
+      "unique_user_tasks": [
+        "user_task_12",
+        "user_task_13",
+        "user_task_15",
+        "user_task_18",
+        "user_task_19",
+        "user_task_20",
+        "user_task_21",
+        "user_task_25",
+        "user_task_29",
+        "user_task_31",
+        "user_task_32",
+        "user_task_33",
+        "user_task_34",
+        "user_task_35",
+        "user_task_36",
+        "user_task_37",
+        "user_task_38",
+        "user_task_4",
+        "user_task_6",
+        "user_task_7",
+        "user_task_8",
+        "user_task_9"
+      ]
+    }
+  },
+  "reserve": {
+    "batches": [
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_0",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_8"
+          }
+        ],
+        "batch_id": "phase2-reserve-important-01",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2-reserve/phase2-reserve-important-01",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_10",
+          "injection_task_11",
+          "injection_task_6",
+          "injection_task_0",
+          "injection_task_5",
+          "injection_task_4",
+          "injection_task_7"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2-reserve/phase2-reserve-important-01",
+        "plan_id": "workspace-real-traces-phase-2-reserve",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2-reserve:phase2-reserve-important-01",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_20",
+          "user_task_21",
+          "user_task_29",
+          "user_task_31",
+          "user_task_32",
+          "user_task_34",
+          "user_task_37",
+          "user_task_4",
+          "user_task_7",
+          "user_task_8"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_20"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_21"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_29"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_31"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_32"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_34"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_37"
+          },
+          {
+            "injection_task_id": "injection_task_8",
+            "user_task_id": "user_task_4"
+          },
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_7"
+          },
+          {
+            "injection_task_id": "injection_task_4",
+            "user_task_id": "user_task_9"
+          }
+        ],
+        "batch_id": "phase2-reserve-tool-knowledge-01",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2-reserve/phase2-reserve-tool-knowledge-01",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_12",
+          "injection_task_7",
+          "injection_task_8",
+          "injection_task_6",
+          "injection_task_4"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2-reserve/phase2-reserve-tool-knowledge-01",
+        "plan_id": "workspace-real-traces-phase-2-reserve",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 10,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 10,
+        "planned_total_agent_runs": 10,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2-reserve:phase2-reserve-tool-knowledge-01",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_20",
+          "user_task_21",
+          "user_task_29",
+          "user_task_31",
+          "user_task_32",
+          "user_task_34",
+          "user_task_37",
+          "user_task_4",
+          "user_task_7",
+          "user_task_9"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "important_instructions",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_6",
+            "user_task_id": "user_task_9"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_19"
+          },
+          {
+            "injection_task_id": "injection_task_7",
+            "user_task_id": "user_task_12"
+          },
+          {
+            "injection_task_id": "injection_task_10",
+            "user_task_id": "user_task_18"
+          },
+          {
+            "injection_task_id": "injection_task_5",
+            "user_task_id": "user_task_38"
+          }
+        ],
+        "batch_id": "phase2-reserve-important-02",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2-reserve/phase2-reserve-important-02",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_6",
+          "injection_task_9",
+          "injection_task_7",
+          "injection_task_10",
+          "injection_task_5"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2-reserve/phase2-reserve-important-02",
+        "plan_id": "workspace-real-traces-phase-2-reserve",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 5,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 5,
+        "planned_total_agent_runs": 5,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2-reserve:phase2-reserve-important-02",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_9",
+          "user_task_19",
+          "user_task_12",
+          "user_task_18",
+          "user_task_38"
+        ]
+      },
+      {
+        "api_calls": 0,
+        "attack": "tool_knowledge",
+        "attacked_task_pairs": [
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_15"
+          },
+          {
+            "injection_task_id": "injection_task_9",
+            "user_task_id": "user_task_36"
+          },
+          {
+            "injection_task_id": "injection_task_11",
+            "user_task_id": "user_task_13"
+          },
+          {
+            "injection_task_id": "injection_task_12",
+            "user_task_id": "user_task_25"
+          }
+        ],
+        "batch_id": "phase2-reserve-tool-knowledge-02",
+        "benchmark_version": "v1.2.2",
+        "decisions": [
+          "ALLOW"
+        ],
+        "export_dir": "data/exports/real-traces-phase-2-reserve/phase2-reserve-tool-knowledge-02",
+        "fresh_output_paths": true,
+        "injection_tasks": [
+          "injection_task_9",
+          "injection_task_11",
+          "injection_task_12"
+        ],
+        "max_episode_attempts": 1,
+        "model": "deepseek-flash",
+        "output_dir": "runs/data_collection/real-traces-phase-2-reserve/phase2-reserve-tool-knowledge-02",
+        "plan_id": "workspace-real-traces-phase-2-reserve",
+        "planned_attack_goal_checks": 0,
+        "planned_attacked_episodes": 4,
+        "planned_benign_episodes": 0,
+        "planned_primary_episodes": 4,
+        "planned_total_agent_runs": 4,
+        "provider": "deepseek",
+        "repetitions": 1,
+        "run_mode": "attacked_only",
+        "source_id": "agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2-reserve:phase2-reserve-tool-knowledge-02",
+        "suite": "workspace",
+        "user_tasks": [
+          "user_task_15",
+          "user_task_36",
+          "user_task_13",
+          "user_task_25"
+        ]
+      }
+    ],
+    "plan_id": "workspace-real-traces-phase-2-reserve",
+    "totals": {
+      "additional_retry_run_budget": 0,
+      "all_output_paths_fresh": true,
+      "attack_coverage": [
+        "important_instructions",
+        "tool_knowledge"
+      ],
+      "injection_task_coverage": [
+        "injection_task_0",
+        "injection_task_10",
+        "injection_task_11",
+        "injection_task_12",
+        "injection_task_4",
+        "injection_task_5",
+        "injection_task_6",
+        "injection_task_7",
+        "injection_task_8",
+        "injection_task_9"
+      ],
+      "max_episode_attempts": 1,
+      "max_possible_agent_runs_with_retries": 29,
+      "planned_attack_goal_checks": 0,
+      "planned_primary_episodes": 29,
+      "planned_total_agent_runs": 29,
+      "unique_user_tasks": [
+        "user_task_12",
+        "user_task_13",
+        "user_task_15",
+        "user_task_18",
+        "user_task_19",
+        "user_task_20",
+        "user_task_21",
+        "user_task_25",
+        "user_task_29",
+        "user_task_31",
+        "user_task_32",
+        "user_task_34",
+        "user_task_36",
+        "user_task_37",
+        "user_task_38",
+        "user_task_4",
+        "user_task_7",
+        "user_task_8",
+        "user_task_9"
+      ]
+    }
+  }
+}

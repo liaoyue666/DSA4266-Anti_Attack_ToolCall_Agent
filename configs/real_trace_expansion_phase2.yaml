@@ -1,0 +1,1217 @@
+plan_id: workspace-real-traces-phase-2
+source_id: agentdojo-0.1.35-workspace-v1.2.2-workspace-real-traces-phase-2
+benchmark_version: v1.2.2
+suite: workspace
+provider: deepseek
+model: deepseek-flash
+model_id: null
+temperature: 0.0
+decisions:
+- ALLOW
+repetitions: 1
+max_episode_attempts: 1
+consequential_tools:
+- send_email
+- delete_email
+- create_calendar_event
+- cancel_calendar_event
+- reschedule_calendar_event
+- add_calendar_event_participants
+- append_to_file
+- create_file
+- delete_file
+- share_file
+tool_output_format: yaml
+stop_policy:
+  max_primary_episodes: 250
+  max_unique_observed_calls: 250
+  stop_at_batch_boundary_when_unique_observed_calls_reaches: 250
+  no_retries: true
+  no_repeat_task_injection_pair: true
+  no_benign_reruns: true
+  run_attack_goal_checks: false
+batches:
+- id: phase2-important-01
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_13
+  - user_task_19
+  - user_task_18
+  - user_task_20
+  - user_task_4
+  - user_task_25
+  - user_task_12
+  - user_task_31
+  injection_tasks:
+  - injection_task_0
+  - injection_task_4
+  - injection_task_2
+  - injection_task_1
+  - injection_task_12
+  attacked_task_pairs:
+  - - user_task_13
+    - injection_task_0
+  - - user_task_19
+    - injection_task_4
+  - - user_task_18
+    - injection_task_2
+  - - user_task_20
+    - injection_task_2
+  - - user_task_4
+    - injection_task_2
+  - - user_task_19
+    - injection_task_0
+  - - user_task_25
+    - injection_task_0
+  - - user_task_25
+    - injection_task_4
+  - - user_task_12
+    - injection_task_1
+  - - user_task_31
+    - injection_task_12
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-01
+  export_dir: data/exports/real-traces-phase-2/phase2-important-01
+- id: phase2-tool-knowledge-01
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_15
+  - user_task_25
+  - user_task_33
+  - user_task_21
+  - user_task_13
+  - user_task_19
+  - user_task_29
+  - user_task_32
+  injection_tasks:
+  - injection_task_2
+  - injection_task_5
+  - injection_task_4
+  - injection_task_3
+  - injection_task_10
+  - injection_task_11
+  attacked_task_pairs:
+  - - user_task_15
+    - injection_task_2
+  - - user_task_25
+    - injection_task_5
+  - - user_task_33
+    - injection_task_4
+  - - user_task_21
+    - injection_task_2
+  - - user_task_13
+    - injection_task_3
+  - - user_task_33
+    - injection_task_5
+  - - user_task_13
+    - injection_task_5
+  - - user_task_19
+    - injection_task_5
+  - - user_task_29
+    - injection_task_10
+  - - user_task_32
+    - injection_task_11
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-01
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-01
+- id: phase2-important-02
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_34
+  - user_task_36
+  - user_task_38
+  - user_task_7
+  - user_task_9
+  - user_task_15
+  - user_task_20
+  - user_task_29
+  - user_task_32
+  - user_task_35
+  injection_tasks:
+  - injection_task_13
+  - injection_task_7
+  - injection_task_9
+  - injection_task_1
+  - injection_task_12
+  - injection_task_3
+  - injection_task_11
+  attacked_task_pairs:
+  - - user_task_34
+    - injection_task_13
+  - - user_task_36
+    - injection_task_7
+  - - user_task_38
+    - injection_task_9
+  - - user_task_7
+    - injection_task_1
+  - - user_task_9
+    - injection_task_12
+  - - user_task_15
+    - injection_task_3
+  - - user_task_20
+    - injection_task_7
+  - - user_task_29
+    - injection_task_9
+  - - user_task_32
+    - injection_task_12
+  - - user_task_35
+    - injection_task_11
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-02
+  export_dir: data/exports/real-traces-phase-2/phase2-important-02
+- id: phase2-tool-knowledge-02
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_35
+  - user_task_37
+  - user_task_6
+  - user_task_8
+  - user_task_12
+  - user_task_18
+  - user_task_21
+  - user_task_31
+  - user_task_34
+  - user_task_36
+  injection_tasks:
+  - injection_task_6
+  - injection_task_8
+  - injection_task_10
+  - injection_task_11
+  - injection_task_13
+  - injection_task_1
+  attacked_task_pairs:
+  - - user_task_35
+    - injection_task_6
+  - - user_task_37
+    - injection_task_8
+  - - user_task_6
+    - injection_task_10
+  - - user_task_8
+    - injection_task_11
+  - - user_task_12
+    - injection_task_13
+  - - user_task_18
+    - injection_task_6
+  - - user_task_21
+    - injection_task_8
+  - - user_task_31
+    - injection_task_1
+  - - user_task_34
+    - injection_task_10
+  - - user_task_36
+    - injection_task_13
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-02
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-02
+- id: phase2-important-03
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_37
+  - user_task_4
+  - user_task_7
+  - user_task_9
+  - user_task_15
+  - user_task_20
+  - user_task_29
+  - user_task_32
+  - user_task_34
+  - user_task_36
+  injection_tasks:
+  - injection_task_3
+  - injection_task_7
+  - injection_task_9
+  - injection_task_1
+  - injection_task_11
+  - injection_task_4
+  - injection_task_0
+  attacked_task_pairs:
+  - - user_task_37
+    - injection_task_3
+  - - user_task_4
+    - injection_task_7
+  - - user_task_7
+    - injection_task_9
+  - - user_task_9
+    - injection_task_1
+  - - user_task_15
+    - injection_task_11
+  - - user_task_20
+    - injection_task_3
+  - - user_task_29
+    - injection_task_4
+  - - user_task_32
+    - injection_task_7
+  - - user_task_34
+    - injection_task_9
+  - - user_task_36
+    - injection_task_0
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-03
+  export_dir: data/exports/real-traces-phase-2/phase2-important-03
+- id: phase2-tool-knowledge-03
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_38
+  - user_task_6
+  - user_task_8
+  - user_task_12
+  - user_task_18
+  - user_task_21
+  - user_task_31
+  - user_task_33
+  - user_task_35
+  - user_task_37
+  injection_tasks:
+  - injection_task_6
+  - injection_task_8
+  - injection_task_0
+  - injection_task_10
+  - injection_task_12
+  - injection_task_13
+  - injection_task_1
+  attacked_task_pairs:
+  - - user_task_38
+    - injection_task_6
+  - - user_task_6
+    - injection_task_8
+  - - user_task_8
+    - injection_task_0
+  - - user_task_12
+    - injection_task_10
+  - - user_task_18
+    - injection_task_12
+  - - user_task_21
+    - injection_task_13
+  - - user_task_31
+    - injection_task_6
+  - - user_task_33
+    - injection_task_8
+  - - user_task_35
+    - injection_task_10
+  - - user_task_37
+    - injection_task_1
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-03
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-03
+- id: phase2-important-04
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_38
+  - user_task_6
+  - user_task_8
+  - user_task_12
+  - user_task_15
+  - user_task_19
+  - user_task_21
+  - user_task_29
+  - user_task_32
+  - user_task_34
+  injection_tasks:
+  - injection_task_11
+  - injection_task_13
+  - injection_task_4
+  - injection_task_6
+  - injection_task_8
+  - injection_task_1
+  - injection_task_10
+  - injection_task_12
+  - injection_task_2
+  - injection_task_3
+  attacked_task_pairs:
+  - - user_task_38
+    - injection_task_11
+  - - user_task_6
+    - injection_task_13
+  - - user_task_8
+    - injection_task_4
+  - - user_task_12
+    - injection_task_6
+  - - user_task_15
+    - injection_task_8
+  - - user_task_19
+    - injection_task_1
+  - - user_task_21
+    - injection_task_10
+  - - user_task_29
+    - injection_task_12
+  - - user_task_32
+    - injection_task_2
+  - - user_task_34
+    - injection_task_3
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-04
+  export_dir: data/exports/real-traces-phase-2/phase2-important-04
+- id: phase2-tool-knowledge-04
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_4
+  - user_task_7
+  - user_task_9
+  - user_task_13
+  - user_task_18
+  - user_task_20
+  - user_task_25
+  - user_task_31
+  - user_task_33
+  - user_task_35
+  injection_tasks:
+  - injection_task_12
+  - injection_task_3
+  - injection_task_5
+  - injection_task_7
+  - injection_task_9
+  - injection_task_0
+  - injection_task_11
+  - injection_task_13
+  - injection_task_6
+  - injection_task_4
+  attacked_task_pairs:
+  - - user_task_4
+    - injection_task_12
+  - - user_task_7
+    - injection_task_3
+  - - user_task_9
+    - injection_task_5
+  - - user_task_13
+    - injection_task_7
+  - - user_task_18
+    - injection_task_9
+  - - user_task_20
+    - injection_task_0
+  - - user_task_25
+    - injection_task_11
+  - - user_task_31
+    - injection_task_13
+  - - user_task_33
+    - injection_task_6
+  - - user_task_35
+    - injection_task_4
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-04
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-04
+- id: phase2-important-05
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_36
+  - user_task_38
+  - user_task_6
+  - user_task_8
+  - user_task_12
+  - user_task_15
+  - user_task_19
+  - user_task_21
+  - user_task_29
+  - user_task_32
+  injection_tasks:
+  - injection_task_5
+  - injection_task_8
+  - injection_task_11
+  - injection_task_1
+  - injection_task_12
+  - injection_task_4
+  - injection_task_2
+  - injection_task_6
+  - injection_task_0
+  attacked_task_pairs:
+  - - user_task_36
+    - injection_task_5
+  - - user_task_38
+    - injection_task_8
+  - - user_task_6
+    - injection_task_11
+  - - user_task_8
+    - injection_task_1
+  - - user_task_12
+    - injection_task_12
+  - - user_task_15
+    - injection_task_4
+  - - user_task_19
+    - injection_task_2
+  - - user_task_21
+    - injection_task_6
+  - - user_task_29
+    - injection_task_8
+  - - user_task_32
+    - injection_task_0
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-05
+  export_dir: data/exports/real-traces-phase-2/phase2-important-05
+- id: phase2-tool-knowledge-05
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_37
+  - user_task_4
+  - user_task_7
+  - user_task_9
+  - user_task_13
+  - user_task_18
+  - user_task_20
+  - user_task_25
+  - user_task_31
+  - user_task_33
+  injection_tasks:
+  - injection_task_7
+  - injection_task_9
+  - injection_task_0
+  - injection_task_10
+  - injection_task_13
+  - injection_task_3
+  - injection_task_5
+  attacked_task_pairs:
+  - - user_task_37
+    - injection_task_7
+  - - user_task_4
+    - injection_task_9
+  - - user_task_7
+    - injection_task_0
+  - - user_task_9
+    - injection_task_10
+  - - user_task_13
+    - injection_task_13
+  - - user_task_18
+    - injection_task_3
+  - - user_task_20
+    - injection_task_5
+  - - user_task_25
+    - injection_task_7
+  - - user_task_31
+    - injection_task_9
+  - - user_task_33
+    - injection_task_10
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-05
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-05
+- id: phase2-important-06
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_34
+  - user_task_36
+  - user_task_38
+  - user_task_6
+  - user_task_8
+  - user_task_12
+  - user_task_15
+  - user_task_19
+  - user_task_21
+  - user_task_29
+  injection_tasks:
+  - injection_task_1
+  - injection_task_11
+  - injection_task_2
+  - injection_task_4
+  - injection_task_6
+  - injection_task_8
+  - injection_task_0
+  - injection_task_10
+  - injection_task_12
+  attacked_task_pairs:
+  - - user_task_34
+    - injection_task_1
+  - - user_task_36
+    - injection_task_11
+  - - user_task_38
+    - injection_task_2
+  - - user_task_6
+    - injection_task_4
+  - - user_task_8
+    - injection_task_6
+  - - user_task_12
+    - injection_task_8
+  - - user_task_15
+    - injection_task_0
+  - - user_task_19
+    - injection_task_10
+  - - user_task_21
+    - injection_task_12
+  - - user_task_29
+    - injection_task_2
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-06
+  export_dir: data/exports/real-traces-phase-2/phase2-important-06
+- id: phase2-tool-knowledge-06
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_35
+  - user_task_37
+  - user_task_4
+  - user_task_7
+  - user_task_9
+  - user_task_13
+  - user_task_18
+  - user_task_20
+  - user_task_25
+  - user_task_31
+  injection_tasks:
+  - injection_task_12
+  - injection_task_13
+  - injection_task_3
+  - injection_task_5
+  - injection_task_7
+  - injection_task_9
+  - injection_task_1
+  - injection_task_11
+  attacked_task_pairs:
+  - - user_task_35
+    - injection_task_12
+  - - user_task_37
+    - injection_task_13
+  - - user_task_4
+    - injection_task_3
+  - - user_task_7
+    - injection_task_5
+  - - user_task_9
+    - injection_task_7
+  - - user_task_13
+    - injection_task_9
+  - - user_task_18
+    - injection_task_1
+  - - user_task_20
+    - injection_task_11
+  - - user_task_25
+    - injection_task_13
+  - - user_task_31
+    - injection_task_3
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-06
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-06
+- id: phase2-important-07
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_32
+  - user_task_34
+  - user_task_36
+  - user_task_38
+  - user_task_6
+  - user_task_8
+  - user_task_12
+  - user_task_15
+  - user_task_19
+  - user_task_21
+  injection_tasks:
+  - injection_task_4
+  - injection_task_5
+  - injection_task_6
+  - injection_task_0
+  - injection_task_12
+  - injection_task_2
+  - injection_task_3
+  - injection_task_13
+  - injection_task_7
+  attacked_task_pairs:
+  - - user_task_32
+    - injection_task_4
+  - - user_task_34
+    - injection_task_5
+  - - user_task_36
+    - injection_task_6
+  - - user_task_38
+    - injection_task_0
+  - - user_task_6
+    - injection_task_12
+  - - user_task_8
+    - injection_task_2
+  - - user_task_12
+    - injection_task_3
+  - - user_task_15
+    - injection_task_13
+  - - user_task_19
+    - injection_task_7
+  - - user_task_21
+    - injection_task_5
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-07
+  export_dir: data/exports/real-traces-phase-2/phase2-important-07
+- id: phase2-tool-knowledge-07
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_33
+  - user_task_35
+  - user_task_37
+  - user_task_4
+  - user_task_7
+  - user_task_9
+  - user_task_13
+  - user_task_18
+  - user_task_20
+  - user_task_25
+  injection_tasks:
+  - injection_task_7
+  - injection_task_8
+  - injection_task_9
+  - injection_task_1
+  - injection_task_10
+  - injection_task_11
+  - injection_task_6
+  - injection_task_4
+  attacked_task_pairs:
+  - - user_task_33
+    - injection_task_7
+  - - user_task_35
+    - injection_task_8
+  - - user_task_37
+    - injection_task_9
+  - - user_task_4
+    - injection_task_1
+  - - user_task_7
+    - injection_task_10
+  - - user_task_9
+    - injection_task_11
+  - - user_task_13
+    - injection_task_6
+  - - user_task_18
+    - injection_task_4
+  - - user_task_20
+    - injection_task_8
+  - - user_task_25
+    - injection_task_9
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-07
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-07
+- id: phase2-important-08
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_29
+  - user_task_32
+  - user_task_34
+  - user_task_36
+  - user_task_38
+  - user_task_6
+  - user_task_8
+  - user_task_12
+  - user_task_15
+  - user_task_19
+  injection_tasks:
+  - injection_task_0
+  - injection_task_1
+  - injection_task_2
+  - injection_task_12
+  - injection_task_3
+  - injection_task_6
+  - injection_task_8
+  - injection_task_10
+  attacked_task_pairs:
+  - - user_task_29
+    - injection_task_0
+  - - user_task_32
+    - injection_task_1
+  - - user_task_34
+    - injection_task_2
+  - - user_task_36
+    - injection_task_12
+  - - user_task_38
+    - injection_task_3
+  - - user_task_6
+    - injection_task_6
+  - - user_task_8
+    - injection_task_8
+  - - user_task_12
+    - injection_task_0
+  - - user_task_15
+    - injection_task_10
+  - - user_task_19
+    - injection_task_12
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-08
+  export_dir: data/exports/real-traces-phase-2/phase2-important-08
+- id: phase2-tool-knowledge-08
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_31
+  - user_task_33
+  - user_task_35
+  - user_task_37
+  - user_task_4
+  - user_task_7
+  - user_task_9
+  - user_task_13
+  - user_task_18
+  - user_task_20
+  injection_tasks:
+  - injection_task_10
+  - injection_task_11
+  - injection_task_13
+  - injection_task_4
+  - injection_task_5
+  - injection_task_7
+  - injection_task_9
+  - injection_task_1
+  attacked_task_pairs:
+  - - user_task_31
+    - injection_task_10
+  - - user_task_33
+    - injection_task_11
+  - - user_task_35
+    - injection_task_13
+  - - user_task_37
+    - injection_task_4
+  - - user_task_4
+    - injection_task_5
+  - - user_task_7
+    - injection_task_7
+  - - user_task_9
+    - injection_task_9
+  - - user_task_13
+    - injection_task_1
+  - - user_task_18
+    - injection_task_11
+  - - user_task_20
+    - injection_task_4
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-08
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-08
+- id: phase2-important-09
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_21
+  - user_task_29
+  - user_task_32
+  - user_task_34
+  - user_task_35
+  - user_task_38
+  - user_task_6
+  - user_task_8
+  - user_task_12
+  - user_task_15
+  injection_tasks:
+  - injection_task_3
+  - injection_task_13
+  - injection_task_6
+  - injection_task_7
+  - injection_task_2
+  - injection_task_10
+  - injection_task_5
+  - injection_task_4
+  - injection_task_1
+  attacked_task_pairs:
+  - - user_task_21
+    - injection_task_3
+  - - user_task_29
+    - injection_task_13
+  - - user_task_32
+    - injection_task_6
+  - - user_task_34
+    - injection_task_7
+  - - user_task_35
+    - injection_task_2
+  - - user_task_38
+    - injection_task_10
+  - - user_task_6
+    - injection_task_5
+  - - user_task_8
+    - injection_task_3
+  - - user_task_12
+    - injection_task_4
+  - - user_task_15
+    - injection_task_1
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-09
+  export_dir: data/exports/real-traces-phase-2/phase2-important-09
+- id: phase2-tool-knowledge-09
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_25
+  - user_task_31
+  - user_task_33
+  - user_task_36
+  - user_task_37
+  - user_task_4
+  - user_task_7
+  - user_task_9
+  - user_task_13
+  - user_task_18
+  injection_tasks:
+  - injection_task_2
+  - injection_task_5
+  - injection_task_9
+  - injection_task_8
+  - injection_task_0
+  - injection_task_11
+  - injection_task_12
+  - injection_task_13
+  - injection_task_7
+  attacked_task_pairs:
+  - - user_task_25
+    - injection_task_2
+  - - user_task_31
+    - injection_task_5
+  - - user_task_33
+    - injection_task_9
+  - - user_task_36
+    - injection_task_8
+  - - user_task_37
+    - injection_task_0
+  - - user_task_4
+    - injection_task_11
+  - - user_task_7
+    - injection_task_12
+  - - user_task_9
+    - injection_task_13
+  - - user_task_13
+    - injection_task_8
+  - - user_task_18
+    - injection_task_7
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-09
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-09
+- id: phase2-important-10
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_19
+  - user_task_21
+  - user_task_29
+  - user_task_32
+  - user_task_34
+  - user_task_36
+  - user_task_38
+  - user_task_6
+  - user_task_8
+  - user_task_12
+  injection_tasks:
+  - injection_task_6
+  - injection_task_0
+  - injection_task_11
+  - injection_task_13
+  - injection_task_4
+  - injection_task_3
+  - injection_task_7
+  - injection_task_9
+  - injection_task_10
+  attacked_task_pairs:
+  - - user_task_19
+    - injection_task_6
+  - - user_task_21
+    - injection_task_0
+  - - user_task_29
+    - injection_task_11
+  - - user_task_32
+    - injection_task_13
+  - - user_task_34
+    - injection_task_4
+  - - user_task_36
+    - injection_task_3
+  - - user_task_38
+    - injection_task_7
+  - - user_task_6
+    - injection_task_9
+  - - user_task_8
+    - injection_task_10
+  - - user_task_12
+    - injection_task_11
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-10
+  export_dir: data/exports/real-traces-phase-2/phase2-important-10
+- id: phase2-tool-knowledge-10
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_20
+  - user_task_25
+  - user_task_31
+  - user_task_33
+  - user_task_35
+  - user_task_37
+  - user_task_4
+  - user_task_7
+  - user_task_9
+  - user_task_13
+  injection_tasks:
+  - injection_task_9
+  - injection_task_1
+  - injection_task_2
+  - injection_task_12
+  - injection_task_5
+  - injection_task_10
+  - injection_task_6
+  - injection_task_8
+  - injection_task_0
+  attacked_task_pairs:
+  - - user_task_20
+    - injection_task_9
+  - - user_task_25
+    - injection_task_1
+  - - user_task_31
+    - injection_task_2
+  - - user_task_33
+    - injection_task_12
+  - - user_task_35
+    - injection_task_5
+  - - user_task_37
+    - injection_task_10
+  - - user_task_4
+    - injection_task_6
+  - - user_task_7
+    - injection_task_8
+  - - user_task_9
+    - injection_task_0
+  - - user_task_13
+    - injection_task_12
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-10
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-10
+- id: phase2-important-11
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_15
+  - user_task_19
+  - user_task_21
+  - user_task_29
+  - user_task_32
+  - user_task_34
+  - user_task_36
+  - user_task_38
+  - user_task_7
+  - user_task_9
+  injection_tasks:
+  - injection_task_6
+  - injection_task_13
+  - injection_task_4
+  - injection_task_3
+  - injection_task_9
+  - injection_task_0
+  - injection_task_1
+  - injection_task_12
+  attacked_task_pairs:
+  - - user_task_15
+    - injection_task_6
+  - - user_task_19
+    - injection_task_13
+  - - user_task_21
+    - injection_task_4
+  - - user_task_29
+    - injection_task_3
+  - - user_task_32
+    - injection_task_9
+  - - user_task_34
+    - injection_task_0
+  - - user_task_36
+    - injection_task_1
+  - - user_task_38
+    - injection_task_12
+  - - user_task_7
+    - injection_task_13
+  - - user_task_9
+    - injection_task_3
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-11
+  export_dir: data/exports/real-traces-phase-2/phase2-important-11
+- id: phase2-tool-knowledge-11
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_18
+  - user_task_20
+  - user_task_25
+  - user_task_31
+  - user_task_33
+  - user_task_35
+  - user_task_37
+  - user_task_4
+  - user_task_8
+  - user_task_6
+  injection_tasks:
+  - injection_task_5
+  - injection_task_1
+  - injection_task_8
+  - injection_task_7
+  - injection_task_2
+  - injection_task_11
+  - injection_task_10
+  attacked_task_pairs:
+  - - user_task_18
+    - injection_task_5
+  - - user_task_20
+    - injection_task_1
+  - - user_task_25
+    - injection_task_8
+  - - user_task_31
+    - injection_task_7
+  - - user_task_33
+    - injection_task_2
+  - - user_task_35
+    - injection_task_7
+  - - user_task_37
+    - injection_task_11
+  - - user_task_4
+    - injection_task_10
+  - - user_task_8
+    - injection_task_5
+  - - user_task_6
+    - injection_task_7
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-11
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-11
+- id: phase2-important-12
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_12
+  - user_task_18
+  - user_task_31
+  - user_task_19
+  - user_task_25
+  - user_task_32
+  - user_task_34
+  - user_task_36
+  - user_task_4
+  - user_task_37
+  injection_tasks:
+  - injection_task_9
+  - injection_task_8
+  - injection_task_4
+  - injection_task_11
+  - injection_task_10
+  - injection_task_3
+  - injection_task_6
+  - injection_task_2
+  - injection_task_0
+  attacked_task_pairs:
+  - - user_task_12
+    - injection_task_9
+  - - user_task_18
+    - injection_task_8
+  - - user_task_31
+    - injection_task_4
+  - - user_task_19
+    - injection_task_11
+  - - user_task_25
+    - injection_task_10
+  - - user_task_32
+    - injection_task_3
+  - - user_task_34
+    - injection_task_6
+  - - user_task_36
+    - injection_task_2
+  - - user_task_4
+    - injection_task_0
+  - - user_task_37
+    - injection_task_2
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-12
+  export_dir: data/exports/real-traces-phase-2/phase2-important-12
+- id: phase2-tool-knowledge-12
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_13
+  - user_task_20
+  - user_task_15
+  - user_task_21
+  - user_task_29
+  - user_task_33
+  - user_task_35
+  - user_task_38
+  - user_task_9
+  - user_task_7
+  injection_tasks:
+  - injection_task_2
+  - injection_task_6
+  - injection_task_12
+  - injection_task_1
+  - injection_task_5
+  - injection_task_13
+  - injection_task_9
+  - injection_task_4
+  - injection_task_8
+  - injection_task_11
+  attacked_task_pairs:
+  - - user_task_13
+    - injection_task_2
+  - - user_task_20
+    - injection_task_6
+  - - user_task_15
+    - injection_task_12
+  - - user_task_21
+    - injection_task_1
+  - - user_task_29
+    - injection_task_5
+  - - user_task_33
+    - injection_task_13
+  - - user_task_35
+    - injection_task_9
+  - - user_task_38
+    - injection_task_4
+  - - user_task_9
+    - injection_task_8
+  - - user_task_7
+    - injection_task_11
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-12
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-12
+- id: phase2-important-13
+  run_mode: attacked_only
+  attack: important_instructions
+  user_tasks:
+  - user_task_8
+  - user_task_13
+  - user_task_18
+  - user_task_25
+  - user_task_38
+  injection_tasks:
+  - injection_task_12
+  - injection_task_10
+  - injection_task_0
+  - injection_task_6
+  - injection_task_13
+  attacked_task_pairs:
+  - - user_task_8
+    - injection_task_12
+  - - user_task_13
+    - injection_task_10
+  - - user_task_18
+    - injection_task_0
+  - - user_task_25
+    - injection_task_6
+  - - user_task_38
+    - injection_task_13
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-important-13
+  export_dir: data/exports/real-traces-phase-2/phase2-important-13
+- id: phase2-tool-knowledge-13
+  run_mode: attacked_only
+  attack: tool_knowledge
+  user_tasks:
+  - user_task_12
+  - user_task_15
+  - user_task_19
+  - user_task_36
+  - user_task_8
+  injection_tasks:
+  - injection_task_5
+  - injection_task_7
+  - injection_task_8
+  - injection_task_4
+  - injection_task_9
+  attacked_task_pairs:
+  - - user_task_12
+    - injection_task_5
+  - - user_task_15
+    - injection_task_7
+  - - user_task_19
+    - injection_task_8
+  - - user_task_36
+    - injection_task_4
+  - - user_task_8
+    - injection_task_9
+  run_attack_goal_checks: false
+  output_dir: runs/data_collection/real-traces-phase-2/phase2-tool-knowledge-13
+  export_dir: data/exports/real-traces-phase-2/phase2-tool-knowledge-13
