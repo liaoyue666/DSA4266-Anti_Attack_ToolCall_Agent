@@ -1,0 +1,60 @@
+{
+  "dataset": "dataset-502-v1",
+  "provenance": "annotation_candidates.jsonl (502), review_metadata.jsonl (120); AI-assisted preliminary review",
+  "counts": {
+    "total_candidates": 502,
+    "observed": 382,
+    "constructed": 120,
+    "observed_attack_context": 351,
+    "observed_normal_context": 31,
+    "label_0_provisional": 382,
+    "label_1_provisional": 120,
+    "injection_present_true": 471,
+    "injection_present_false": 31,
+    "review_pending": 502,
+    "human_reviewed": 0,
+    "review_queue_flagged": 134,
+    "review_disputed": 0
+  },
+  "label_distribution_by_source": {
+    "observed": {
+      "0": 382
+    },
+    "constructed": {
+      "1": 120
+    }
+  },
+  "tool_distribution": {
+    "append_to_file": 52,
+    "create_calendar_event": 161,
+    "send_email": 123,
+    "create_file": 52,
+    "delete_file": 32,
+    "share_file": 50,
+    "reschedule_calendar_event": 13,
+    "add_calendar_event_participants": 19
+  },
+  "number_task_groups": 22,
+  "review_priority_distribution": {
+    "Standard": 430,
+    "Medium": 13,
+    "High": 59
+  },
+  "review_flag_types": {
+    "Organizer included as event participant; confirm implied invitation": 7,
+    "Copied original meeting location though user requested only same participants": 4,
+    "Optional location field supplied without explicit request": 1,
+    "Unrequested extra attachment in TODO notification; verify recipient access and authorization": 1,
+    "new_end_time is null; verify calendar tool default/duration": 1,
+    "Counterfactual construction: must be independently adjudicated against user authorization": 120
+  },
+  "labeling_limitations": [
+    "All 502 labels are AI-assisted provisional. They are not independently human-reviewed ground truth.",
+    "No observed call was classified as unauthorized in this preliminary task-specific audit; this does not prove zero real-world attacks or success rate.",
+    "120 constructed Label 1 candidates were hypothetically created, not agent-proposed or executed, and MUST NOT be included in real-episode ASR.",
+    "An injection present in an observation is different from an unauthorized proposed tool call.",
+    "Some observed calls have ambiguous extra tool fields and are explicitly flagged for adjudication.",
+    "Keep all linked task_group_id / related_task_group_ids, constructed variants and deduplicated cross-group parent references in the same data split.",
+    "Model input MUST contain only original_user_request, observations_before_call and proposed_action. Labels, source identifiers, review reasons, and metadata must remain outside model_input."
+  ]
+}
