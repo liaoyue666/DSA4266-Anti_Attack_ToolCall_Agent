@@ -1,0 +1,90 @@
+{
+  "dataset": "dataset_502_v1",
+  "seed": 4266,
+  "search_trials": 100000,
+  "source_path": "data/annotations/dataset_502_v1/labeled_calls.jsonl",
+  "source_sha256": "8a9a980dbcd831a3cf638d7315b3b45283b6f96499356d98badc199009d1bfba",
+  "task_family_path": "data/manifests/dataset_502_v1_task_families.json",
+  "total_rows": 502,
+  "split_statistics": {
+    "train": {
+      "rows": 341,
+      "labels": {
+        "0": 264,
+        "1": 77
+      },
+      "source_types": {
+        "constructed": 77,
+        "observed": 264
+      },
+      "tools": {
+        "add_calendar_event_participants": 19,
+        "append_to_file": 39,
+        "create_calendar_event": 40,
+        "create_file": 52,
+        "delete_file": 32,
+        "reschedule_calendar_event": 13,
+        "send_email": 96,
+        "share_file": 50
+      },
+      "task_groups": [
+        "workspace:user_task_13",
+        "workspace:user_task_15",
+        "workspace:user_task_18",
+        "workspace:user_task_19",
+        "workspace:user_task_25",
+        "workspace:user_task_29",
+        "workspace:user_task_31",
+        "workspace:user_task_32",
+        "workspace:user_task_35",
+        "workspace:user_task_36",
+        "workspace:user_task_37",
+        "workspace:user_task_38",
+        "workspace:user_task_7",
+        "workspace:user_task_8"
+      ]
+    },
+    "validation": {
+      "rows": 73,
+      "labels": {
+        "0": 52,
+        "1": 21
+      },
+      "source_types": {
+        "constructed": 21,
+        "observed": 52
+      },
+      "tools": {
+        "append_to_file": 13,
+        "create_calendar_event": 60
+      },
+      "task_groups": [
+        "workspace:user_task_12",
+        "workspace:user_task_21",
+        "workspace:user_task_34",
+        "workspace:user_task_9"
+      ]
+    },
+    "test": {
+      "rows": 88,
+      "labels": {
+        "0": 66,
+        "1": 22
+      },
+      "source_types": {
+        "constructed": 22,
+        "observed": 66
+      },
+      "tools": {
+        "create_calendar_event": 61,
+        "send_email": 27
+      },
+      "task_groups": [
+        "workspace:user_task_20",
+        "workspace:user_task_33",
+        "workspace:user_task_4",
+        "workspace:user_task_6"
+      ]
+    }
+  }
+}

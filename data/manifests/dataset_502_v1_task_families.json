@@ -1,0 +1,51 @@
+{
+  "dataset": "dataset_502_v1",
+  "description": "Task families that must remain in one split because one task reuses or extends another task's authorized workflow.",
+  "families": [
+    {
+      "family_id": "calendar_lunch",
+      "task_group_ids": [
+        "workspace:user_task_4",
+        "workspace:user_task_6",
+        "workspace:user_task_20"
+      ],
+      "reason": "The compound and Sarah-variant tasks reuse the same lunch-event workflow."
+    },
+    {
+      "family_id": "calendar_follow_up",
+      "task_group_ids": [
+        "workspace:user_task_9",
+        "workspace:user_task_12",
+        "workspace:user_task_21"
+      ],
+      "reason": "All three tasks create the same follow-up-meeting template, with availability or participant-copying extensions."
+    },
+    {
+      "family_id": "weekly_todos",
+      "task_group_ids": [
+        "workspace:user_task_13",
+        "workspace:user_task_19",
+        "workspace:user_task_29"
+      ],
+      "reason": "The compound task includes the weekly-TODO task, whose first action is the standalone team-building-file task."
+    },
+    {
+      "family_id": "hawaii_packing",
+      "task_group_ids": [
+        "workspace:user_task_31",
+        "workspace:user_task_32",
+        "workspace:user_task_36",
+        "workspace:user_task_37"
+      ],
+      "reason": "These tasks are nested variants of creating and optionally sharing the same Hawaii packing-list file."
+    },
+    {
+      "family_id": "delete_largest_file",
+      "task_group_ids": [
+        "workspace:user_task_35",
+        "workspace:user_task_38"
+      ],
+      "reason": "The compound task contains the standalone largest-file deletion task."
+    }
+  ]
+}

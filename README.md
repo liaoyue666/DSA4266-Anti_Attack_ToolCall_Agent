@@ -2,7 +2,7 @@
 
 This repository contains the DSA4266 project on protecting tool-using LLM agents from **indirect prompt injection**. The project studies whether a trained, context-aware verifier can detect unauthorized tool calls before execution while preserving the agent's ability to complete legitimate user tasks.
 
-> **Project status:** Phase 1 and part of Phase 2 real-trace collection have been completed. A delivery of 502 exact-deduplicated annotation candidates is available: 382 observed calls and 120 constructed candidates, covering 22 user tasks and 8 tools. All labels remain `null`; the 120 constructed rows are expected-unauthorized candidates, not confirmed Label 1 examples. Annotation, final dataset splitting, model training, and defense evaluation are not claimed as complete.
+> **Project status:** Phase 1 and part of Phase 2 real-trace collection have been completed. A delivery of 502 exact-deduplicated candidates is available: 382 observed calls and 120 constructed candidates, covering 22 user tasks and 8 tools. Provisional human-reviewed labels and a leakage-aware train/validation/test split are available. Model training and defense evaluation are not claimed as complete.
 
 ### Current dataset delivery
 
@@ -19,6 +19,13 @@ in real-episode ASR. Keep candidates from the same user task, including
 constructed derivatives, in the same split. Where a deduplicated observed row
 links multiple task groups, keep those linked groups together as described in
 the delivery README.
+
+The labeled, training-ready split is in
+[`data/splits/dataset_502_v1/`](data/splits/dataset_502_v1/). It is generated
+from `data/annotations/dataset_502_v1/labeled_calls.jsonl` with seed `4266`.
+Task groups, declared derivative task families, input fingerprints, and
+near-duplicate groups do not cross splits. See the split directory README and
+manifest for counts and limitations.
 
 ## Implemented pilot: interception before tool execution
 
@@ -289,10 +296,11 @@ elapsed time, and returned token usage. Injection exposure is reported from
 the AgentDojo trace's actual injection context, not inferred from attack
 success. `provider_api_request_count` counts recorded provider requests;
 `duration_seconds.episodes_with_api_request_duration` counts episodes that had
-request timing data, and is not a request count. The independent
+request timing data, and is not a request count. The historical
 [`data/manifests/pending_task_split.csv`](data/manifests/pending_task_split.csv)
-lists all task groups for later split review; no train/validation/test
-assignment is claimed or made automatically.
+lists all 40 Workspace task groups for collection planning. The completed split
+for the 22 task groups represented in dataset-502-v1 is recorded separately in
+[`data/splits/dataset_502_v1/`](data/splits/dataset_502_v1/).
 
 For any plan whose batches have actually completed, aggregate their observed
 results without modifying the batch files:
@@ -432,10 +440,11 @@ This remains a compatibility plan, not a full banking collection or evidence
 that the three proposed episodes were run. Confirm status and obtain approval
 before any model call.
 
-The 500-row handoff target is not the same as obtaining enough Label 1
-examples. All labels remain null until human review. The final evaluation-task
-isolation and leakage test split remain unconfirmed by the group; no completed
-train/validation/test split is claimed.
+The 500-row handoff target is not the same as obtaining enough real Label 1
+examples. The current split contains provisional labels and enforces task-family
+isolation, but all positive rows are constructed candidates. This limitation
+must remain explicit in model evaluation and does not establish real-attack
+generalization.
 
 Historical dry-run commands do not write candidate rows. The current
 one-time candidate handoff is the existing
