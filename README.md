@@ -27,6 +27,46 @@ Task groups, declared derivative task families, input fingerprints, and
 near-duplicate groups do not cross splits. See the split directory README and
 manifest for counts and limitations.
 
+### Offline verifier models
+
+Install the modeling dependencies in the project virtual environment:
+
+```bash
+./.venv/bin/pip install -e '.[dev,model]'
+```
+
+Run the majority and TF-IDF logistic-regression baselines:
+
+```bash
+./.venv/bin/python scripts/train_offline_baselines.py
+```
+
+Evaluate the fixed lexical rule/policy comparator:
+
+```bash
+./.venv/bin/python scripts/evaluate_rule_policy.py
+```
+
+Run the proposal's primary frozen-Transformer experiment. The encoder remains
+frozen; only a `768 -> 64 -> 1` dense head is trained. The default run uses
+DistilRoBERTa, CLS pooling, three random seeds, validation-loss early stopping,
+and validation-only threshold selection:
+
+```bash
+./.venv/bin/python scripts/train_frozen_transformer.py \
+  --pooling cls \
+  --output-dir results/frozen_distilroberta_cls
+```
+
+The Transformer input uses fixed field budgets (96 request, 256 observation,
+156 action tokens). Each field is truncated independently, and security-relevant
+action arguments are serialized before long free-text arguments so a long tool
+observation cannot remove the proposed action. Runtime artifacts, predictions,
+and model weights are written under `results/`, which is git-ignored. Thresholds
+are selected on validation data only; do not retune them on the test split.
+Preliminary results and the source/label-confounding analysis are documented in
+[`docs/offline_model_results.md`](docs/offline_model_results.md).
+
 ## Implemented pilot: interception before tool execution
 
 The repository now includes a deterministic AgentDojo pilot that verifies the

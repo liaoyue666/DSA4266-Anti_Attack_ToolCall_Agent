@@ -9,6 +9,13 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+model = [
+    "joblib>=1.4",
+    "numpy>=2.0",
+    "scikit-learn>=1.5,<2",
+    "torch>=2.6,<3",
+    "transformers>=4.48,<6",
+]
 
 [build-system]
 requires = ["setuptools>=68"]
