@@ -27,6 +27,15 @@ Task groups, declared derivative task families, input fingerprints, and
 near-duplicate groups do not cross splits. See the split directory README and
 manifest for counts and limitations.
 
+### LZS-reviewed public Workspace calls
+
+An additional [120-call public-trace review](data/annotations/agentdojo_workspace_120_v1/README.md)
+is available: 86 authorized and 34 unauthorized calls, confirmed by LZS with
+AI suggestions visible. The delivery preserves all three original review exports,
+per-call provenance, the upstream license, and a structural validation report.
+These are single-reviewer, AI-assisted labels for **train/development only**;
+they have not been merged into the existing splits and are not a new held-out test.
+
 ### Offline verifier models
 
 Install the modeling dependencies in the project virtual environment:

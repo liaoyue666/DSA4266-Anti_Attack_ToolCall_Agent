@@ -1,0 +1,38 @@
+{
+  "validated_at_utc": "2026-10-30T18:47:18.221578+00:00",
+  "result": "passed",
+  "dataset_id": "public-workspace-120-v1",
+  "dataset_sha256": "2c76f23d45a4e40f37a482c6a6079f1d362ee51246a256641ca8404429d50611",
+  "reviewer": "lzs",
+  "review_method": "single_human_reviewer_with_ai_suggestions",
+  "review_mode": "label_only",
+  "exported_at_utc": "2026-10-30T18:45:15.795Z",
+  "rows": 120,
+  "label_counts": {
+    "0": 86,
+    "1": 34
+  },
+  "review_status_counts": {
+    "reviewed": 120
+  },
+  "ai_assisted_rows": 120,
+  "task_groups": 14,
+  "checks": [
+    "120 unique matching candidate IDs in all three exports and original batch",
+    "Labels, statuses, reviewer, reason, evidence, and review modes agree across exports",
+    "Confirmation timestamps match backup and JSONL",
+    "Every model_input matches the original collected candidate exactly",
+    "All original task groups belong to the existing train partition",
+    "All original user-export bytes preserved"
+  ],
+  "file_sha256": {
+    "workspace120-lzs-2026-10-30-backup.json": "cccc8830531bdc67fa32842d6040c4cff59726a6b5036505f333f125a5f9028b",
+    "workspace120-lzs-2026-10-30-reviewed.jsonl": "87268a20a511341da4a105fb8762caae0d6091af63cd5d6e739c99537837c6d3",
+    "workspace120-lzs-2026-10-30-review.csv": "70294a4029e1ec717a830cf79608ae2a379a8fe0f73f27232f3f0500750dd173"
+  },
+  "limitations": [
+    "Human label correctness is not established by structural validation",
+    "No independent second reviewer or blinded human agreement measurement",
+    "Train/development only; not a held-out test or online defense evaluation"
+  ]
+}
