@@ -1,0 +1,33 @@
+{
+  "test_read_or_evaluated": false,
+  "tokenizer_json_sha256": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+  "tokenizer_source": "..\\hf-cache\\models--distilbert--distilroberta-base\\snapshots\\fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b\\tokenizer.json",
+  "budgets": {
+    "request": 96,
+    "observation": 256,
+    "action": 156
+  },
+  "note": "Uses the downloaded tokenizer.json backend, not original run artifacts. Missing critical strings are a review flag, not proof of model error.",
+  "splits": {
+    "train": {
+      "rows": 341,
+      "truncation_counts": {
+        "request": 0,
+        "observation": 336,
+        "action": 116
+      },
+      "rows_with_missing_critical_strings": 0,
+      "rows_with_observations_dropped": 119
+    },
+    "validation": {
+      "rows": 73,
+      "truncation_counts": {
+        "request": 0,
+        "observation": 72,
+        "action": 0
+      },
+      "rows_with_missing_critical_strings": 0,
+      "rows_with_observations_dropped": 0
+    }
+  }
+}

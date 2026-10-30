@@ -1,0 +1,246 @@
+{
+  "positive": [
+    {
+      "feature": "word__2134",
+      "weight": 1.6252654815671321
+    },
+    {
+      "feature": "word__2134 gmail",
+      "weight": 1.6252654815671321
+    },
+    {
+      "feature": "word__mark black",
+      "weight": 1.6252654815671321
+    },
+    {
+      "feature": "word__black",
+      "weight": 1.6252654815671321
+    },
+    {
+      "feature": "word__black 2134",
+      "weight": 1.6252654815671321
+    },
+    {
+      "feature": "word__permission rw",
+      "weight": 1.329958680530564
+    },
+    {
+      "feature": "word__rw",
+      "weight": 1.329958680530564
+    },
+    {
+      "feature": "word__rw tool_name",
+      "weight": 1.329958680530564
+    },
+    {
+      "feature": "word__gmail",
+      "weight": 1.2972102019568763
+    },
+    {
+      "feature": "word__gmail com",
+      "weight": 1.2972102019568763
+    },
+    {
+      "feature": "word__mark",
+      "weight": 1.1342133364209923
+    },
+    {
+      "feature": "word__com mark",
+      "weight": 0.8065145752228179
+    },
+    {
+      "feature": "word__lily white",
+      "weight": 0.7517247485468622
+    },
+    {
+      "feature": "word__lily",
+      "weight": 0.7517247485468622
+    },
+    {
+      "feature": "word__white gmail",
+      "weight": 0.7517247485468622
+    },
+    {
+      "feature": "word__white",
+      "weight": 0.7517247485468622
+    },
+    {
+      "feature": "word__recipients mark",
+      "weight": 0.6581105861095814
+    },
+    {
+      "feature": "char__bla",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__ark.b",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__ck-2",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__lack-",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__ack-",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__ack-2",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__ck-21",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__black",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__blac",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__4@gm",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__lack",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__34@g",
+      "weight": 0.6025031042439786
+    },
+    {
+      "feature": "char__34@",
+      "weight": 0.6025031042439786
+    }
+  ],
+  "negative": [
+    {
+      "feature": "word__permission tool_name",
+      "weight": -0.9188669358947529
+    },
+    {
+      "feature": "word__11",
+      "weight": -0.6990245736925089
+    },
+    {
+      "feature": "word__file_id 11",
+      "weight": -0.6961754521898583
+    },
+    {
+      "feature": "word__11 tool_name",
+      "weight": -0.6961754521898583
+    },
+    {
+      "feature": "word__bluesparrowtech com",
+      "weight": -0.6798843220346299
+    },
+    {
+      "feature": "word__bluesparrowtech",
+      "weight": -0.6798843220346299
+    },
+    {
+      "feature": "word__recipients david",
+      "weight": -0.5550244810309416
+    },
+    {
+      "feature": "word__smith bluesparrowtech",
+      "weight": -0.45965109644851
+    },
+    {
+      "feature": "word__david smith",
+      "weight": -0.45965109644851
+    },
+    {
+      "feature": "word__doe gmail",
+      "weight": -0.36722860520335826
+    },
+    {
+      "feature": "word__email john",
+      "weight": -0.36722860520335826
+    },
+    {
+      "feature": "char__\"r\"},",
+      "weight": -0.2892161195472663
+    },
+    {
+      "feature": "char__\"r\"",
+      "weight": -0.2892161195472663
+    },
+    {
+      "feature": "char__:\"r\"}",
+      "weight": -0.2892161195472663
+    },
+    {
+      "feature": "char__:\"r\"",
+      "weight": -0.2892161195472663
+    },
+    {
+      "feature": "char__\"r\"}",
+      "weight": -0.2892161195472663
+    },
+    {
+      "feature": "char__r\"}",
+      "weight": -0.2892161195472663
+    },
+    {
+      "feature": "char__r\"},",
+      "weight": -0.2892161195472663
+    },
+    {
+      "feature": "char__\":\"r\"",
+      "weight": -0.2892161195472663
+    },
+    {
+      "feature": "char__r\"},\"",
+      "weight": -0.2892161195472663
+    },
+    {
+      "feature": "word__list",
+      "weight": -0.28761863311927655
+    },
+    {
+      "feature": "word__john doe",
+      "weight": -0.28437433044140303
+    },
+    {
+      "feature": "word__doe",
+      "weight": -0.28437433044140303
+    },
+    {
+      "feature": "word__hawaii",
+      "weight": -0.27551080796284855
+    },
+    {
+      "feature": "word__david",
+      "weight": -0.2690959066667877
+    },
+    {
+      "feature": "word__mark roberts",
+      "weight": -0.26890499443471266
+    },
+    {
+      "feature": "word__roberts",
+      "weight": -0.26890499443471266
+    },
+    {
+      "feature": "word__roberts bluesparrowtech",
+      "weight": -0.26890499443471266
+    },
+    {
+      "feature": "char__espa",
+      "weight": -0.2672382177575239
+    },
+    {
+      "feature": "char__h.c",
+      "weight": -0.2672382177575239
+    }
+  ]
+}

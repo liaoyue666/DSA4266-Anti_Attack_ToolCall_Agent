@@ -1,0 +1,135 @@
+{
+  "scope": "Train/validation diagnostics only; validation is used for threshold selection, not an independent final estimate.",
+  "test_read_or_evaluated": false,
+  "versions": {
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "data_sha256": {
+    "train": "18c363baf49a5657f4f5f804a83711f6cc51a4b3c5ab3e143bb442a42480ddca",
+    "validation": "8968cd95223addded2928afc2f154645768f83a2d54f2c41527d1e6c78b6c374"
+  },
+  "validation_tfidf": {
+    "full": {
+      "threshold": 0.48,
+      "rows": 73,
+      "confusion_matrix": {
+        "tn": 31,
+        "fp": 21,
+        "fn": 4,
+        "tp": 17
+      },
+      "accuracy": 0.6575342465753424,
+      "unauthorized_precision": 0.4473684210526316,
+      "unauthorized_recall": 0.8095238095238095,
+      "unauthorized_f1": 0.576271186440678,
+      "false_block_rate": 0.40384615384615385,
+      "pr_auc": 0.67002593113876
+    },
+    "no_request": {
+      "threshold": 0.5,
+      "rows": 73,
+      "confusion_matrix": {
+        "tn": 31,
+        "fp": 21,
+        "fn": 3,
+        "tp": 18
+      },
+      "accuracy": 0.6712328767123288,
+      "unauthorized_precision": 0.46153846153846156,
+      "unauthorized_recall": 0.8571428571428571,
+      "unauthorized_f1": 0.6,
+      "false_block_rate": 0.40384615384615385,
+      "pr_auc": 0.6593765576400608
+    },
+    "no_observations": {
+      "threshold": 0.47,
+      "rows": 73,
+      "confusion_matrix": {
+        "tn": 52,
+        "fp": 0,
+        "fn": 0,
+        "tp": 21
+      },
+      "accuracy": 1.0,
+      "unauthorized_precision": 1.0,
+      "unauthorized_recall": 1.0,
+      "unauthorized_f1": 1.0,
+      "false_block_rate": 0.0,
+      "pr_auc": 1.0
+    },
+    "action_only": {
+      "threshold": 0.59,
+      "rows": 73,
+      "confusion_matrix": {
+        "tn": 52,
+        "fp": 0,
+        "fn": 0,
+        "tp": 21
+      },
+      "accuracy": 1.0,
+      "unauthorized_precision": 1.0,
+      "unauthorized_recall": 1.0,
+      "unauthorized_f1": 1.0,
+      "false_block_rate": 0.0,
+      "pr_auc": 1.0
+    }
+  },
+  "validation_thresholds": {
+    "full": 0.48,
+    "no_request": 0.5,
+    "no_observations": 0.47,
+    "action_only": 0.59
+  },
+  "rule_threshold": 0.65,
+  "rule_validation": {
+    "threshold": 0.65,
+    "rows": 73,
+    "confusion_matrix": {
+      "tn": 52,
+      "fp": 0,
+      "fn": 0,
+      "tp": 21
+    },
+    "accuracy": 1.0,
+    "unauthorized_precision": 1.0,
+    "unauthorized_recall": 1.0,
+    "unauthorized_f1": 1.0,
+    "false_block_rate": 0.0,
+    "pr_auc": 1.0
+  },
+  "probe_warning": "Synthetic deliberately targeted development probes with pending expected labels; not generalization/ASR results.",
+  "probe_rule_vs_expected": {
+    "threshold": 0.65,
+    "rows": 20,
+    "confusion_matrix": {
+      "tn": 10,
+      "fp": 0,
+      "fn": 10,
+      "tp": 0
+    },
+    "accuracy": 0.5,
+    "unauthorized_precision": 0.0,
+    "unauthorized_recall": 0.0,
+    "unauthorized_f1": 0.0,
+    "false_block_rate": 0.0,
+    "pr_auc": 0.5
+  },
+  "probe_tfidf_vs_expected": {
+    "threshold": 0.48,
+    "rows": 20,
+    "confusion_matrix": {
+      "tn": 5,
+      "fp": 5,
+      "fn": 5,
+      "tp": 5
+    },
+    "accuracy": 0.5,
+    "unauthorized_precision": 0.5,
+    "unauthorized_recall": 0.5,
+    "unauthorized_f1": 0.5,
+    "false_block_rate": 0.5,
+    "pr_auc": 0.5
+  }
+}

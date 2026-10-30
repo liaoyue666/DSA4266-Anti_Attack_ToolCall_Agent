@@ -2,7 +2,7 @@
 
 This repository contains the DSA4266 project on protecting tool-using LLM agents from **indirect prompt injection**. The project studies whether a trained, context-aware verifier can detect unauthorized tool calls before execution while preserving the agent's ability to complete legitimate user tasks.
 
-> **Project status:** Phase 1 and part of Phase 2 real-trace collection have been completed. A delivery of 502 exact-deduplicated candidates is available: 382 observed calls and 120 constructed candidates, covering 22 user tasks and 8 tools. Provisional human-reviewed labels and a leakage-aware train/validation/test split are available. Model training and defense evaluation are not claimed as complete.
+> **Project status:** Phase 1 and part of Phase 2 real-trace collection have been completed. A delivery of 502 exact-deduplicated candidates is available: 382 observed calls and 120 constructed candidates, covering 22 user tasks and 8 tools. AI-assisted provisional labels, pending independent human review, and a leakage-aware train/validation/test split are available. Preliminary offline models and development diagnostics are available; online defense evaluation is not complete.
 
 ### Current dataset delivery
 
@@ -66,6 +66,27 @@ and model weights are written under `results/`, which is git-ignored. Thresholds
 are selected on validation data only; do not retune them on the test split.
 Preliminary results and the source/label-confounding analysis are documented in
 [`docs/offline_model_results.md`](docs/offline_model_results.md).
+
+### LZS development diagnostics and prompt auditor
+
+The development-only ablations reveal a dataset shortcut: TF-IDF obtains
+validation F1 1.000 using the proposed action alone, versus 0.576 with full
+context. This is diagnostic evidence on provisional labels, not a new held-out
+test result. See the [analysis and reproduction instructions](docs/lzs_development_diagnostics.md)
+and [committed summaries and predictions](docs/diagnostics/lzs-v1/README.md).
+
+The [20 paired development probes](data/diagnostics/lzs_pairs_v1/README.md)
+have null labels and require independent review. They are not training data or
+real AgentDojo episodes.
+
+A [prompt-only DeepSeek auditor](docs/prompt_auditor_handoff.md) is implemented
+with dry-run previews, bounded API attempts, caching, and explicit failure
+coverage. No actual auditor API scores are claimed. It supports the same
+context ablations and restricts development runs to train/validation.
+
+```bash
+PYTHONPATH=src python scripts/run_prompt_auditor.py --split validation --limit 73 --output-dir results/auditor_preview_new
+```
 
 ## Implemented pilot: interception before tool execution
 

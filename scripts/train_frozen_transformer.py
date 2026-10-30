@@ -16,6 +16,7 @@ from transformers import AutoModel, AutoTokenizer
 
 from tool_call_auditor.modeling import binary_metrics, load_split, select_threshold
 from tool_call_auditor.modeling.transformer_input import encode_model_input
+from tool_call_auditor.modeling.ablations import ABLATIONS, ablate_rows
 
 
 class DenseVerifier(nn.Module):
@@ -44,6 +45,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--patience", type=int, default=5)
     parser.add_argument("--minimum-recall", type=float, default=0.80)
     parser.add_argument("--pooling", choices=("cls", "mean"), default="cls")
+    parser.add_argument("--ablation", choices=ABLATIONS, default="full")
+    parser.add_argument("--development-only", action="store_true",
+                        help="Read only train/validation; leave test unopened.")
     return parser.parse_args()
 
 
@@ -158,6 +162,8 @@ def write_predictions(path: Path, rows, scores: np.ndarray, threshold: float) ->
 
 def main() -> None:
     args = parse_args()
+    if args.output_dir.exists() and any(args.output_dir.iterdir()):
+        raise ValueError("Output directory is not empty; select a new directory.")
     args.output_dir.mkdir(parents=True, exist_ok=True)
     device = choose_device()
     print(f"Extracting frozen embeddings on {device}...")
@@ -166,10 +172,9 @@ def main() -> None:
     for parameter in encoder.parameters():
         parameter.requires_grad = False
 
-    splits = {
-        name: load_split(args.data_dir / f"{name}.jsonl")
-        for name in ("train", "validation", "test")
-    }
+    split_names = ("train", "validation") if args.development_only else ("train", "validation", "test")
+    splits = {name: ablate_rows(load_split(args.data_dir / f"{name}.jsonl"), args.ablation)
+              for name in split_names}
     labels = {name: np.asarray([row.label for row in rows]) for name, rows in splits.items()}
     embeddings = {
         name: extract_embeddings(rows, tokenizer, encoder, device, args.batch_size, args.pooling)
@@ -197,6 +202,8 @@ def main() -> None:
                 "model_state_dict": model.state_dict(),
                 "hidden_size": embeddings["train"].shape[1],
                 "model_name": args.model_name,
+                "pooling": args.pooling,
+                "ablation": args.ablation,
                 "threshold": threshold,
                 "input_budgets": {"request": 96, "observation": 256, "action": 156},
             },
@@ -215,14 +222,18 @@ def main() -> None:
         runs.append(run)
 
     summary = {
+        "ablation": args.ablation,
+        "evaluated_splits": list(split_names),
         "model_name": args.model_name,
         "encoder_frozen": True,
         "pooling": args.pooling,
         "device_used_for_embedding_extraction": str(device),
         "seeds": args.seeds,
         "runs": runs,
-        "test_mean": {
-            metric: float(np.mean([run["metrics"]["test"][metric] for run in runs]))
+        "selection_split": "validation",
+        "summary_split": "validation" if args.development_only else "test",
+        "evaluation_mean": {
+            metric: float(np.mean([run["metrics"]["validation" if args.development_only else "test"][metric] for run in runs]))
             for metric in (
                 "unauthorized_precision",
                 "unauthorized_recall",
@@ -231,8 +242,8 @@ def main() -> None:
                 "pr_auc",
             )
         },
-        "test_std": {
-            metric: float(np.std([run["metrics"]["test"][metric] for run in runs]))
+        "evaluation_std": {
+            metric: float(np.std([run["metrics"]["validation" if args.development_only else "test"][metric] for run in runs]))
             for metric in (
                 "unauthorized_precision",
                 "unauthorized_recall",
@@ -242,8 +253,11 @@ def main() -> None:
             )
         },
     }
-    (args.output_dir / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
-    print(json.dumps(summary["test_mean"], indent=2))
+    if not args.development_only:
+        summary["test_mean"] = summary["evaluation_mean"]
+        summary["test_std"] = summary["evaluation_std"]
+    (args.output_dir / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps(summary["evaluation_mean"], indent=2))
 
 
 if __name__ == "__main__":

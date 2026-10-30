@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import hashlib
+import importlib.metadata
 from pathlib import Path
 
 import joblib
@@ -19,6 +21,7 @@ from tool_call_auditor.modeling import (
     select_threshold,
     serialize_model_input,
 )
+from tool_call_auditor.modeling.ablations import ABLATIONS, ablate_rows
 
 
 def parse_args() -> argparse.Namespace:
@@ -27,6 +30,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", type=Path, default=Path("results/offline_baselines"))
     parser.add_argument("--seed", type=int, default=4266)
     parser.add_argument("--minimum-recall", type=float, default=0.80)
+    parser.add_argument("--ablation", choices=ABLATIONS, default="full")
+    parser.add_argument("--development-only", action="store_true",
+                        help="Read only train/validation; do not open or evaluate test.")
     return parser.parse_args()
 
 
@@ -79,10 +85,13 @@ def write_predictions(path: Path, rows, probabilities: np.ndarray, threshold: fl
 
 def main() -> None:
     args = parse_args()
+    if args.output_dir.exists() and any(args.output_dir.iterdir()):
+        raise ValueError("Output directory is not empty; select a new directory.")
     args.output_dir.mkdir(parents=True, exist_ok=True)
+    split_names = ("train", "validation") if args.development_only else ("train", "validation", "test")
     splits = {
-        name: load_split(args.data_dir / f"{name}.jsonl")
-        for name in ("train", "validation", "test")
+        name: ablate_rows(load_split(args.data_dir / f"{name}.jsonl"), args.ablation)
+        for name in split_names
     }
     texts = {
         name: [serialize_model_input(row.model_input) for row in rows]
@@ -114,6 +123,11 @@ def main() -> None:
     }
 
     report = {
+        "ablation": args.ablation,
+        "evaluated_splits": list(split_names),
+        "input_sha256": {name: hashlib.sha256((args.data_dir / f"{name}.jsonl").read_bytes()).hexdigest()
+                         for name in split_names},
+        "versions": {name: importlib.metadata.version(name) for name in ("numpy", "scikit-learn", "joblib")},
         "data_dir": str(args.data_dir),
         "seed": args.seed,
         "threshold_policy": {
