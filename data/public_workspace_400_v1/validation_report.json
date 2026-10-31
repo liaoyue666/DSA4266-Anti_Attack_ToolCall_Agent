@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "candidates": 400,
+  "unique": true,
+  "all_labels_null_and_pending": true,
+  "existing_502_exact_overlap": 0,
+  "old_validation_test_task_overlap": 0,
+  "prior_120_exact_overlap": 0,
+  "prior_120_source_episode_overlap": 0,
+  "source_git_blobs_match_pinned_commit": 400,
+  "within_batch_unique_request_actions": 400,
+  "prior_622_request_action_overlap_rows": 0,
+  "every_parent_reconstructed_from_source": true,
+  "pre_call_boundary_regression": "PASS",
+  "review_case_alignment": "PASS"
+}

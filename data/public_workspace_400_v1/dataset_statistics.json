@@ -1,0 +1,102 @@
+{
+  "upstream_commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "seed": 4266,
+  "planned_traces": 1435,
+  "available_traces": 1435,
+  "download_failures": [],
+  "skipped": {
+    "exact_duplicate_of_existing_502_or_prior_120": 29,
+    "episode_error": 8
+  },
+  "unique_candidate_pool": 1226,
+  "delivered_candidates": 400,
+  "label_counts": {
+    "pending_null": 400
+  },
+  "tools": {
+    "send_email": 79,
+    "create_calendar_event": 63,
+    "append_to_file": 186,
+    "create_file": 58,
+    "share_file": 4,
+    "reschedule_calendar_event": 4,
+    "delete_file": 6
+  },
+  "sampling_strata": {
+    "attacked_episode_other": 73,
+    "attacked_episode_security_false": 273,
+    "normal_episode": 54
+  },
+  "task_groups": [
+    "workspace:user_task_13",
+    "workspace:user_task_15",
+    "workspace:user_task_18",
+    "workspace:user_task_19",
+    "workspace:user_task_25",
+    "workspace:user_task_29",
+    "workspace:user_task_31",
+    "workspace:user_task_32",
+    "workspace:user_task_35",
+    "workspace:user_task_36",
+    "workspace:user_task_37",
+    "workspace:user_task_38",
+    "workspace:user_task_7",
+    "workspace:user_task_8"
+  ],
+  "task_families": [
+    "delete_largest_file",
+    "hawaii_packing",
+    "weekly_todos",
+    "workspace:user_task_15",
+    "workspace:user_task_18",
+    "workspace:user_task_25",
+    "workspace:user_task_7",
+    "workspace:user_task_8"
+  ],
+  "source_traces_included": 400,
+  "agent_models": [
+    "claude-3-5-sonnet-20240620",
+    "claude-3-5-sonnet-20241022",
+    "claude-3-7-sonnet-20250219",
+    "claude-3-haiku-20240307",
+    "claude-3-opus-20240229",
+    "command-r-plus",
+    "gemini-1.5-flash-002",
+    "gemini-1.5-pro-002",
+    "gemini-2.0-flash-001",
+    "gpt-3.5-turbo-0125",
+    "gpt-4-turbo-2024-04-09",
+    "gpt-4o-2024-05-13",
+    "gpt-4o-mini-2024-07-18"
+  ],
+  "attack_types": [
+    "captcha_dos",
+    "direct",
+    "dos",
+    "felony_dos",
+    "ignore_previous",
+    "important_instructions",
+    "important_instructions_no_model_name",
+    "important_instructions_no_names",
+    "important_instructions_no_user_name",
+    "important_instructions_wrong_model_name",
+    "important_instructions_wrong_user_name",
+    "injecagent",
+    "none",
+    "offensive_email_dos",
+    "swearwords_dos",
+    "tool_knowledge"
+  ],
+  "prior_622_request_action_overlap_rows": 0,
+  "fixed_attack_email_in_action_rows": 51,
+  "within_batch_unique_request_actions": 400,
+  "prior_120_exact_overlap": 0,
+  "prior_120_source_episode_overlap": 0,
+  "prior_120_source_sha256": "2c76f23d45a4e40f37a482c6a6079f1d362ee51246a256641ca8404429d50611",
+  "existing_502_source_sha256": "d11dd84a66fa77d25323758cbd52d47e2dfdd7308a6317da328c58fe2ce89417",
+  "use_restriction": "train/development only after human review; no old validation/test tasks collected",
+  "selection_note": "Deterministic source cap of 4 per task/model/attack; diversity round-robin; prefer novel request/action and distinct episodes. No rule or learned-model scores used. Episode strata are not call labels.",
+  "within_batch_source_reference_count": 417,
+  "within_batch_reused_source_count": 16,
+  "rows_selected_after_relaxing_episode_uniqueness": 17
+}

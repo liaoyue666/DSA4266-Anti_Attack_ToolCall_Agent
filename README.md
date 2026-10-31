@@ -36,6 +36,16 @@ per-call provenance, the upstream license, and a structural validation report.
 These are single-reviewer, AI-assisted labels for **train/development only**;
 they have not been merged into the existing splits and are not a new held-out test.
 
+### Additional 400 public calls awaiting review
+
+The [new 400-call review batch](data/public_workspace_400_v1/README.md) contains
+full pre-call inputs, source logs, provenance, validation, and four 100-row
+review batches. All labels are null and pending. The batch spans 13 model
+versions and has no exact request/action overlap with the original 502 calls
+or the LZS-reviewed 120 calls. It remains restricted to the existing training
+tasks and is not a held-out test. See the delivery notes for tool imbalance,
+shared source episodes, and remaining template shortcuts.
+
 ### Offline verifier models
 
 Install the modeling dependencies in the project virtual environment:

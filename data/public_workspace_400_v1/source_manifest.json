@@ -1,0 +1,2002 @@
+[
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_13/important_instructions/injection_task_0.json",
+    "sha256": "3e739748d69bf828c8fe0ce27a5c637a21154aed4f1e20a45347a0479db1d7a4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_13/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_13/important_instructions/injection_task_4.json",
+    "sha256": "610ba14ceb782b0394693af5516048e27bd1cfc3e8196d186d0a6b4e97a9c85d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_13/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_13/important_instructions/injection_task_5.json",
+    "sha256": "2727f7f4e0a0a37f06cd9f4dbac0ec969c34765f1f801ccaf777b86e41db3128",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_13/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_15/important_instructions/injection_task_3.json",
+    "sha256": "b16ce63126e0a936f16045c5e65c31b5255e673be4b69677934e78e499660a44",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_15/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_15/important_instructions/injection_task_5.json",
+    "sha256": "ffe871047899a9089d53f70f3e5c87a3c75fbe4aa9a3a42cf7fa6ff30f9f7dca",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_15/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_18/important_instructions/injection_task_2.json",
+    "sha256": "de719a5035593571b92c6a2293168a5ef9bdd93ec52494aa5e31ae16fd33e31b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_18/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_18/important_instructions/injection_task_5.json",
+    "sha256": "01484a622e7a119cea85fe12e18a6ae4ac3e289eb512828d2f85e474f7b52dea",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_18/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_19/important_instructions/injection_task_3.json",
+    "sha256": "426b8bab76edc8f3222e869d388cb0e855fffa870e81c892d05cc932b37e382c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_19/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_19/important_instructions/injection_task_4.json",
+    "sha256": "68e1facffc6a5470c4f21d3429e5d3eb77669b73cf3b405b1fdda3f8b1fe2b6b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_19/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_19/important_instructions/injection_task_5.json",
+    "sha256": "741f6c34d79683086ee55d42febf11ac496b1a4be23dec4c523535a7c5aace1a",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_19/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_29/important_instructions/injection_task_1.json",
+    "sha256": "51606e0483f3a8864f3ef661bb993eb23e89587487cea756ba4e84b97a1cace2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_29/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_29/important_instructions/injection_task_4.json",
+    "sha256": "88eafd899c420d7b850cd94aad51ea6edaff93f745c7a1a9a14342945f0526d9",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_29/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_36/important_instructions/injection_task_1.json",
+    "sha256": "b75867888815ad3b73f3d911a88d54784a7b077c242585420adbdc9e0cdb5a4d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_36/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_36/important_instructions/injection_task_4.json",
+    "sha256": "58a1f5c3587bf81c46fde8c5a8f24819b86ca747901e71b68afd4031ed8c2e29",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_36/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_36/important_instructions/injection_task_5.json",
+    "sha256": "acefbe30a171c3115f09b1180741ddabdc85b6b5a33ec1dcc5f6d5f98b7b666f",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_36/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20240620/workspace/user_task_8/important_instructions/injection_task_3.json",
+    "sha256": "66ca9e6ed815ca2fa0dcb3d9c43273a49b038cdafd26e3aa36229cf0c3eded1b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20240620/workspace/user_task_8/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_13/important_instructions/injection_task_1.json",
+    "sha256": "92261516fe051e177ac45e4f62713b0728393223d75edc403c2104c964d4a8d9",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_13/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_13/important_instructions/injection_task_3.json",
+    "sha256": "af19d57eb2367ba720e8a6c583bfdb0ad77f1d5963af874493737f878ced84ce",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_13/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_13/important_instructions/injection_task_4.json",
+    "sha256": "da54d8c2836c3fe31cfbc6d7cd6eceaded02e0f33b549d7fa11bcff464977aa7",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_13/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_13/important_instructions/injection_task_5.json",
+    "sha256": "3aa933eafa3998913ba27d71b458aa1ddd15b1be20789c0f05a5df0efe163924",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_13/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_13/none/none.json",
+    "sha256": "92a713b740fd4db5a77fafe6d2c9c014fa37f8f7aaf6e415540dcec64e14a213",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_13/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_15/important_instructions/injection_task_5.json",
+    "sha256": "b9337b7038a20faa249dc0cd55a5319a06cad005d301f8679ecb9fb6d478f987",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_15/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_15/none/none.json",
+    "sha256": "976d2d87725cb6193e1027a49d89e964698bee840dd3ccb1fab1a5b3839c8db3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_15/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_18/important_instructions/injection_task_1.json",
+    "sha256": "45c06448b3031949a4fc9e30744783cbaf49fcbf8c0050b6bbf121ff02431c27",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_18/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_18/important_instructions/injection_task_3.json",
+    "sha256": "5aa99470eb67719e884d36e8586af97a88a42f9cb9fb01e70a568e4c4c675963",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_18/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_18/important_instructions/injection_task_4.json",
+    "sha256": "ab86534e806f804bf4db86d57cccf9799157ccfecd90ff581a0b7398165d8d7c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_18/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_19/important_instructions/injection_task_0.json",
+    "sha256": "2d1ca4df0e3c0adc0c1e8a40549bdcdfb4d50958ebff18f55ce1e971d49b4af1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_19/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_19/important_instructions/injection_task_1.json",
+    "sha256": "76242f8b778a59e4c41accbe5833d33d7bd5d1fb04813195a29c54c396420d1e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_19/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_19/important_instructions/injection_task_2.json",
+    "sha256": "ea3a1eb8d9de92d3ac3188b803ccb8ecbf1599b8b9c3561ae8dd0c75d526772c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_19/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_19/important_instructions/injection_task_5.json",
+    "sha256": "64d2d050aac0434661ab70f89db8e2361ccb4865c9914523abc76770a40d0894",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_19/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_19/none/none.json",
+    "sha256": "277c70567c3ca9df4206b27994582ee958d0ffba776b125b870acd360f76aa58",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_19/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_25/important_instructions/injection_task_0.json",
+    "sha256": "40950e20ee4fbef0006fca30869c8cc325afd2e03862eb0deeb7d5d5e14a70b5",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_25/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_25/important_instructions/injection_task_1.json",
+    "sha256": "915a4df21b820295668a39f6447cd7bc7ffe2f2d56513e942c45fbad78fef9cf",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_25/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_25/important_instructions/injection_task_2.json",
+    "sha256": "294b859631a63a9ec02d9f59b4baadcab2e354aa75dd3046d036ebb515c152f5",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_25/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_25/important_instructions/injection_task_4.json",
+    "sha256": "d10aa327bf6322bd4131036341807d937e2483cf30d80319ad5bcc8233964664",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_25/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_25/none/none.json",
+    "sha256": "245764835479569a7454d617f583ff675c6cca1a6587c78b0a1430aaa4f939bb",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_25/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_29/important_instructions/injection_task_0.json",
+    "sha256": "55acc1163f15f674532605e2ca7336691670a759176a7e8bffde00aedea40912",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_29/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_29/important_instructions/injection_task_1.json",
+    "sha256": "a4f621de8ed59b5d79343b90a4c0a53ac768f913a813292c88f43ec0db2478d7",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_29/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_29/important_instructions/injection_task_2.json",
+    "sha256": "5f729e1f8ecc7ea2864086f8695de70e1b96978f0cf57ae4dc46b478688f55f1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_29/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_29/important_instructions/injection_task_4.json",
+    "sha256": "7e6a6206874b5f4c214eefeb56af6a7b0aa14537a37107e380c73778a0418fb8",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_29/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_29/none/none.json",
+    "sha256": "9fcd12cd8864a724f64b818d3a463188987ad17caf3687ad701168a0d91b12c0",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_29/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_31/important_instructions/injection_task_0.json",
+    "sha256": "2494fe9ad3d662ffceef311f80b540c5131ee418059adaac714b0c69ba982323",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_31/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_31/important_instructions/injection_task_3.json",
+    "sha256": "05f40be4cce5fe442d20ff5ad192e7802e2f78505a0b6bda0fae5d8aecfd043b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_31/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_31/important_instructions/injection_task_4.json",
+    "sha256": "1f055d86e2b0e573a3beee4085ada90db069676d403f0288cacd864ea064b072",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_31/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_31/important_instructions/injection_task_5.json",
+    "sha256": "4f6d9c0da8981e4f3c98b6b5635e56fae4d01159f765eaf2342073472a1220e8",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_31/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_31/none/none.json",
+    "sha256": "c2ca3872699297b351ede23432d746b38f7ab73bf62023034659020c63520839",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_31/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_36/important_instructions/injection_task_2.json",
+    "sha256": "f27fbe6d18d0698c8bb09d31bc8741a5b9881679170ca65658d1bf49ad5e9507",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_36/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_37/important_instructions/injection_task_0.json",
+    "sha256": "590e57346e2f4027e02ff585116271112cd84e2b8f9db20eaaaa9dc90395ce4c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_37/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_37/important_instructions/injection_task_2.json",
+    "sha256": "d04ff4fb6ede9992062608b606321e6c3f9577c36003c28efaaf8c08cac08157",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_37/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-5-sonnet-20241022/workspace/user_task_37/none/none.json",
+    "sha256": "ab11cf57fb3cc259be08247058476d2f969a77a475d019e8a7d564d30dd51c00",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-5-sonnet-20241022/workspace/user_task_37/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_13/important_instructions/injection_task_11.json",
+    "sha256": "ee40a857fa9c29fc33b08252eb3fb3c97747c7ccfedc4b7f96a6d1f43f336364",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_13/important_instructions/injection_task_11.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_13/important_instructions/injection_task_13.json",
+    "sha256": "bc4355b2daac3755dff7eb0bbf2e790868c53723ea9a7f4252488f275130b902",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_13/important_instructions/injection_task_13.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_13/important_instructions/injection_task_3.json",
+    "sha256": "6444b7a6bb884d798bdff6e86e551e544262c38c7a95d9e40e99008b0cf4d73d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_13/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_13/important_instructions/injection_task_7.json",
+    "sha256": "64819005581de7604d04f679127cf8071245442ff92c719945dc1e6bd4ed42e4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_13/important_instructions/injection_task_7.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_13/none/none.json",
+    "sha256": "4877b95fc21371167783faca7a768a82e8541f0a2c4e3d0b4bbc7e4245f900a9",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_13/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_15/important_instructions/injection_task_0.json",
+    "sha256": "1823f11adf3b96a1ef3e378a13834dff489799cc0f7dfc0719c8e676c766b8f6",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_15/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_15/important_instructions/injection_task_13.json",
+    "sha256": "922c4bb1533702deb15388cb123f61eaa61429ddba18df97551dcbcd0a18fce8",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_15/important_instructions/injection_task_13.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_15/important_instructions/injection_task_7.json",
+    "sha256": "61da3933d341e6ec3bf04634a8c14578c28f7ee163cf2e17dd72d5a9c06febc8",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_15/important_instructions/injection_task_7.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_15/important_instructions/injection_task_8.json",
+    "sha256": "8c3d4084893a5709e631fabe4fba34b03eb869154f89c8e2d48943fb0a4fa27e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_15/important_instructions/injection_task_8.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_15/none/none.json",
+    "sha256": "f8e089ac34ce55b165f65d8620a7e7e1f8ed8bd3b1cfe250f29d2efac3a18e5b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_15/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_18/important_instructions/injection_task_4.json",
+    "sha256": "df341688b1662098569240d803ceaea442de71815b67f2a9be8ffa16d7f8c197",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_18/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_19/important_instructions/injection_task_11.json",
+    "sha256": "d1da97509d44e4d609fa8f3a8cd3f3ec0530a8b68dae6af72ce06684010512c8",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_19/important_instructions/injection_task_11.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_19/important_instructions/injection_task_2.json",
+    "sha256": "ec183b9c835b885b6c99d3449f568b054171662786642895457d8c4074398fbb",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_19/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_19/important_instructions/injection_task_5.json",
+    "sha256": "8f232ee9e7adbdf7e3feb59c71b54d2471551cbaa3e03480a70e8fb65d7bd183",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_19/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_19/none/none.json",
+    "sha256": "e0de6c7f2ed59b35548de427d25b6f05a3094edac10a6a031e610688dc18c4eb",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_19/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_25/important_instructions/injection_task_12.json",
+    "sha256": "acf3f8939262c992c6a8c7a674c5fd6cb5b2218d33789ee33f8635ef66e4b727",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_25/important_instructions/injection_task_12.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_25/important_instructions/injection_task_2.json",
+    "sha256": "a2ea84036aee755c2d361692c877edfc8a8d9a4c989e0bc66c445194a04c740d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_25/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_25/important_instructions/injection_task_4.json",
+    "sha256": "538157f518a3e166e6c4c5dbebe3cd4dd7007415324bad11b733c6d6f9485cf1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_25/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_25/none/none.json",
+    "sha256": "1a9e1c20c587c98e2c06594a647fe5e7edd414dd3dcd3438996e2587ad4bae92",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_25/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_29/important_instructions/injection_task_13.json",
+    "sha256": "f4bfd0d818bb0b2d757fa031d139cb521a12d180b1e9815a80abb0177cf13661",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_29/important_instructions/injection_task_13.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_29/important_instructions/injection_task_5.json",
+    "sha256": "3afa476097acbfd0929a93a65c019a8ff4e09c261fb109b08826adfe80f15125",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_29/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_29/important_instructions/injection_task_8.json",
+    "sha256": "480df12f3f172bb3e8b8fb3e2deefd77aa9cfdb063e3894fef6d556fb39a6fcd",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_29/important_instructions/injection_task_8.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_29/none/none.json",
+    "sha256": "95fb0ed0711e0ce37234d76ac88b2558684ea471d35d8a19f25bb8ffc2e9a051",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_29/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_31/important_instructions/injection_task_11.json",
+    "sha256": "d2e07aa40637e9eaf1a9f3de7c432181be8f3ff00cd76ba17d8a24ad17891fec",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_31/important_instructions/injection_task_11.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_31/important_instructions/injection_task_12.json",
+    "sha256": "c7c882544bb4edc67ae3347ceb0337852808402936676e845002e85672130024",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_31/important_instructions/injection_task_12.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_31/important_instructions/injection_task_2.json",
+    "sha256": "c5ac837d04fe349f5db45d090fd11beedfe38cfc59a49f5a56a66dd911d5aca3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_31/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_31/important_instructions/injection_task_4.json",
+    "sha256": "18eb063535a21cce52d4ca838ec7c08b48f729813f1fa30c001b56044ad151bb",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_31/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_31/none/none.json",
+    "sha256": "ecc0aaab79dd5dae68a9cf6310666018b5a44203eff6fc14dd0624ff5ea3b5c2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_31/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_32/important_instructions/injection_task_10.json",
+    "sha256": "489ce8ba02b735d3a821569d989222e540a1534f1947e483f2b77cd717e1fad3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_32/important_instructions/injection_task_10.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_32/important_instructions/injection_task_7.json",
+    "sha256": "1643aa2cd4b718764083cf0f3b57ea94ffd3662b032cd5e6548bee074614814b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_32/important_instructions/injection_task_7.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_32/none/none.json",
+    "sha256": "481487d807884b2a906e3654b271c4ff795309a9129e232bb786bb21b1c058d9",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_32/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_36/important_instructions/injection_task_12.json",
+    "sha256": "3e5af189744ee4b63ac0a6f4f4bd182868a071785e4884ea73e87d6ce4f3dec7",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_36/important_instructions/injection_task_12.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_36/important_instructions/injection_task_3.json",
+    "sha256": "4f4278856eee016b14f3fabc293bce8d106d53f47322693aa45a984a0e628d86",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_36/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_36/important_instructions/injection_task_4.json",
+    "sha256": "b64798edee25b98abee2247db8a063e3b9d15804ce09ddc44309a3e86ad1a92c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_36/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_36/important_instructions/injection_task_5.json",
+    "sha256": "d8a47c8c803b5a96062b1ea03c8d06bcc49296053bf5d42cd2888c5d16259a2b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_36/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_36/none/none.json",
+    "sha256": "f72fdf6f7d0ea8a5087ffae0dc1eb6881de8609cf3dff62857698b460f719322",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_36/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_37/important_instructions/injection_task_10.json",
+    "sha256": "b66d3525369f1073598ee108fd064e4569af326d98ea56126a7de74a45dd48d2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_37/important_instructions/injection_task_10.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_37/important_instructions/injection_task_11.json",
+    "sha256": "86e92a3f73ec389184886bebab2af531368865baa0358aba2b25e45e92c5baf6",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_37/important_instructions/injection_task_11.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_37/important_instructions/injection_task_2.json",
+    "sha256": "4e216086b2eaab8c8729be144aefbbcdfe019aaa136c7aad8d9c7cceb4a9968e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_37/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_37/important_instructions/injection_task_4.json",
+    "sha256": "25b983a4d613e4190d08ab221099d549b9dbbd5d5851303d974fbb011379685c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_37/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-7-sonnet-20250219/workspace/user_task_37/none/none.json",
+    "sha256": "aef675500f24de3f54ef5e07955bbfe4885d7d51d6c2a49384a2588ad6fdd28e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-7-sonnet-20250219/workspace/user_task_37/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-haiku-20240307/workspace/user_task_29/important_instructions/injection_task_3.json",
+    "sha256": "d6cc35a5506f7ba0ceee47a6400dd879dea2f04146f47dd964973fe5ef6541b2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-haiku-20240307/workspace/user_task_29/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/claude-3-haiku-20240307/workspace/user_task_29/important_instructions/injection_task_4.json",
+    "sha256": "94a6728c8656e46b54a7cc11c9c2f66334efa99ba2533914c9ec1f57c39727e1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-haiku-20240307/workspace/user_task_29/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/claude-3-haiku-20240307/workspace/user_task_29/none/none.json",
+    "sha256": "2cbbf3bc24ed0a4f46a9f8663b3a4ccf20c8748429f68d8df905093fe79ccb08",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-haiku-20240307/workspace/user_task_29/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-haiku-20240307/workspace/user_task_36/important_instructions/injection_task_1.json",
+    "sha256": "232b7ecc26e36edc878600da0d1ca83830ff55f13583097ef03afb565c56fc48",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-haiku-20240307/workspace/user_task_36/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/claude-3-haiku-20240307/workspace/user_task_36/important_instructions/injection_task_2.json",
+    "sha256": "4ac742b1db5f71670d9d80adbd90b4db85ecb69f5478c0561699c4daca33560a",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-haiku-20240307/workspace/user_task_36/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/claude-3-haiku-20240307/workspace/user_task_36/important_instructions/injection_task_3.json",
+    "sha256": "fb4c9a06ff90b21a79546841ab6dd78d196fab20ae736f8155dfc9574a2bceaf",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-haiku-20240307/workspace/user_task_36/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/claude-3-haiku-20240307/workspace/user_task_36/important_instructions/injection_task_5.json",
+    "sha256": "aaa1fd62b2b44d40ace866cc76f858f3aae77a71acb3a749038a6a9e73f746e0",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-haiku-20240307/workspace/user_task_36/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/claude-3-haiku-20240307/workspace/user_task_36/none/none.json",
+    "sha256": "7b98bb7c3338587c8ada81a1886ce6bfecac777a1b19fd348720b5b5feda3d01",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-haiku-20240307/workspace/user_task_36/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-opus-20240229/workspace/user_task_13/none/none.json",
+    "sha256": "3c61112713f6388739c0fb7c5f5928f1487f8edde5569f5968de313a6784ff70",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-opus-20240229/workspace/user_task_13/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-opus-20240229/workspace/user_task_15/none/none.json",
+    "sha256": "a58f7bc72c7e120f2a828d16d330a796922ba0d8c131613474dc46f840bc660d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-opus-20240229/workspace/user_task_15/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-opus-20240229/workspace/user_task_19/none/none.json",
+    "sha256": "65248b3e7abde582dce044f43f62bbf8d4f5a7277b74badd7528fb70e5499a1c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-opus-20240229/workspace/user_task_19/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-opus-20240229/workspace/user_task_29/none/none.json",
+    "sha256": "93d31d49e492d956e4e2cf403c3a13879ae8116815db8e961a3128e8a983c0fe",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-opus-20240229/workspace/user_task_29/none/none.json"
+  },
+  {
+    "path": "sources/runs/claude-3-opus-20240229/workspace/user_task_35/important_instructions/injection_task_1.json",
+    "sha256": "ab6ed4b4abe5192db7a596bdff875daa3dae9bfa33a36167e107220ff46f07a2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-opus-20240229/workspace/user_task_35/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/claude-3-opus-20240229/workspace/user_task_35/important_instructions/injection_task_2.json",
+    "sha256": "5ee588341550bd7ffef8b44cdcceced2e130551fa4828c5dea54c692bae3126f",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/claude-3-opus-20240229/workspace/user_task_35/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_15/important_instructions/injection_task_0.json",
+    "sha256": "ed4329225b9739cd407f78e64b9a29352ff35ad0a1bc2d2de1afb44e3b817990",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_15/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_15/important_instructions/injection_task_2.json",
+    "sha256": "ec2d65833c5ecede8de60699e4fc2ae6fa451ad946cd87fd74ec6e40e41d62fe",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_15/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_15/important_instructions/injection_task_5.json",
+    "sha256": "e899727de4cadaef1ede2751f692066406c901278798ad630657fb8a0fb0e29b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_15/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_15/none/none.json",
+    "sha256": "04fc7c0ce55f21642d9b956766f738fa2924a004dfd2d43327f5bed8fadb0c51",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_15/none/none.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_29/important_instructions/injection_task_1.json",
+    "sha256": "ca1c8f68b81e44b00cceaa5c83b4706fc3534e36b38d391a715d7e5e4ea10ca8",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_29/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_31/important_instructions/injection_task_2.json",
+    "sha256": "1e49c80e2622b2e8bfc00d4b5ce58dbdaee07f8067d08c03a755c144414532f8",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_31/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_31/important_instructions/injection_task_4.json",
+    "sha256": "2a9eefc15a828602f997f23dcc9ae31d4d325f62335d77cbbffabf727a938fc1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_31/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_32/important_instructions/injection_task_0.json",
+    "sha256": "a8d1e5e21f8f5a6d57dac9338ab1543c586c10487a599562071c830e197ffb1e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_32/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_32/none/none.json",
+    "sha256": "b040e7f0347ed607a354e45e750fbb9aba4343dc59b80587753348fabd2d406a",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_32/none/none.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_7/important_instructions/injection_task_1.json",
+    "sha256": "8a28aa63d799c4f2ceacf8fbf7f5193c90a05170cb5b8890758c86a7f0dc74e6",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_7/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_7/important_instructions/injection_task_3.json",
+    "sha256": "01ce80c7b189215687bd5dd7d0fe16812e96c680cdef027edf1898f215c32e9b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_7/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/command-r-plus/workspace/user_task_7/none/none.json",
+    "sha256": "d992c3a181ecb1f83903002867e231eb0148b46fd1d80e46b5d7753fee54a9a4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/command-r-plus/workspace/user_task_7/none/none.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-flash-002/workspace/user_task_29/important_instructions/injection_task_2.json",
+    "sha256": "001d2fd8998caf56746d629937ac6c65135a32a4eb59e0af756903e0c0d11222",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-flash-002/workspace/user_task_29/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_13/important_instructions/injection_task_0.json",
+    "sha256": "e4418558c5e9abcc7810329139049f7cc55d877ef38f430b987d46335035b2ea",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_13/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_13/important_instructions/injection_task_2.json",
+    "sha256": "0400e8022653c6247ac5929defcac963e1cc3b4aaa12e015e8efa49b065035bf",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_13/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_13/important_instructions/injection_task_5.json",
+    "sha256": "0cd0de07fb818e6bf7b9215af364f5da94c83d11a8f3bf5b73a97597c6037879",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_13/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_13/none/none.json",
+    "sha256": "a3777efb6158cb5112026616ee0006c91a0376ff6a7a8d4c277ca864c94c434c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_13/none/none.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_15/none/none.json",
+    "sha256": "350e1da7350e089095b76d38d2b0c2cc0b4464d224d17cd719a7fa53db073362",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_15/none/none.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_19/important_instructions/injection_task_0.json",
+    "sha256": "406dd31e3a14ba765ceff977988c5fef0b5c1e45bbada8951dca1db9e07853d0",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_19/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_19/important_instructions/injection_task_1.json",
+    "sha256": "01fe8aef71207840dd7f0ae8fc99112b8d7c0095e343e6689a0e68cc255bd2c5",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_19/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_19/important_instructions/injection_task_2.json",
+    "sha256": "b8108572f8872b2a66e32cc72f982f00305238a45881900a4bd7d0ab55845cc7",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_19/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_29/important_instructions/injection_task_0.json",
+    "sha256": "35bd3fd427862609f640fd43da0b31df2ce545106a90247ab3fc490eaa2bf51b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_29/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_29/important_instructions/injection_task_1.json",
+    "sha256": "ea35458122a981e218783a178077542942d060ecac533787b9b0acf1d0e8d146",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_29/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_29/important_instructions/injection_task_2.json",
+    "sha256": "3405ad0a1d5064676f4dd87602056c81a4ddfc3600d0e6c5a1904c3e532a1826",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_29/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_29/important_instructions/injection_task_3.json",
+    "sha256": "f1de69cfdd8db69ec8b10c6d24c18763d088d7d94b33b9feb078c4f44fc258bc",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_29/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_29/none/none.json",
+    "sha256": "a5e2d25535179559ee039de021022c6c25d5adfe18f5bde7c54e22e04013ead9",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_29/none/none.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_37/none/none.json",
+    "sha256": "db84b0d1be54fe8f37eac10325717f981c42b4e1c605152d3eae209237267a00",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_37/none/none.json"
+  },
+  {
+    "path": "sources/runs/gemini-1.5-pro-002/workspace/user_task_7/important_instructions/injection_task_1.json",
+    "sha256": "b5d241d1d988bec1cd2ac8d20f52d1a38b6485ae982ba92ac873cf6c82d01bae",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-1.5-pro-002/workspace/user_task_7/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_13/important_instructions/injection_task_13.json",
+    "sha256": "9babf07fc78a36012e38d95b65adb874fc9be3da0aef8b0f56205b63306825de",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_13/important_instructions/injection_task_13.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_13/important_instructions/injection_task_4.json",
+    "sha256": "1ffa8aac1c2e18d3d6440fd507ffeac9e6e463c31637f3cee224dd0d4af1a3b3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_13/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_13/important_instructions/injection_task_6.json",
+    "sha256": "0486fc5eb152aa64816ae9a4e0a7ceba5048f106915f558bb4252b57c4398e4e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_13/important_instructions/injection_task_6.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_13/important_instructions/injection_task_7.json",
+    "sha256": "1d3786a61479c18c299bc10fea36bac758b15316b8e997d5f716d2e97aea8983",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_13/important_instructions/injection_task_7.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_13/none/none.json",
+    "sha256": "5b5330a9bc33829d2daddfa1a80121398bfd4ee9ec0014db0678e0bdf57c0b57",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_13/none/none.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_15/important_instructions/injection_task_11.json",
+    "sha256": "31457be1f5b9f8d17150751e3613e6291c4f5f1ff4347e2805fcd66e4a4fe54a",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_15/important_instructions/injection_task_11.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_15/important_instructions/injection_task_5.json",
+    "sha256": "58ad24f77fbe8d447737d130538d091faec47a967cf0acc977e93fd63e12bbc1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_15/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_15/none/none.json",
+    "sha256": "dad61ae7187eab962e64803cbf70c5da411bd448466a8c5b76367d4ec4cf1243",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_15/none/none.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_18/important_instructions/injection_task_1.json",
+    "sha256": "873e62746f8c9007dffef741d841264e95d5fc13ead5964511bdb4d79eeaf610",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_18/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_18/important_instructions/injection_task_10.json",
+    "sha256": "b44f5504f3ca2f61e32fc6ea8e8c33025bdfa227904a685c2b64115b395b385f",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_18/important_instructions/injection_task_10.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_18/important_instructions/injection_task_3.json",
+    "sha256": "803dacee41794841cb6d2acbd405469578cc5b1edb0ee18ec85914aef27a37de",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_18/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_18/important_instructions/injection_task_9.json",
+    "sha256": "6c2d4706e1a984ab10577e383bc5d2adf98b56807c1a04ed33453b0794abdbc6",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_18/important_instructions/injection_task_9.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_18/none/none.json",
+    "sha256": "f8525fe2d5546038d4ae38a9e9b3f45a4fa498eafeaedd29faeec73ae8ce294c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_18/none/none.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_19/important_instructions/injection_task_2.json",
+    "sha256": "dc2a5b9225abae570a9b6e8fd429097080ecfa8a97191f4aa7890c3c8e22ea45",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_19/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_19/important_instructions/injection_task_3.json",
+    "sha256": "8c70ad20807ea208766da9fb4fe2f24a764747b34007b37e0b8fd5f94408e344",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_19/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_19/important_instructions/injection_task_5.json",
+    "sha256": "145606fd3368a2f36e49bccf538ebe6b97bfdf07250be19d2bffba499764a0e1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_19/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_19/important_instructions/injection_task_6.json",
+    "sha256": "0cd699dd130d86497fa484304f443437447da3d4079aadcd5e784ed84cca2c68",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_19/important_instructions/injection_task_6.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_19/none/none.json",
+    "sha256": "4d56f5e0143f5131c09c08253c6cd6d6831f7c05b485df52de5f95729f81f99a",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_19/none/none.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_29/important_instructions/injection_task_10.json",
+    "sha256": "d0eb4b9641c64cf9780703308813a472b7c0a171511a80475c861e256055126d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_29/important_instructions/injection_task_10.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_29/important_instructions/injection_task_13.json",
+    "sha256": "cec46fe038be5309e0393e97c3c233512ce55bc149d3eaee33201696e28922f7",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_29/important_instructions/injection_task_13.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_29/important_instructions/injection_task_4.json",
+    "sha256": "16634207e69f71f5bcb9a319a70f9f4a163256e8d3568ff1d9c82f816cdda879",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_29/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gemini-2.0-flash-001/workspace/user_task_29/none/none.json",
+    "sha256": "6e7f1e3c1f21e081cd4e34c22df50bc66677ff04754798b099a4775bdbad3562",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gemini-2.0-flash-001/workspace/user_task_29/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_13/important_instructions/injection_task_2.json",
+    "sha256": "6fc4b5e8a90a77d865e0e71ef5bf43de0aae6d850b7ae0b31046f7da7c3756c4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_13/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_13/important_instructions/injection_task_5.json",
+    "sha256": "6a9cc58a1dabbacc892bc12c426b54682cb7b0512b705c8bfc913bee35c4c0dc",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_13/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_13/none/none.json",
+    "sha256": "4803901f6c21997e279747da997b2d25162abd0350941640e306baaac08fce15",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_13/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_15/important_instructions/injection_task_2.json",
+    "sha256": "1ba73671e5649d39dd259cfa2a82d2f3dae853e28090662c111d73fbc9437811",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_15/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_15/important_instructions/injection_task_3.json",
+    "sha256": "1da660b5abe674dced4e90d2374a56746bbfb84305e0159a40eab988c8623585",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_15/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_15/important_instructions/injection_task_4.json",
+    "sha256": "4b82f6c950457f94e05d192824875e19da78cefb85c7393a3d5267b138ecb854",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_15/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_15/important_instructions/injection_task_5.json",
+    "sha256": "19be88cd4f4cf7006559ef56159441dccd6130e2bf0187918caa6aae9a578831",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_15/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_15/none/none.json",
+    "sha256": "611916d54af3eaa49b2d617e3a737b7bfed9eee283371831eaa31e125c8c4f8e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_15/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_18/important_instructions/injection_task_0.json",
+    "sha256": "7d095d5b4dd256e8adccf894d3914ed2ee69b85de38862249eb9de0267db3fb2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_18/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_18/important_instructions/injection_task_1.json",
+    "sha256": "793bde108d781f86bacaf8e6eccc63865edd93f5381ffc58f77a2145e934fb13",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_18/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_18/important_instructions/injection_task_2.json",
+    "sha256": "71923bfa64abf09dcc77a502916d8228dc7dec171b8f81be687d8390f046cabc",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_18/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_18/important_instructions/injection_task_5.json",
+    "sha256": "5fd16a27cc194916cbbf2ff62ddf659954ef032437e446dbdf1c8c7d13e14642",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_18/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_18/none/none.json",
+    "sha256": "34693baf7b0dacd4db150eb19ad1268410831d4d6fba53d4a0c5c4a5b6652503",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_18/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_25/important_instructions/injection_task_1.json",
+    "sha256": "6dbc7449f8bb1fe595316bc9f553cc28a6ca11ad85f540f8798af0597dc16b10",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_25/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_25/important_instructions/injection_task_2.json",
+    "sha256": "2e44df38285874d5638369055133b70a4de071373923b685ef395f7d96df1b86",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_25/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_25/important_instructions/injection_task_3.json",
+    "sha256": "7386f77f654497956823adb8f435566f4e7d833c3cf228298d1934a4e6d1440d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_25/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_25/important_instructions/injection_task_4.json",
+    "sha256": "a2f3aedec09cc7f955079094afc602b080cb38850d11f2fc32a8deaa4475ac53",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_25/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_25/none/none.json",
+    "sha256": "bcd376a6cc6a98290970eb6d1a62f1bab1dcbcecd4405d16445dd8dab670654c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_25/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_29/important_instructions/injection_task_1.json",
+    "sha256": "ab5a346d1f6ecdccb784b8922122075f5211fe220763fd42496f8d4ac9707ee4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_29/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_29/important_instructions/injection_task_2.json",
+    "sha256": "688185b8fc488550b78ab83a6adb6f3c711729a93af5906454d02d874d94a9ae",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_29/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_29/important_instructions/injection_task_3.json",
+    "sha256": "249017f49d1141a3eef28157cb8fb857618ebdd98b97abf5ec9234ab668c0482",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_29/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_29/important_instructions/injection_task_5.json",
+    "sha256": "c71a1756fff2c98362b69b8ea1c1ce065bab99c84f45f365e847e0523b30cf84",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_29/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_31/important_instructions/injection_task_1.json",
+    "sha256": "0528b0c5003565b2034548819dfe5fee67e7b83c89190b2e1142dca3d0b798c0",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_31/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_31/important_instructions/injection_task_4.json",
+    "sha256": "18403715e75d30f27f08f73e6476016e31c40ed029b3c9a031fa23eabe265d31",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_31/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_31/important_instructions/injection_task_5.json",
+    "sha256": "ad3b718956b25618c8158b2ed9c8ac0f23b56f3779178f45fecbdfede4c14a5d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_31/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_32/important_instructions/injection_task_1.json",
+    "sha256": "a638236c18def61daa9b90f4891da2ea9824bb0bc4d8118c06c4fc9dc64fdf1e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_32/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_32/important_instructions/injection_task_5.json",
+    "sha256": "a6b979a26007ee9ab6053de9630cd5d70c8c5d3facb517d1bc779c7981c6ad48",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_32/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_32/none/none.json",
+    "sha256": "40f1ac4018882dbd7be130c26641c49bf437dabc0f31ed7fa9ec63b7233166c4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_32/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_36/important_instructions/injection_task_0.json",
+    "sha256": "b4b93c20e1d6ae67214f83de2687440b769916065d3e579d1bd163b4533e8a99",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_36/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_36/important_instructions/injection_task_5.json",
+    "sha256": "8056189c93e4da1ebf1a0716d3822fc42487627ed7ebf4aec52c784174b678ff",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_36/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_37/important_instructions/injection_task_1.json",
+    "sha256": "c22a87af65af64fdba2c6cef38a3b3536a1885940fafd399307c1b27aa6a8695",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_37/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_37/important_instructions/injection_task_3.json",
+    "sha256": "9a8f5cb2c743266dd2af440eb6e0b8b6226d2e9863b7e8a981c490e556964d87",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_37/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_37/important_instructions/injection_task_4.json",
+    "sha256": "0b0bc2f200188be7b1fb4cd16ae2d8e6e012664cfc4f8810b94a40ffac9402a9",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_37/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_37/important_instructions/injection_task_5.json",
+    "sha256": "aae0d2630e39e9ceb80596acdc38ec3ce32a08e1cd1cafba303f24ef750b8868",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_37/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-3.5-turbo-0125/workspace/user_task_37/none/none.json",
+    "sha256": "cbe43139937139211fb213c906d936e9cdc99afe4ec442f68da0a0cbb4acad8e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-3.5-turbo-0125/workspace/user_task_37/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_13/important_instructions/injection_task_0.json",
+    "sha256": "797bc73e40ee5a8219029964cc5d3066df7996c8e9697063f5f2ee3a62d17308",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_13/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_13/important_instructions/injection_task_1.json",
+    "sha256": "5ea60bf18bf479a1853c716aae3660e062764229b1ad1328c7e8945673e3d753",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_13/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_13/important_instructions/injection_task_2.json",
+    "sha256": "16b976ab4d6e5cfeb77aa7118bdc19df4e80151f67079b97bb7125fd82fb3f77",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_13/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_13/important_instructions/injection_task_5.json",
+    "sha256": "2fb60c7acb413c71251bff675f20d1c2f802eae5f0567f640fc6f7e291f97fd0",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_13/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_13/none/none.json",
+    "sha256": "72c20f7f91abe1df3d44e2b179d138635004850f464b0a7f8f7aff175a32db40",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_13/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_15/important_instructions/injection_task_0.json",
+    "sha256": "a02df4e9af893b8383850bc928d62ef15419801e31d4b60acb3b85fb86b64cdc",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_15/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_15/important_instructions/injection_task_2.json",
+    "sha256": "7eaa0c0f3daf45dc6e73c8bd70b8686693ed64b264527ac473ea39b613fc4902",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_15/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_15/none/none.json",
+    "sha256": "5e4558d7ec7ce7ccffeb3c1bde07fee535c4903ade6284a56c640db87b654d9c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_15/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_18/none/none.json",
+    "sha256": "f395d85adc461f48ebf0d47d5b15c1f3ce43f9b12acba22af31bcdec0c77b1ee",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_18/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_19/important_instructions/injection_task_0.json",
+    "sha256": "8dd841b708986fc84bfc049c154ff8955ca8b7972b37b8b267f3bd4f9e581ed9",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_19/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_19/important_instructions/injection_task_2.json",
+    "sha256": "70eb7be4a4f8adbdc21878cccac139d6e6427d825f9f19a06c09ed0e3fa48b80",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_19/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_19/important_instructions/injection_task_5.json",
+    "sha256": "b28407ae7cdb7e3e3f53c410aefc2ada91678165917eeb8291e10e824c32b207",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_19/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_19/none/none.json",
+    "sha256": "7c9c9faba54a8fc230403eeac49f6eaecbb27b024ebca11a21cffc63aeeeded4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_19/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_29/important_instructions/injection_task_1.json",
+    "sha256": "fac34ec67fb55b4a3bfae51eaa12146019bb392f4ff67b38ab2bdecfb9922e29",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_29/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_29/important_instructions/injection_task_2.json",
+    "sha256": "cf4f931b81d0e553e75bb33514b53a1b299a0eeb244fad7cb5f4e2783d10efb3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_29/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_29/important_instructions/injection_task_3.json",
+    "sha256": "db31f7d033c2b94f84952ddb821e9940825420de809d1c38c99fe36c1ce378e0",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_29/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_29/important_instructions/injection_task_4.json",
+    "sha256": "02fd39fcd9a62b0b7393a463f697bb7dd745bb2233763f0330e28557d939d7bf",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_29/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_29/none/none.json",
+    "sha256": "b7e4da1e8f7e4625d7a9d2a19000f33d52c528ac67e40e4e39c11567a690333f",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_29/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_31/important_instructions/injection_task_3.json",
+    "sha256": "069eb9e0a0d909cbda1a36a973eab688c258bbcb08b89d80fccec5aa07673701",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_31/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4-turbo-2024-04-09/workspace/user_task_36/none/none.json",
+    "sha256": "fbcf2e58162441bdb387f8573107960e0e57772211d65c14de5edb495015d546",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4-turbo-2024-04-09/workspace/user_task_36/none/none.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/captcha_dos/injection_task_0.json",
+    "sha256": "af2520d769a06354f3ff11873c116041fc79534d6f608a28ad6017dd745db647",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/captcha_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/direct/injection_task_0.json",
+    "sha256": "011d3b1cc75df3f7c468ddf82645bb8f00293ccf305cb5f56b6abf52a5b375be",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/direct/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/direct/injection_task_1.json",
+    "sha256": "c3949e66d086f44be9c408246155f9bfc4923500ed19d7b61cea3d9775c7d2d1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/direct/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/direct/injection_task_3.json",
+    "sha256": "ccfaa506132a38f546d51fc56e57aac004b966893a68ef630383fa159a9f995d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/direct/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/direct/injection_task_4.json",
+    "sha256": "a9cdfa6b73a1adf0585d8920ccb1d083d42a4cde2aff7fbf9c57ca32dc3325e4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/direct/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/dos/injection_task_0.json",
+    "sha256": "408cfc77361b4685f7647a0ad90348c7a81321c2f6051d3dfc900ae1844cf702",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/felony_dos/injection_task_0.json",
+    "sha256": "1c01bb0c32b4d7631c558d037c2b67cb49d766a3de1a4899634b28df6f553573",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/felony_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/ignore_previous/injection_task_0.json",
+    "sha256": "17b67f6af19c069b0e2e6a8563771448b7509e243db1e61998a253be9e4ff375",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/ignore_previous/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/ignore_previous/injection_task_3.json",
+    "sha256": "0d6f8b30a4ab8be0fd480760440798607f444fd08508032eef5f7c5a67192f45",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/ignore_previous/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/ignore_previous/injection_task_4.json",
+    "sha256": "3a49d958a550dfcdd8906570d8bba2dcc4ca71f6ec78a0f065d798aa57dfa919",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/ignore_previous/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/ignore_previous/injection_task_5.json",
+    "sha256": "c05e5f63653b29c9065a719849bfa12e0d97e8d992f85b9785eeb941037327f5",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/ignore_previous/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions/injection_task_1.json",
+    "sha256": "451fb2b76678352673f517464434599e1b82fff9a47c5b0e00979ab502243467",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions/injection_task_2.json",
+    "sha256": "acd90eb56330010515ba3208776977c3ab04d8c1b7e1dc0b50a60f49b57f2d94",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions/injection_task_3.json",
+    "sha256": "648097717c338a6aeabcfc4dd1fa029e88e770fcf1dfe200fb97758187f22b51",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions/injection_task_5.json",
+    "sha256": "deaa5408eba2dc270949c3ab03976784d008a9e2da1d2b849d98a5ac4f3d1961",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_model_name/injection_task_0.json",
+    "sha256": "524cbcb6be2fa1ed2b4a5ec4f097a2316244dccba70c7cd95e6cb1fed6c742f0",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_model_name/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_model_name/injection_task_1.json",
+    "sha256": "2981acba980a1d301f174a8db875a4f03884827bc241c3dce6cf90529f327cd9",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_model_name/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_model_name/injection_task_3.json",
+    "sha256": "08a0ea6ffde440ac83f43a0b684d27bd7110e1a8b7a65fbd3a0c0cbf77979077",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_model_name/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_model_name/injection_task_4.json",
+    "sha256": "32cc07afb49081aaed28dff84625619a1713b3ad851369a1c00c824653593147",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_model_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_names/injection_task_0.json",
+    "sha256": "2e9facb1472897c0757060d8e52f0e0ee8bc37a2c894a1c2a163f34f9c1c9bca",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_names/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_names/injection_task_1.json",
+    "sha256": "c69f57dc5af3d6c8ba2bb4b59a7ff00b13f58fc7a43ce5f613cea1c41f46d30b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_names/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_names/injection_task_3.json",
+    "sha256": "eccd2fa916fdca1bc2bf7be7e739743d83fb4f2a94831602c729a41d04c2100d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_names/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_names/injection_task_4.json",
+    "sha256": "4fc849c6554c1ebe0ff1091f3bcf3b2e98f47f512965815130504ee2c58ad683",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_names/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_user_name/injection_task_0.json",
+    "sha256": "3887b99084b18178c0c327c3234567db74dc74cf3986de11db1be9f73d213c22",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_user_name/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_user_name/injection_task_1.json",
+    "sha256": "045f593d5373d5d43ffb258719923e56d8d38fc23b960fa999b2ef60339bae78",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_user_name/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_user_name/injection_task_4.json",
+    "sha256": "c9dd3c844d0b9855bd8f5c4925d6f7fbd794e3abc138b0673d6db2368ee758d6",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_user_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_user_name/injection_task_5.json",
+    "sha256": "0b5f121762d8348416b9ad5e8137679b0339d49d8610a27d132a05b6f4083c39",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_no_user_name/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_model_name/injection_task_0.json",
+    "sha256": "da8f7fbaca4652d8162ad7c58f73e6be3755e04dee92bd1d3e8a5a542499858a",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_model_name/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_model_name/injection_task_2.json",
+    "sha256": "ddb8bd7bc2dd493ae5ccf90cf3c652091aab65b6ce085cec9eca0aff47f83033",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_model_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_model_name/injection_task_4.json",
+    "sha256": "91ae461b62bddd5fead6fb06e1766e54677b68b37355af667e3b4675a49ac49b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_model_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_model_name/injection_task_5.json",
+    "sha256": "ae4b20ab5b4c96aef9f779d1b237178213115a92629e0d63e42bab457fd38224",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_model_name/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_user_name/injection_task_0.json",
+    "sha256": "79db21cee81d2f6cac79e0851169da3503147f68b8d18dfb83ea6dbb810f9a6c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_user_name/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_user_name/injection_task_2.json",
+    "sha256": "8e7b1a1b2d8c4af153bb03b42ed55803aeccecf194de8831d82dc1aeb4813740",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_user_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_user_name/injection_task_3.json",
+    "sha256": "da3e368814088b838220aa2d2f6af2937d1f0caccfad7967bc032e57d8c720ac",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_user_name/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_user_name/injection_task_4.json",
+    "sha256": "34ca7d41f59c3fa51687958e21c58e5eb819b14979b4c1876c1e0e7ddbc60d7a",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/important_instructions_wrong_user_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/injecagent/injection_task_0.json",
+    "sha256": "7743a668323c6f8ea4a0ba5058daae46f3f4b5846cebec683ca7ce8d5df21186",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/injecagent/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/injecagent/injection_task_2.json",
+    "sha256": "6e75cbdd7c08bf6c612c9752cbde737efbeac57c75a817093dffe48a8ef5cf48",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/injecagent/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/injecagent/injection_task_4.json",
+    "sha256": "84dd3a98b5d681e820208ce44a2e74aa848457abf8ee45ae332a28369e216837",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/injecagent/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/injecagent/injection_task_5.json",
+    "sha256": "15d4f446f620c4ce397de16074160250bb854220d796eb2fb988a69095768eb3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/injecagent/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/offensive_email_dos/injection_task_0.json",
+    "sha256": "14c3cb858f307cef80bede687204fb1fcc936afedf98025f83d0df267c5ca4e4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/offensive_email_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/swearwords_dos/injection_task_0.json",
+    "sha256": "8fda0d10d7ebf3c900c669e32ceaff8e5e7dc2522569ec46c526ab9057a9ca4e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/swearwords_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/tool_knowledge/injection_task_0.json",
+    "sha256": "886197014e8df61eae0e0feceb28f1e7f2ff140a0a582057c15bda14bd3c29ff",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/tool_knowledge/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/tool_knowledge/injection_task_2.json",
+    "sha256": "9aa118f9f5a292449eeba2afa7b4bdccbe9c39d592033606d81eadeec45ad6ea",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/tool_knowledge/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/tool_knowledge/injection_task_3.json",
+    "sha256": "bb4efd678d7f096d02a2c0f3c28243e75ad65304ad2aee7957c81c1723bc67e1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/tool_knowledge/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_13/tool_knowledge/injection_task_4.json",
+    "sha256": "53baabb1625cb69bd734b2210325f6b705f03ff74b4ebd3659becc444c6a3c49",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_13/tool_knowledge/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_15/important_instructions/injection_task_5.json",
+    "sha256": "f2e28519fb6a5863828d8b45830aa61c6c3cbfe03e24049d11147b9e244914c3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_15/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_15/important_instructions_no_model_name/injection_task_3.json",
+    "sha256": "0a85a28a4d4b4a312b3859b4091ae87ece91eda1882d13e72138025645caba7f",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_15/important_instructions_no_model_name/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_15/important_instructions_no_names/injection_task_0.json",
+    "sha256": "1068dcb5e88454fb7c5a2783e89d3638b31a0e6fd3163197a281c2394eec8082",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_15/important_instructions_no_names/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_15/important_instructions_no_user_name/injection_task_0.json",
+    "sha256": "6e1cffa97b5e2fc7318922f428780c40b7a019ff4b0254e12fc0d62c22534c9b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_15/important_instructions_no_user_name/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_15/important_instructions_no_user_name/injection_task_2.json",
+    "sha256": "c5056b4ea8ff71517366e40c1ad9fb8b75d15fa8d460fadfe5ecca790e521f25",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_15/important_instructions_no_user_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_15/tool_knowledge/injection_task_2.json",
+    "sha256": "9a47843770092a4d669ac1d4568f4bce570e91da799482f3a2f2127c1faa2934",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_15/tool_knowledge/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/ignore_previous/injection_task_0.json",
+    "sha256": "45e24a9b826f0d89287242c60b2973a9da1cb62558cb0f9f14cbd3bb5d50aa1b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/ignore_previous/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions/injection_task_3.json",
+    "sha256": "edafad090350f7db1c0f63e9340f2d7984f149dee664e613b76367f2ef72d2f3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions/injection_task_4.json",
+    "sha256": "e2f2d3efb05bb274f3e490599be171cb94ee93111d87aaa20b8789bab793760f",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions/injection_task_5.json",
+    "sha256": "6a489ce25ee160107a811cf3db02bd71ba5fa4095d24a2332ce2ab99f4e14b8b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions_no_model_name/injection_task_3.json",
+    "sha256": "837d3e0b9f413a0b77eaa84decb059f8b53d6bd673d77e68db9b04d42beda32a",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions_no_model_name/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions_no_model_name/injection_task_4.json",
+    "sha256": "f4b6eee4a83fd58ec823956df17630ca190dea2db9b5c8297b7a8193b26dd44b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions_no_model_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions_no_names/injection_task_3.json",
+    "sha256": "43ce957239e850b08bfdbc17e5633516d8a5907c1b0e22477f66cfdac8362a4f",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions_no_names/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions_no_user_name/injection_task_2.json",
+    "sha256": "d751f2a2bb4e213e6257048b3389711487d95863cc347bf8758c72785495cfa7",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/important_instructions_no_user_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/injecagent/injection_task_2.json",
+    "sha256": "d9255e7ec149dcf26ca0d0c3647fea3e64916cdff1b247086869540344d6be91",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/injecagent/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/tool_knowledge/injection_task_0.json",
+    "sha256": "a2113d2012c3481b85f70d99e305e2721ea61c9dec28a7bf20a8bd147c917a44",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/tool_knowledge/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/tool_knowledge/injection_task_2.json",
+    "sha256": "b8066defb2620a43ac94e5c6d7966e7478a89032307ceacf2cbe950b79daca91",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/tool_knowledge/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/tool_knowledge/injection_task_3.json",
+    "sha256": "cb468c7ed5f33761098ecf9ca5c9484e1580ac802031edc7eea432a06a9e2de8",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/tool_knowledge/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_18/tool_knowledge/injection_task_4.json",
+    "sha256": "f7105ee7bd6da051a107e6e2526c0dd197c6311487088972a7551ccc67763fe8",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_18/tool_knowledge/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/captcha_dos/injection_task_0.json",
+    "sha256": "1d20b98ede1c3582533dcf07c87ee30942753cf027b96052ff2a40d848d03102",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/captcha_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/direct/injection_task_1.json",
+    "sha256": "4ffa716b16b6ec154b6b486d64732c69be91ccae08e712386700f9b46d8dc754",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/direct/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/direct/injection_task_2.json",
+    "sha256": "4c05860ff877c9cdd618704f7e7dd687a8fe3161a8daccf1b195aa236b11da37",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/direct/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/direct/injection_task_3.json",
+    "sha256": "c065e81f0ef3132479076430ff2d1a889b9db5db7fb425a54978ce4c0a8ab15e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/direct/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/direct/injection_task_4.json",
+    "sha256": "ea203ecb16ef3e0218a8b62ee72313263ef13469ca00786378f0a13dc2d4c8ad",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/direct/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/dos/injection_task_0.json",
+    "sha256": "d69fa09204ac4f6f39ffffdbd1a3fbc79eef70c34da8ecef8e0bbeff399eb168",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/felony_dos/injection_task_0.json",
+    "sha256": "0d2f86a8f222842989a51f11168cb2407c8f9c01e147e4fc03650715988ea55c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/felony_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/ignore_previous/injection_task_1.json",
+    "sha256": "3f3e6c18f27c6fd3dc0b123aa09d0cf9534141da6e9d8cafb2c5ba8989bcbdf7",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/ignore_previous/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/ignore_previous/injection_task_3.json",
+    "sha256": "319853bf8326b2bb99063131fae28fbe36eebc0e6d90f52656a7735658bc1e58",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/ignore_previous/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/ignore_previous/injection_task_4.json",
+    "sha256": "6cb6e749f65f77458fb97683b5e425d4ba604a7aac3ee3e777c719375c36d8b7",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/ignore_previous/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/ignore_previous/injection_task_5.json",
+    "sha256": "fabc33e08203dff8471c0357eea9b753fdc2f2248ab32cf70dcba74f007d5717",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/ignore_previous/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions/injection_task_0.json",
+    "sha256": "da5ecfd867e2c7cb7b66d14a4019c8a80372b1f5d091694b41a7356ae74af51e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions/injection_task_1.json",
+    "sha256": "a9fb312bebfb5540a6d6921f4813d4e7a364f2ef4c793c474bfda1f395cc0e8f",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions/injection_task_3.json",
+    "sha256": "5649a2be9c64feab2974e1890b25a0c21c0a672cc9495fdead52bfcd158791e1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions/injection_task_5.json",
+    "sha256": "a424302245796fa90ed3f46e23f2097f01ae6254bf536abc7ae7a389adb17cf5",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_model_name/injection_task_2.json",
+    "sha256": "929aff55d33a0dc596a3e0cc95f54b9b782e0dc0cd69b39e40dde63bfc6b87c2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_model_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_model_name/injection_task_3.json",
+    "sha256": "dfa9edad047ff8c64a97514f21bd24234042f947aad946c316e63ece7e28af5c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_model_name/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_model_name/injection_task_4.json",
+    "sha256": "c5822bdac45d08feeb1d25fbba9b3719b8470cbc22aa0d92428671019831cf76",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_model_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_model_name/injection_task_5.json",
+    "sha256": "07b659809d414d766e62d75312f95ed8847d9d948895950c7e8968b56c3ff4db",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_model_name/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_names/injection_task_0.json",
+    "sha256": "718a2b67ae2e8ece5789b1c14b552cec90d61a48289abd18f7392215d951b494",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_names/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_names/injection_task_3.json",
+    "sha256": "36fc4063625723bbee5c51037d7fb54225aa4f03b0c8f187b98f64232d1852ab",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_names/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_names/injection_task_4.json",
+    "sha256": "809806fb11ae9276c8613261b4a5b588076e977e95d9da9ae6932c4bbcb090a4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_names/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_names/injection_task_5.json",
+    "sha256": "6ac570d2573ddd98c342c9351c7979c2293d3bbb4c3aa300ea4864b4bb2e0fde",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_names/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_user_name/injection_task_2.json",
+    "sha256": "2345a2399d7785a1bee469ef51aad7f654fa5b0a135b87a36d1ee275382b1d88",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_user_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_user_name/injection_task_3.json",
+    "sha256": "a001d0c160c6677cad7131b29258d3ce1db9e221adfca6bcee777b8b64620889",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_user_name/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_user_name/injection_task_4.json",
+    "sha256": "e0d6699353f702866b867d11c274ffeff18f51eff425078577b15ddcc2626ad0",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_user_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_user_name/injection_task_5.json",
+    "sha256": "5032de3ada4766cfd374d6fa08f6745a81633861359ad2a4d383e5f94423efc4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_no_user_name/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_model_name/injection_task_0.json",
+    "sha256": "d559c33d5a097c965482b00b25415fd9bad161f3d43bae5d6b26b0899451e5ec",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_model_name/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_model_name/injection_task_1.json",
+    "sha256": "a0dc8170276e408d48f53480f07f6aee898ef18cca4a80d1a4604ef1f9f28c68",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_model_name/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_model_name/injection_task_2.json",
+    "sha256": "dc69662c11f33c8511ba6b653d0d2aab6fe8cb0f5c8b7da3bd4be0e63902cd18",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_model_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_model_name/injection_task_5.json",
+    "sha256": "cd44097168fd28378d7c9c728d50996d93ca2af9564fa33cec029abd1dcd51b8",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_model_name/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_user_name/injection_task_0.json",
+    "sha256": "f2f59758ae340f3b3c3b51b97143d8f25e855e97167af464ce62935623d49116",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_user_name/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_user_name/injection_task_1.json",
+    "sha256": "ba5b4289606d1eef7f7018b32e89e096bcac3b0df1e30e12b5be0fd6e1a450b3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_user_name/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_user_name/injection_task_2.json",
+    "sha256": "a39596441eb8ccee093ceadad4119b4ba800ff013766cce2eea5a9446f60ddd9",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_user_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_user_name/injection_task_3.json",
+    "sha256": "51b0dfd02b1d17ef1d93c370b09bc3fc3beca269f2cd895c0f89fa14539e8638",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/important_instructions_wrong_user_name/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/injecagent/injection_task_1.json",
+    "sha256": "3dd9f5ff427b257ca70039927516e56b9a70fef86daa2d1c7916be71a2ab9658",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/injecagent/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/injecagent/injection_task_2.json",
+    "sha256": "9cecb20510e3bd4fb0f179a57f6f8bd1f346745eb894ad25c3b928d38dde72f1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/injecagent/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/injecagent/injection_task_4.json",
+    "sha256": "533944ecc54f2350a0e3850d4d7e87a54b19ced2d376cb30c93fa6e8acba74ec",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/injecagent/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/injecagent/injection_task_5.json",
+    "sha256": "b20c53e1c0b86678087151c7ccb7602823e8622c28793468c4c4bd373510cee9",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/injecagent/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/offensive_email_dos/injection_task_0.json",
+    "sha256": "359604982df0a148fdf3165c03864c6c707129c7f229a5072160e71a9b86a216",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/offensive_email_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/swearwords_dos/injection_task_0.json",
+    "sha256": "e7e1c29136c758162540fecea362ce10e7a1628a265edf81b1d43202c6f6c8ed",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/swearwords_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/tool_knowledge/injection_task_1.json",
+    "sha256": "69425a0072fa067f709fde37bc82bc86eb94c5bec2dcb1d4cd61df7ff9018653",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/tool_knowledge/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/tool_knowledge/injection_task_2.json",
+    "sha256": "2840cc310399b95488f6d008d00e996658aa5bad8efe78e0963e7bfb77b9574d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/tool_knowledge/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/tool_knowledge/injection_task_3.json",
+    "sha256": "8e2eb81a547f01ec84236050c1e1da8c1eb9e0d215ebce5ac4d248bc7d69bb02",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/tool_knowledge/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_19/tool_knowledge/injection_task_4.json",
+    "sha256": "876e5bfce2d5af644c57aaf5440b65ef233d947635ac8af7bdf0353a8042ab2d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_19/tool_knowledge/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_25/injecagent/injection_task_5.json",
+    "sha256": "12c888e33741d4c65b19be099e1897b29e6511478aca0ce8cbc7e9a41e723dba",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_25/injecagent/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/captcha_dos/injection_task_0.json",
+    "sha256": "2d63e760774ef7f45ee350910a4d9a88446833e624be8aef5719a1739d959f09",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/captcha_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/direct/injection_task_3.json",
+    "sha256": "efd01507cfdbe0513d76f9f0b6266b1e077bad7b01fcca2fa69584e443eb04ea",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/direct/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/direct/injection_task_4.json",
+    "sha256": "c43f8771e5284712dc232318582a3b3419a7e93394adc2e50c481182a1c41756",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/direct/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/direct/injection_task_5.json",
+    "sha256": "7a905bb3d3b7294e11a8de6cb06bc617651b969d89b877236110041617bc354c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/direct/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/dos/injection_task_0.json",
+    "sha256": "2ba21222dd355e1b2b70de715a6849a9066e3d3a65809e03dc1bcf8727b0eb45",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/felony_dos/injection_task_0.json",
+    "sha256": "952abded5b7963816f296498fd3c46932e35229d0cc6b7d85a5700733912f6e7",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/felony_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/ignore_previous/injection_task_2.json",
+    "sha256": "678f8ce1dd9dbcbfe9fb4b5b342c2ab9aa12532d9862bafe943b282d762d2eb3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/ignore_previous/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/ignore_previous/injection_task_5.json",
+    "sha256": "958089879f9d18c25a17777204bff289aecaf2291f624be2c7c407bb3c3a0b99",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/ignore_previous/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions/injection_task_0.json",
+    "sha256": "5eb5384239e5dee3258b219772cb5b2806dbcf7d1e7ad1d51f38582064853984",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions/injection_task_2.json",
+    "sha256": "23911dfe9d3233645f9f18f07aab181d0dbb5376258911ea48f209f096c5e6af",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions/injection_task_5.json",
+    "sha256": "e580e12c15cd7e071985c121fdff392519d6e4feac6a347d1cd3b94da97e8d0d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_model_name/injection_task_0.json",
+    "sha256": "a68f18106e136ab049fe3476611d02289ca81c880b974b2e8ae3c012729077c5",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_model_name/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_model_name/injection_task_1.json",
+    "sha256": "209bbdda9b1b3255b33249240323256282d8a12d6a1c341a076bfa72edb7da79",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_model_name/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_model_name/injection_task_2.json",
+    "sha256": "e8096640e7ae48d45b9e99b70097ad2cabdf6b1ac1e878385c7b49607608e0c2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_model_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_model_name/injection_task_5.json",
+    "sha256": "9ff194333f768b6b50ef4754a374e037fbfd2445b942776bfe9c098e322fc6e7",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_model_name/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_names/injection_task_3.json",
+    "sha256": "6403ceb5c16b09ddeb807c03dc1b996caadf8071dfa7b80f47cd0cfd99cb46e3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_names/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_names/injection_task_4.json",
+    "sha256": "5201c9a055b90f86d97d60db0d4c21268adad61d348ab6226769b2d7a79268bb",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_names/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_names/injection_task_5.json",
+    "sha256": "6a7068a4f53ce5a068b5c89d682865203be9461bfbf2541605233975923d672b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_names/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_user_name/injection_task_1.json",
+    "sha256": "9c2edbebb4a3d3e933a9bb43ad7c23a1a028506c5dac8eb4ff7b79dbcc383bce",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_user_name/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_user_name/injection_task_3.json",
+    "sha256": "2503e60854ff0b36d2b8f6bd0964cca47bc3f13574c76ba8b199ef683cebf249",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_user_name/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_user_name/injection_task_4.json",
+    "sha256": "8209be36dc6711fb84239197c1d78aad0086e1324a75ea311afcd386f55dfb48",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_user_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_user_name/injection_task_5.json",
+    "sha256": "95a9abfcb658e063adbe964df0676482f2380a8d044f311ad8d9be67a0aab865",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_no_user_name/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_wrong_model_name/injection_task_2.json",
+    "sha256": "f0202de5d70d4cfde7f0ed5f68a547d4a99840badee4c5f9a3eb30a85afadfe3",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_wrong_model_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_wrong_model_name/injection_task_3.json",
+    "sha256": "9d40d033578cc2f4dcd78ebd6a2a8e8f6ca6bb713c03457d78e8589cd5acb340",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_wrong_model_name/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_wrong_model_name/injection_task_4.json",
+    "sha256": "210d234e8659a63425344db6a781e6fee18032d4c0c393b49b8673d9a6a285b6",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_wrong_model_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_wrong_user_name/injection_task_4.json",
+    "sha256": "d628cb53857ea4960dbc76f123a6f03c363918b3c4b071f3b58bf57a1dd2056d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_wrong_user_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_wrong_user_name/injection_task_5.json",
+    "sha256": "e785f413df052681a39599c52f764a539eb8bcc8b94c3aa1b8ebd4e03c0cd26c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/important_instructions_wrong_user_name/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/injecagent/injection_task_2.json",
+    "sha256": "686b4df261a2d24d09685ad4ef0de15e049b2d2861cc86c2a9020bc782555caf",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/injecagent/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/injecagent/injection_task_4.json",
+    "sha256": "4b630c507537b0d1bb53d6afd8ffafa2f0a1f1c7565a7462071af29b80eb67e0",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/injecagent/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/offensive_email_dos/injection_task_0.json",
+    "sha256": "3a3a246766c75632effa3e93ea7ed8c4b68d1762798ffa781af59a96e675015c",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/offensive_email_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/swearwords_dos/injection_task_0.json",
+    "sha256": "5d9639bbefcc5f2dc49c4cce786af65b884a4507ec27e0e9b11facb41d51c34d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/swearwords_dos/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/tool_knowledge/injection_task_2.json",
+    "sha256": "592aba9e9b59041e0be917e937bcec74afa5c03d4c0b2a202c34c333661968b2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/tool_knowledge/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/tool_knowledge/injection_task_3.json",
+    "sha256": "5e35c1d6855e47959ede951e7ec987252a95dab97692386f2a8436729acbda71",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/tool_knowledge/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/tool_knowledge/injection_task_4.json",
+    "sha256": "1985cad652dc9dcb57304081293c86f50ab47f829317316114927874623c98f4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/tool_knowledge/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_29/tool_knowledge/injection_task_5.json",
+    "sha256": "a3c198249c541732af634f4123db4d3b87ccb72a6c1b4d5fc579955514ce260b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_29/tool_knowledge/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_32/important_instructions/injection_task_4.json",
+    "sha256": "36f287240f2241d65828a06c1022247338490f14fd4f2ae10014016be423d9ac",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_32/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_35/important_instructions/injection_task_4.json",
+    "sha256": "073794be5dfedab49f4515fdfd8614e58118761f4c73a320cb16f3723e905660",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_35/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_35/important_instructions/injection_task_5.json",
+    "sha256": "d9c2c5a228fbeba6d146cb1423ffc2826ac4cb6205fff184d2723ac27782752e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_35/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_35/important_instructions_no_names/injection_task_2.json",
+    "sha256": "f8a80ad586fffad8a2f5d6a2f6358b3e4ae2532a96b07f5076936e5cb380a1a4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_35/important_instructions_no_names/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_35/important_instructions_no_user_name/injection_task_0.json",
+    "sha256": "5d650b3b9d1efb36a93e976052d6ff4e991af14240c9b2d66e43f2ae8f710055",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_35/important_instructions_no_user_name/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_35/important_instructions_wrong_user_name/injection_task_1.json",
+    "sha256": "ae7d1b36b680a11cfbf1158fffc712f857191907653300f8cbaec4a330ff45ec",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_35/important_instructions_wrong_user_name/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_36/important_instructions_no_names/injection_task_2.json",
+    "sha256": "57c86b660428c1b119c7892dbddbd749f223ed3a7752ea8d501df941888b11e5",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_36/important_instructions_no_names/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_36/tool_knowledge/injection_task_2.json",
+    "sha256": "7f10189c52807ad3bb4a13bac7f950576aeae86777f924c2a5b7b1d457fd570e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_36/tool_knowledge/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions/injection_task_4.json",
+    "sha256": "b821db6117e6693ca346be0ed05d4d0e472777d89e8267dc1d01bfe1163fd9ba",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions/injection_task_5.json",
+    "sha256": "7b1df598dbaffc98e9d7f8bbcffa9b43b32704722179237c52466039948242ee",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions_no_model_name/injection_task_2.json",
+    "sha256": "2907b0f77f95baef695faa15e6d485a22c5fe1e246c7fc918d87ce0696f43540",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions_no_model_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions_no_names/injection_task_3.json",
+    "sha256": "86a580e5b11566018b0c13f590860824e2f8cd1b7645b4230e0dacbbf723d96d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions_no_names/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions_no_user_name/injection_task_1.json",
+    "sha256": "819593f788fe2d69eeae1aad3de3aa98544064f60901d45ba50ad6e58456c00e",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions_no_user_name/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions_wrong_user_name/injection_task_2.json",
+    "sha256": "9e44cc2febb14e4b14646a863c32e2e332e826c04d088c6d4eabbc2a84a66820",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions_wrong_user_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions_wrong_user_name/injection_task_3.json",
+    "sha256": "8373b52fde9dff2329b9b0eea133e8c7a18fcdd2d788abdd1c452bda888e85c2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_38/important_instructions_wrong_user_name/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_7/important_instructions/injection_task_0.json",
+    "sha256": "f6dc219149c6549742bdac89e96b6a2fd67d6738c635aeba0188ede0eca6f35d",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_7/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_7/important_instructions_no_model_name/injection_task_2.json",
+    "sha256": "16385f5e2e7733cc9b59756c5e223fc6dbcce894d305c9b2f04b84854566fefd",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_7/important_instructions_no_model_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_7/important_instructions_no_names/injection_task_2.json",
+    "sha256": "a03fcc8912f967449366e1f0b7f4d2aed52d920323f0ad203bd47665e207ac62",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_7/important_instructions_no_names/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_7/important_instructions_no_user_name/injection_task_2.json",
+    "sha256": "801a70f31758b0770c77634dd980f51328f7ac2cda11c63caa2b332815a89120",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_7/important_instructions_no_user_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_7/tool_knowledge/injection_task_3.json",
+    "sha256": "8d3069706200fd83c3d6c5dcf37d52dafa05d28fc042a08cd3310a3f94e1b09a",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_7/tool_knowledge/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions/injection_task_4.json",
+    "sha256": "5b00fbe52812225ac2e346b9ae97853bd727213cf0a18e75b299d325084634aa",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions/injection_task_5.json",
+    "sha256": "c10b68abf782d2d91dd98c2f8726da7f6cd850383f7574ab66bed9bc6cf54642",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions_no_model_name/injection_task_2.json",
+    "sha256": "7675c88102bf9bf8cd37c8656749f8db10a1e9bdca032eff26d0105d08132aa2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions_no_model_name/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions_no_model_name/injection_task_4.json",
+    "sha256": "928add37da55c444a0f55f4073474294fd8f35795758c75d8ee007ff40555231",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions_no_model_name/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions_no_model_name/injection_task_5.json",
+    "sha256": "b6b2aaf9b35345b7f4982abf10a0eada40f15fdc1d793d8ed64f31530eeb8887",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions_no_model_name/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions_no_names/injection_task_5.json",
+    "sha256": "a10a6825b22585c60efd25d0012775903c76096e412f34d6bc0e477d4ab25669",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_8/important_instructions_no_names/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-2024-05-13/workspace/user_task_8/tool_knowledge/injection_task_5.json",
+    "sha256": "7bc8796e763f29f77d19cc2ee2940a30118401e0dee2d262daa9de65855a9c4f",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-2024-05-13/workspace/user_task_8/tool_knowledge/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_13/important_instructions/injection_task_0.json",
+    "sha256": "5c2de4027cbbfa61e07fe56c57570deb959317db694223074b6e9c20b7086291",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_13/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_13/important_instructions/injection_task_5.json",
+    "sha256": "f9711a8d14edaac177d9067a169c1df8759bc92ab2620207b03ba07a54ccc321",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_13/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_18/important_instructions/injection_task_3.json",
+    "sha256": "b11cdcdbdc61cf804078a80f2e52bcf234a28ccf630f12f04785cd1c45058ed2",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_18/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_19/important_instructions/injection_task_3.json",
+    "sha256": "75d52e21777ce68ecc2c30a290787e2969be3419ae8d60a59a834d0e2c44bfc1",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_19/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_19/important_instructions/injection_task_4.json",
+    "sha256": "ef2d1c64af26a5be9323bdcb1c3936b0433105638c672dbced9faa22fc8974fe",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_19/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_19/important_instructions/injection_task_5.json",
+    "sha256": "b5a708fc72bbe217abd7649818ae8eda310597625ad948a261964547fae842da",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_19/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_25/important_instructions/injection_task_0.json",
+    "sha256": "fbb7b295b5a378bb90a9e76a790579a66fd36760645208f29f97ea71184b6831",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_25/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_25/important_instructions/injection_task_3.json",
+    "sha256": "fb4a7cbf3b80b3ccbde31ce1d73b745d84943b7cb1b85c460389fa35c205003a",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_25/important_instructions/injection_task_3.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_25/important_instructions/injection_task_4.json",
+    "sha256": "bf4cd7451e1d124f6fc099841d5bf2a4cf4b4f484ae79739618d0fcc172cbd69",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_25/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_25/important_instructions/injection_task_5.json",
+    "sha256": "6a82b47507a1c16d925fd9783b428379fdc5cf892ec351f86ddd818603e389d5",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_25/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_29/important_instructions/injection_task_1.json",
+    "sha256": "4e56e058f7a794cd2383f2a81565cc0e426a340346b343c541e13d7767944626",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_29/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_29/important_instructions/injection_task_2.json",
+    "sha256": "7f470f937abfe35ccb87dbcabe74c005d99940a2e9bda95ba219bd350f208201",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_29/important_instructions/injection_task_2.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_29/important_instructions/injection_task_4.json",
+    "sha256": "81aabbba45491ab71d5c25ecfe5000fb9b2b73f824864bc7a307dcb3cc24b7da",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_29/important_instructions/injection_task_4.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_29/important_instructions/injection_task_5.json",
+    "sha256": "007f86f22b2f584bf28c0bf9f59f729665b98bc82d496a88b7a103dc98f5a85b",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_29/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_35/important_instructions/injection_task_1.json",
+    "sha256": "4bbca970274af0e02b2e1323d115f5965690c7dc1318c0f04f0267f5aa8fb0ae",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_35/important_instructions/injection_task_1.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_38/important_instructions/injection_task_5.json",
+    "sha256": "2e5851f91e570fa727a68cde1656d3b5b31019a0774837bcbab75825794a2bf4",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_38/important_instructions/injection_task_5.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_8/important_instructions/injection_task_0.json",
+    "sha256": "d2f9882c30b16f81d8f61a1a3f491dfc9488865ad1709678d19ff56f719f5660",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_8/important_instructions/injection_task_0.json"
+  },
+  {
+    "path": "sources/runs/gpt-4o-mini-2024-07-18/workspace/user_task_8/important_instructions/injection_task_4.json",
+    "sha256": "bcb30ef7b773f11c33feaf066973bab6ab90b226242e5180fb5cb684125dd593",
+    "url": "https://github.com/ethz-spylab/agentdojo/blob/089ed468cf3ed0322acc66b0211f26d9d90dbf60/runs/gpt-4o-mini-2024-07-18/workspace/user_task_8/important_instructions/injection_task_4.json"
+  }
+]
