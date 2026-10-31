@@ -38,6 +38,13 @@ they have not been merged into the existing splits and are not a new held-out te
 
 ### Additional 400 public calls awaiting review
 
+The [four-person review website](https://chessloverr.github.io/dsa4266-review/)
+provides four groups of 100, label-only confirmation, local backups, and
+multi-reviewer result merging with conflicts excluded from labeled exports.
+Progress stays in each browser; share exported backups for team aggregation.
+See [usage and source](review-web/README.md). The dedicated Pages repository
+publishes only static review assets and public samples.
+
 The [new 400-call review batch](data/public_workspace_400_v1/README.md) contains
 full pre-call inputs, source logs, provenance, validation, and four 100-row
 review batches. All labels are null and pending. The batch spans 13 model
