@@ -30,6 +30,19 @@ test('first use asks for identity; no reason/evidence inputs',()=>{
  const a=app(new Map());assert.equal(a.elements.get('profileDialog').open,true);assert.equal(a.elements.has('reasonInput'),false);assert.equal(a.elements.has('evidenceInput'),false);
  a.choose('0');a.click('confirmButton');assert.equal(a.api.labeledRows().length,0);
 });
+test('AI suggestions are visible only in A; adopting never auto-confirms',()=>{
+ const a=app();assert.equal(a.elements.get('aiSuggestion').hidden,false);assert.equal(a.elements.get('reviewHint').hidden,true);assert.match(a.elements.get('aiDecision').textContent,/未授权/);
+ assert.equal(a.api.labeledRows().length,0);a.click('adoptSuggestion');assert.equal(a.api.labeledRows().length,0);
+ a.click('confirmButton');assert.equal(a.api.labeledRows()[0].label,1);assert.equal(a.api.labeledRows()[0].annotation.ai_assisted,true);
+ assert.equal(Object.values(a.api.backupObject().records)[0].ai_assisted,true);
+ const b=app(undefined,'?batch=2');assert.equal(b.elements.get('aiSuggestion').hidden,true);assert.equal(b.elements.get('reviewHint').hidden,false);
+});
+test('AI update and reload preserve a human choice that disagrees with the suggestion',()=>{
+ const a=app();a.choose('0');a.click('confirmButton');const r=a.api.backupObject().records[a.data.cases[0].candidate_id];
+ const b=app(a.storage);b.click('previousButton');const actual=b.api.backupObject().records[b.data.cases[0].candidate_id];
+ assert.equal(actual.label,0);assert.equal(actual.status,'reviewed');assert.equal(actual.updated_at,r.updated_at);assert.match(b.elements.get('aiDecision').textContent,/未授权/);
+ assert.equal(actual.ai_assisted,true);
+});
 test('batch deep link, label-only confirmation, drafts, and group boundaries',()=>{
  const a=app(undefined,'?batch=2');assert.equal(a.api.backupObject().cursor,100);assert.equal(a.elements.get('caseList').children.length,100);
  a.choose('1');assert.equal(a.api.labeledRows().length,0);a.click('confirmButton');assert.equal(a.api.labeledRows().length,1);assert.equal(a.api.backupObject().cursor,101);

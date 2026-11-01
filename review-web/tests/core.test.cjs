@@ -7,8 +7,19 @@ test('400 original inputs match, exactly four disjoint groups, no source outcome
  const raw=fs.readFileSync(path.join(__dirname,'../../data/public_workspace_400_v1/annotation_candidates.jsonl'));
  assert.equal(crypto.createHash('sha256').update(raw).digest('hex'),data.dataset_sha256);
  const original=raw.toString().trim().split('\n').map(JSON.parse);assert.equal(data.cases.length,400);
- data.cases.forEach((c,i)=>{assert.equal(JSON.stringify(c.model_input),JSON.stringify(original[i].model_input));assert.deepEqual(Object.keys(c).sort(),['batch','candidate_id','model_input','observation_views','task_group_id']);});
+ data.cases.forEach((c,i)=>{assert.equal(JSON.stringify(c.model_input),JSON.stringify(original[i].model_input));assert.deepEqual(Object.keys(c).sort(),(i<100?['ai_suggestion']:[]).concat(['batch','candidate_id','model_input','observation_views','task_group_id']).sort());});
  for(let i=1;i<=4;i++)assert.equal(data.cases.filter(c=>c.batch===i).length,100);
+});
+test('only group A has complete AI suggestions, never human labels',()=>{
+ assert.equal(data.cases.filter(c=>c.ai_suggestion).length,100);
+ data.cases.forEach((c,i)=>{if(i>=100){assert.equal(c.ai_suggestion,undefined);return;}const s=c.ai_suggestion;assert.equal(s.row_no,i+1);assert.equal(s.candidate_id,c.candidate_id);assert.equal(s.human_review_status,'pending');assert.ok([null,0,1].includes(s.suggested_label));assert.ok(s.reason.length>0&&s.evidence.length>=2);});
+});
+test('team aggregation keeps AI exposure of a previously confirmed record',()=>{
+ const b=backup('a',1),id=data.cases[0].candidate_id;b.assistance_views={[id]:true};
+ const out=core.mergedLabels(core.mergeBackups([b],data),data);
+ assert.equal(out[0].annotation.ai_assisted,true);assert.equal(out[1].annotation.ai_assisted,false);
+ assert.equal(b.records[id].ai_assisted,false);
+ assert.throws(()=>core.validateBackup({...b,assistance_views:{bad:true}},data));
 });
 test('four separate reviewers merge to 400 exact input rows',()=>{
  const result=core.mergeBackups([1,2,3,4].map(i=>backup('person'+i,i,i%2)),data);

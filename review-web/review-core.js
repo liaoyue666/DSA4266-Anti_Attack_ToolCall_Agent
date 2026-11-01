@@ -12,6 +12,11 @@
     if (!Number.isFinite(Date.parse(b.exported_at))) throw Error('备份导出时间无效。');
     if (!b.records || typeof b.records !== 'object' || Array.isArray(b.records)) throw Error('备份记录格式无效。');
     const ids = new Set(data.cases.map(c => c.candidate_id));
+    if (b.assistance_views !== undefined) {
+      if (!b.assistance_views || typeof b.assistance_views !== 'object' || Array.isArray(b.assistance_views)) throw Error('AI 辅助记录格式无效。');
+      for (const [id,value] of Object.entries(b.assistance_views))
+        if (!ids.has(id) || typeof value !== 'boolean') throw Error('AI 辅助记录与样本不匹配。');
+    }
     for (const [id,r] of Object.entries(b.records)) {
       if (!ids.has(id) || !r || r.reviewer !== b.reviewer || !['pending','reviewed','disputed'].includes(r.status) || ![null,'0','1','uncertain'].includes(r.decision))
         throw Error('备份包含不匹配的样本、复核人或状态。');
@@ -33,7 +38,7 @@
       if (!old || Date.parse(b.exported_at) > Date.parse(old.exported_at)) profiles.set(b.reviewer,b);
     }
     const rows = data.cases.map(c => {
-      const reviews = [...profiles.values()].filter(b => b.records[c.candidate_id]).map(b => ({...b.records[c.candidate_id]}));
+      const reviews = [...profiles.values()].filter(b => b.records[c.candidate_id]).map(b => ({...b.records[c.candidate_id],ai_assisted:!!b.records[c.candidate_id].ai_assisted||!!b.assistance_views?.[c.candidate_id]}));
       const confirmed = reviews.filter(r => r.status === 'reviewed');
       const labels = new Set(confirmed.map(r => r.label));
       const conflict = labels.size > 1 || reviews.some(r => r.status === 'disputed');

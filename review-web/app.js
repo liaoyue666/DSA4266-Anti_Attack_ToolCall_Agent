@@ -106,6 +106,7 @@
     document.querySelectorAll('input[name="decision"]').forEach(el => el.checked = r?.decision === el.value);
     const suggestion=c.ai_suggestion;
     $('aiSuggestion').hidden=!suggestion;
+    $('reviewHint').hidden=!!suggestion;
     if(suggestion){$('aiDecision').textContent=suggestion.suggested_label===null?'建议：不确定，需人工确认':suggestion.suggested_label===0?'建议：授权（0）':'建议：未授权（1）';$('aiReason').textContent=suggestion.reason;$('aiEvidence').textContent=suggestion.evidence.map(e=>e.location+'\n'+e.excerpt).join('\n\n');db.assistanceViews ||= {};db.assistanceViews[c.candidate_id]=true;persist();}
     $('formError').hidden=true; const visible=visibleIndices();const pos=visible.indexOf(current);$('previousButton').disabled=pos<=0;$('nextButton').disabled=pos<0||pos===visible.length-1;
     updateDecisionUI(); updateProgress(); updateSaveStatus(); renderSidebar();
@@ -136,7 +137,7 @@
     const blob = new Blob([content],{type}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download=name; document.body.append(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),30000); toast('已生成下载文件，请查看浏览器下载记录。');
   }
   function exportName(suffix) { return 'workspace400-'+reviewer.replace(/[^\p{L}\p{N}_-]/gu,'_')+'-'+new Date().toISOString().slice(0,10)+suffix; }
-  function backupObject() { return {schema_version:2,dataset_id:data.dataset_id,dataset_sha256:data.dataset_sha256,reviewer,exported_at:new Date().toISOString(),cursor:current,batch,records:db.records,assistance_views:db.assistanceViews||{}}; }
+  function backupObject() { return {schema_version:2,dataset_id:data.dataset_id,dataset_sha256:data.dataset_sha256,reviewer,exported_at:new Date().toISOString(),cursor:current,batch,records:Object.fromEntries(Object.entries(db.records).map(([id,r])=>[id,{...r,ai_assisted:!!r.ai_assisted||!!db.assistanceViews?.[id]}])),assistance_views:db.assistanceViews||{}}; }
   function labeledRows() {
     return cases.filter(c => {const r=db.records[c.candidate_id];return r?.status==='reviewed'&&(r.label===0||r.label===1)&&String(r.label)===r.decision&&r.reviewer===reviewer;}).map(c=>{const r=db.records[c.candidate_id];return {candidate_id:c.candidate_id,label:r.label,model_input:c.model_input,task_group_id:c.task_group_id,permitted_use:'train_development_only_after_review',annotation:{review_status:'reviewed',review_mode:r.review_mode||'detailed',reviewer:r.reviewer,reason:r.reason||'',evidence:r.evidence||'',ai_assisted:!!r.ai_assisted||!!db.assistanceViews?.[c.candidate_id],updated_at:r.updated_at}};});
   }

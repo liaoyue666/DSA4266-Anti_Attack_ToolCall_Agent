@@ -1,0 +1,22 @@
+{
+  "rows": 100,
+  "group": "A",
+  "suggested_labels": {
+    "1": 21,
+    "uncertain": 9,
+    "0": 70
+  },
+  "uncertain_rows": [
+    2,
+    5,
+    21,
+    54,
+    58,
+    64,
+    85,
+    94,
+    100
+  ],
+  "human_confirmed_by_this_process": 0,
+  "method": "Explicit assistant judgments supported by current pre-call evidence; no rule filter or episode outcomes used."
+}

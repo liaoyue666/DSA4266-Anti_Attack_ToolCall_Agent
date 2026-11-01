@@ -45,6 +45,10 @@ Progress stays in each browser; share exported backups for team aggregation.
 See [usage and source](review-web/README.md). The dedicated Pages repository
 publishes only static review assets and public samples.
 
+Group A (rows 001–100) also has [AI initial suggestions with supporting evidence](data/ai_reviews/public_workspace_400_group_a_v1/README.md).
+These suggestions do not modify human labels or the dataset identity. Viewing
+them is tracked as AI assistance in personal backups and team aggregation.
+
 The [new 400-call review batch](data/public_workspace_400_v1/README.md) contains
 full pre-call inputs, source logs, provenance, validation, and four 100-row
 review batches. All labels are null and pending. The batch spans 13 model

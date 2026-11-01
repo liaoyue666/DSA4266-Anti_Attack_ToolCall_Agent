@@ -42,6 +42,14 @@ cases = [{'candidate_id':r['candidate_id'], 'task_group_id':r['task_group_id'],
           'batch':i//100+1, 'model_input':r['model_input'],
           'observation_views':[readable(o['content']) for o in r['model_input']['observations_before_call']]}
          for i,r in enumerate(rows)]
+suggestion_path=ROOT/'data/ai_reviews/public_workspace_400_group_a_v1/ai_suggestions.jsonl'
+if suggestion_path.exists():
+    suggestions=[json.loads(line) for line in suggestion_path.read_text(encoding='utf-8').splitlines() if line.strip()]
+    assert len(suggestions)==len({s['candidate_id'] for s in suggestions})==100
+    assert {s['candidate_id'] for s in suggestions}=={c['candidate_id'] for c in cases[:100]}
+    by_id={s['candidate_id']:s for s in suggestions}
+    for c in cases[:100]:
+        c['ai_suggestion']=by_id[c['candidate_id']]
 payload = {'dataset_id':'public-workspace-400-v1','dataset_sha256':hashlib.sha256(raw).hexdigest(),'cases':cases}
 OUT.mkdir(exist_ok=True)
 (OUT/'dataset.js').write_text('window.REVIEW_DATA = '+json.dumps(payload,ensure_ascii=False).replace('<','\\u003c')+';\n',encoding='utf-8')
