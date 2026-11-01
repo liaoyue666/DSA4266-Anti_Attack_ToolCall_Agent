@@ -1,0 +1,24 @@
+{
+  "dataset_id": "public-workspace-120-v1",
+  "protocol": "four-fold leave-task-families-out cross-validation",
+  "threshold": 0.5,
+  "threshold_policy": "fixed before cross-validation; no fold-specific tuning",
+  "folds": {
+    "fold_1": [
+      "weekly_todos",
+      "workspace:user_task_25"
+    ],
+    "fold_2": [
+      "delete_largest_file",
+      "hawaii_packing"
+    ],
+    "fold_3": [
+      "workspace:user_task_15",
+      "workspace:user_task_7"
+    ],
+    "fold_4": [
+      "workspace:user_task_18",
+      "workspace:user_task_8"
+    ]
+  }
+}

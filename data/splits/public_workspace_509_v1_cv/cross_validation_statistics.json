@@ -1,0 +1,205 @@
+{
+  "dataset_id": "public-workspace-509-v1",
+  "dataset_sha256": "9c1e6df8f4aa55a1e0ae7206d03386379f971ba3327e560041abb23b148c3e5a",
+  "protocol": "four-fold leave-task-families-out cross-validation",
+  "excluded": {
+    "public_workspace_400_v1_unresolved": 11
+  },
+  "overall": {
+    "rows": 509,
+    "labels": {
+      "0": 400,
+      "1": 109
+    },
+    "sources": {
+      "public_workspace_120_v1": 120,
+      "public_workspace_400_v1_confirmed": 389
+    },
+    "tools": {
+      "add_calendar_event_participants": 3,
+      "append_to_file": 207,
+      "create_calendar_event": 86,
+      "create_file": 63,
+      "delete_file": 27,
+      "reschedule_calendar_event": 8,
+      "send_email": 104,
+      "share_file": 11
+    }
+  },
+  "folds": {
+    "fold_1": {
+      "validation_families": [
+        "weekly_todos",
+        "workspace:user_task_25"
+      ],
+      "train": {
+        "rows": 202,
+        "labels": {
+          "0": 135,
+          "1": 67
+        },
+        "sources": {
+          "public_workspace_120_v1": 69,
+          "public_workspace_400_v1_confirmed": 133
+        },
+        "tools": {
+          "add_calendar_event_participants": 3,
+          "create_calendar_event": 75,
+          "create_file": 52,
+          "delete_file": 21,
+          "reschedule_calendar_event": 8,
+          "send_email": 32,
+          "share_file": 11
+        }
+      },
+      "validation": {
+        "rows": 307,
+        "labels": {
+          "0": 265,
+          "1": 42
+        },
+        "sources": {
+          "public_workspace_120_v1": 51,
+          "public_workspace_400_v1_confirmed": 256
+        },
+        "tools": {
+          "append_to_file": 207,
+          "create_calendar_event": 11,
+          "create_file": 11,
+          "delete_file": 6,
+          "send_email": 72
+        }
+      }
+    },
+    "fold_2": {
+      "validation_families": [
+        "delete_largest_file",
+        "hawaii_packing"
+      ],
+      "train": {
+        "rows": 414,
+        "labels": {
+          "0": 331,
+          "1": 83
+        },
+        "sources": {
+          "public_workspace_120_v1": 82,
+          "public_workspace_400_v1_confirmed": 332
+        },
+        "tools": {
+          "add_calendar_event_participants": 3,
+          "append_to_file": 207,
+          "create_calendar_event": 79,
+          "create_file": 11,
+          "delete_file": 11,
+          "reschedule_calendar_event": 8,
+          "send_email": 95
+        }
+      },
+      "validation": {
+        "rows": 95,
+        "labels": {
+          "0": 69,
+          "1": 26
+        },
+        "sources": {
+          "public_workspace_120_v1": 38,
+          "public_workspace_400_v1_confirmed": 57
+        },
+        "tools": {
+          "create_calendar_event": 7,
+          "create_file": 52,
+          "delete_file": 16,
+          "send_email": 9,
+          "share_file": 11
+        }
+      }
+    },
+    "fold_3": {
+      "validation_families": [
+        "workspace:user_task_15",
+        "workspace:user_task_7"
+      ],
+      "train": {
+        "rows": 453,
+        "labels": {
+          "0": 362,
+          "1": 91
+        },
+        "sources": {
+          "public_workspace_120_v1": 104,
+          "public_workspace_400_v1_confirmed": 349
+        },
+        "tools": {
+          "add_calendar_event_participants": 3,
+          "append_to_file": 207,
+          "create_calendar_event": 46,
+          "create_file": 63,
+          "delete_file": 25,
+          "send_email": 98,
+          "share_file": 11
+        }
+      },
+      "validation": {
+        "rows": 56,
+        "labels": {
+          "0": 38,
+          "1": 18
+        },
+        "sources": {
+          "public_workspace_120_v1": 16,
+          "public_workspace_400_v1_confirmed": 40
+        },
+        "tools": {
+          "create_calendar_event": 40,
+          "delete_file": 2,
+          "reschedule_calendar_event": 8,
+          "send_email": 6
+        }
+      }
+    },
+    "fold_4": {
+      "validation_families": [
+        "workspace:user_task_18",
+        "workspace:user_task_8"
+      ],
+      "train": {
+        "rows": 458,
+        "labels": {
+          "0": 372,
+          "1": 86
+        },
+        "sources": {
+          "public_workspace_120_v1": 105,
+          "public_workspace_400_v1_confirmed": 353
+        },
+        "tools": {
+          "append_to_file": 207,
+          "create_calendar_event": 58,
+          "create_file": 63,
+          "delete_file": 24,
+          "reschedule_calendar_event": 8,
+          "send_email": 87,
+          "share_file": 11
+        }
+      },
+      "validation": {
+        "rows": 51,
+        "labels": {
+          "0": 28,
+          "1": 23
+        },
+        "sources": {
+          "public_workspace_120_v1": 15,
+          "public_workspace_400_v1_confirmed": 36
+        },
+        "tools": {
+          "add_calendar_event_participants": 3,
+          "create_calendar_event": 28,
+          "delete_file": 3,
+          "send_email": 17
+        }
+      }
+    }
+  }
+}
