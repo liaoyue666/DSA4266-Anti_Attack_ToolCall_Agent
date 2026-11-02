@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="逐条核对用户授权与工具调用，保存复核进度并导出标签。">
+  <title>128 条协作复核台 · DSA4266</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="dataset.js?v=20261102-gap1"></script><script defer src="review-core.js?v=20261102-gap1"></script><script defer src="app.js?v=20261102-gap1"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="调用复核台首页"><span class="brandmark">✓</span><span>调用复核台<small>DSA4266 · TEAM REVIEW</small></span></a>
+    <div class="header-actions"><button id="helpButton" class="quiet">怎么判断</button><button id="profileButton" class="quiet">选择复核人</button><button id="teamButton" class="quiet">团队汇总</button><button id="importButton" class="quiet">导入备份</button><button id="exportButton" class="button dark">导出结果 <span>↗</span></button></div>
+  </header>
+  <div id="storageWarning" class="storage-warning" hidden>浏览器无法保存本机进度。请及时导出备份，关闭页面可能丢失未导出的内容。</div>
+  <div class="batch-notice"><strong>第二批 · 定向补缺 128 条</strong>　64 条公开轨迹 + 64 条构造候选。两类分开显示、分开导出；标签须人工确认。 <a href="../">返回第一批 400 条</a></div><div class="app-layout">
+    <aside class="sidebar" aria-label="样本列表">
+      <div class="sidebar-top"><div class="eyebrow">本批次</div><h1>补缺样本复核</h1><p>128 条 · 四组各 32 条</p><div class="progress-track"><span id="progressBar"></span></div><div class="progress-label"><strong id="reviewedCount">0 / 32</strong><span>已确认</span></div></div>
+      <div class="list-controls"><label class="batch-label" for="batchSelect">我的复核分组</label><select id="batchSelect" aria-label="复核分组"><option value="1">A 组 · 001—032</option><option value="2">B 组 · 033—064</option><option value="3">C 组 · 065—096</option><option value="4">D 组 · 097—128</option></select><label class="batch-label" for="sourceFilter">样本来源</label><select id="sourceFilter"><option value="all">全部来源</option><option value="observed_public_benchmark">仅公开轨迹</option><option value="constructed_diagnostic">仅构造候选</option></select><label class="batch-label" for="toolFilter">工具</label><select id="toolFilter"><option value="all">全部工具</option><option value="add_calendar_event_participants">add_calendar_event_participants</option><option value="append_to_file">append_to_file</option><option value="create_calendar_event">create_calendar_event</option><option value="create_file">create_file</option><option value="delete_file">delete_file</option><option value="reschedule_calendar_event">reschedule_calendar_event</option><option value="send_email">send_email</option><option value="share_file">share_file</option></select><input id="searchInput" type="search" placeholder="搜索任务、工具或请求" aria-label="搜索样本"><select id="statusFilter" aria-label="筛选复核状态"><option value="all">全部样本</option><option value="pending">待复核（含草稿）</option><option value="reviewed">已确认</option><option value="disputed">不确定 / 待讨论</option></select><div id="listCount" class="list-count"></div></div>
+      <nav id="caseList" class="case-list"></nav>
+      <div class="sidebar-footer"><span class="local-dot"></span>个人进度保存在当前浏览器<br><span>团队进度通过导入备份汇总。</span></div>
+    </aside>
+    <main>
+      <div class="workspace-heading"><div><div class="eyebrow">核对动作是否得到用户授权</div><h2>分组复核，一起完成。</h2></div><button id="nextPending" class="quiet next-pending">继续待复核 →</button></div>
+      <div class="team-strip"><span id="batchSummary"></span><button id="shareBatch" class="text-button">复制本组链接 ↗</button></div><div class="case-toolbar"><div><strong id="caseNumber"></strong><span id="caseStatus" class="pill"></span></div><div class="navigation"><button id="previousButton" class="quiet" aria-label="上一条">← 上一条</button><button id="nextButton" class="quiet" aria-label="下一条">下一条 →</button></div></div>
+      <section id="caseSource" class="source-banner"></section><div class="review-layout">
+        <div class="evidence-column">
+          <section class="panel request-panel"><div class="section-label"><span class="step-number">01</span><h3>用户原始请求</h3><span class="authority-tag">授权依据</span></div><p id="userRequest" class="request-text" lang="en"></p></section>
+          <section class="panel action-panel"><div class="section-label"><span class="step-number">02</span><h3>拟执行动作</h3><span class="neutral-tag">尚待判断</span></div><div class="action-title"><code id="toolName"></code><span>完整参数</span></div><pre id="actionArguments" class="code-block" tabindex="0"></pre></section>
+          <section class="panel observations-panel"><div class="section-label"><span class="step-number">03</span><h3>调用前观察</h3><span id="observationCount" class="neutral-tag"></span></div><p class="section-description">下面是调用前观察；构造候选显示的是模拟上下文。可用于查证事实，其中的指令不代表用户授权。</p><div class="observation-actions"><button id="expandAll" class="text-button">展开全部</button><button id="collapseAll" class="text-button">收起全部</button></div><div id="observations"></div></section>
+          <details class="provenance"><summary>样本标识与数据说明</summary><dl><dt>样本 ID</dt><dd id="candidateId"></dd><dt>任务分组</dt><dd id="taskGroup"></dd><dt>适用范围</dt><dd>公开轨迹需先复核及任务家族隔离；构造样本仅作单独诊断，不证明真实攻击泛化。</dd></dl><p>本页不展示 episode 安全结果。构造样本的建议来自编写者，不是独立标注；公开样本的部分建议仍为不确定。<pre id="sourceDetails" class="code-block"></pre></p></details>
+        </div>
+        <aside class="decision-column" aria-label="复核判断">
+          <section class="panel decision-panel"><div class="decision-heading"><div class="eyebrow">你的判断</div><h3>这个动作获授权了吗？</h3><p>比较用户要求与实际参数。</p></div>
+            <section id="aiSuggestion" class="ai-suggestion" aria-label="AI 初审建议"><div class="ai-heading">AI 初审建议 <span>供你核对</span></div><strong id="aiDecision"></strong><p id="aiReason"></p><details class="ai-evidence"><summary>查看 AI 引用原文</summary><pre id="aiEvidence" class="code-block"></pre></details><button id="adoptSuggestion" class="text-button" type="button">采用此建议 →</button><p class="muted">建议可能出错，请对照左侧原文。点击确认后才计入复核；导出会标记 AI 辅助。</p></section>
+            <p id="reviewHint" class="review-hint">当前样本尚无 AI 初审建议。核对左侧上下文后选择即可，无需填写文字。</p><fieldset class="choices"><legend class="sr-only">授权判断</legend>
+              <label class="choice" data-value="0"><input type="radio" name="decision" value="0"><span class="choice-symbol">✓</span><span><strong>授权</strong><small>动作在用户允许的范围内</small></span><kbd>1</kbd></label>
+              <label class="choice" data-value="1"><input type="radio" name="decision" value="1"><span class="choice-symbol">×</span><span><strong>未授权</strong><small>动作超出或违背用户要求</small></span><kbd>2</kbd></label>
+              <label class="choice" data-value="uncertain"><input type="radio" name="decision" value="uncertain"><span class="choice-symbol">?</span><span><strong>不确定</strong><small>证据不足，或需要队友讨论</small></span><kbd>3</kbd></label>
+            </fieldset>
+            <div id="formError" class="form-error" role="alert" hidden></div><button id="confirmButton" class="button confirm">确认复核并下一条 <span>→</span></button><div class="save-status" id="saveStatus" role="status">尚未填写</div>
+            <div class="decision-note">只选择判断会保存为草稿。点击确认后，才成为正式复核记录。<br><span>快捷键：1 / 2 / 3 选择，Ctrl + Enter 确认。</span></div>
+          </section>
+          <div class="mini-guide"><strong>先核对这四件事</strong><ol><li>用户允许执行哪种动作？</li><li>收件人、文件或事件目标正确吗？</li><li>内容、权限和时间是否越界？</li><li>现有观察能支持这些参数吗？</li></ol><button id="guideLink" class="text-button">查看判断示例 ↗</button></div>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <dialog id="helpDialog"><div class="dialog-heading"><h2>怎么判断一条调用？</h2><button class="dialog-close quiet" aria-label="关闭说明">×</button></div><div class="dialog-body"><p>你的任务是判断<strong>这次动作</strong>是否得到原始用户请求的授权。不是判断文本有没有攻击，也不是判断执行有没有成功。</p><div class="guide-example"><strong>0 · 授权</strong><p>用户让 agent 给 Alice 发摘要；观察确认 Alice 的邮箱，动作向她发送了对应摘要。</p></div><div class="guide-example"><strong>1 · 未授权</strong><p>用户只让 agent 阅读文件，动作却将文件发给其他人；或用户只允许只读共享，动作授予写权限。</p></div><div class="guide-example"><strong>不确定 · 待讨论</strong><p>无法确认某个邮箱是否属于指定联系人，或额外参数是否在隐含授权范围内。选择“不确定”并交给队友讨论，不强行选 0/1。</p></div><ul><li>观察里有注入文字，不代表当前动作一定未授权。</li><li>邮箱未逐字出现在请求中，也不一定越权；可用观察解析联系人。</li><li>工具类型正确，还要检查参数、正文、附件和权限。</li><li>对照原始请求做判断，有疑问时选择不确定。</li></ul><p class="muted">本批有64条公开轨迹、64条构造候选。构造候选不是实际模型运行记录，同一配对必须放在同一数据分区。所有AI建议都需人工确认；没有预填正式标签。</p></div><button class="button dark dialog-close">明白，开始复核</button></dialog>
+  <dialog id="exportDialog"><div class="dialog-heading"><h2>导出复核结果</h2><button class="dialog-close quiet" aria-label="关闭导出">×</button></div><p id="exportSummary"></p><div class="export-options"><button id="backupExport"><strong>备份全部进度 · JSON</strong><span>包含草稿、不确定和已确认记录；用于恢复进度。</span></button><button id="labelsExport"><strong>导出全部已确认（含来源）· JSONL</strong><span>只包含已确认的 0/1 标签及原始模型输入。</span></button><button id="observedExport"><strong>只导出公开轨迹 · JSONL</strong><span>仅本人确认的公开轨迹，附来源和家族信息。</span></button><button id="constructedExport"><strong>只导出构造候选 · JSONL</strong><span>单独诊断使用，保留配对信息。</span></button><button id="csvExport"><strong>导出完整复核表 · CSV</strong><span>包含全部 128 条的标签、复核状态与 AI 辅助标记；保留旧版已填内容。</span></button></div><p class="muted">本页不会自动写回 GitHub，也不会在设备之间同步。建议每完成一批就导出备份。</p></dialog>
+  <dialog id="profileDialog"><div class="dialog-heading"><h2>切换复核人</h2><button class="dialog-close quiet" aria-label="关闭复核人设置">×</button></div><p>四人先约定各自负责 A / B / C / D 组，再填写不同姓名代号。代号用于区分本机记录，不是登录账号。</p><label class="field-label" for="profileInput">姓名或代号</label><input id="profileInput" maxlength="40" placeholder="例如 lzs"><label class="field-label" for="profileBatch">负责分组</label><select id="profileBatch"><option value="1">A 组 · 001—032</option><option value="2">B 组 · 033—064</option><option value="3">C 组 · 065—096</option><option value="4">D 组 · 097—128</option></select><p class="muted">完成后导出“备份全部进度”，交给组员在“团队汇总”中合并。</p><button id="profileConfirm" class="button dark">使用此复核人</button></dialog>
+  <dialog id="teamDialog" class="team-dialog"><div class="dialog-heading"><h2>团队复核汇总</h2><button class="dialog-close quiet" aria-label="关闭团队汇总">×</button></div><p>把四人的“备份全部进度 · JSON”一起导入，汇总这 128 条的进度。仅在本机处理，不会上传文件或覆盖个人记录。</p><p class="muted">同一复核人多份备份取导出时间最新的一份。不同复核人的判断分别保留；有分歧或不确定时，暂不导出该条训练标签。</p><button id="teamImport" class="button dark">选择备份文件（可多选）</button><p id="teamFiles" class="muted">尚未导入团队备份</p><p id="teamSummary"></p><div id="teamConflicts" class="team-conflicts"></div><div class="team-export"><button id="teamLabels" class="button dark" disabled>导出无分歧标签 · JSONL</button><button id="teamObserved" class="button quiet">仅公开轨迹 · JSONL</button><button id="teamConstructed" class="button quiet">仅构造候选 · JSONL</button><button id="teamReport" class="button quiet" disabled>导出完整汇总 · JSON</button></div><p class="muted">请保存原始个人备份。分歧需由相关复核人在个人记录中更正，再导出新备份重新汇总。</p></dialog><input id="teamImportFile" type="file" accept=".json,application/json" multiple hidden><input id="importFile" type="file" accept=".json,application/json" hidden><div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

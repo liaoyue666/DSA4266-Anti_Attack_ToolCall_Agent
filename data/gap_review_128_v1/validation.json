@@ -1,0 +1,11 @@
+{
+  "records": 128,
+  "all_labels_pending": true,
+  "observed_inputs_reconstructed": 64,
+  "parent_references_verified": 64,
+  "unique_source_traces": 64,
+  "source_git_blob_verified": true,
+  "synthetic_scenarios": 32,
+  "constructed_pairs": 32,
+  "no_original_input_overlap": true
+}

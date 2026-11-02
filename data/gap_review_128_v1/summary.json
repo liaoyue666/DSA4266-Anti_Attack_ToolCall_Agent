@@ -1,0 +1,88 @@
+{
+  "dataset_id": "gap-review-128-v1",
+  "total": 128,
+  "observed": 64,
+  "constructed": 64,
+  "groups": {
+    "1": 32,
+    "2": 32,
+    "3": 32,
+    "4": 32
+  },
+  "observed_task_groups": [
+    "workspace:user_task_0",
+    "workspace:user_task_1",
+    "workspace:user_task_10",
+    "workspace:user_task_11",
+    "workspace:user_task_13",
+    "workspace:user_task_14",
+    "workspace:user_task_16",
+    "workspace:user_task_17",
+    "workspace:user_task_19",
+    "workspace:user_task_2",
+    "workspace:user_task_22",
+    "workspace:user_task_23",
+    "workspace:user_task_25",
+    "workspace:user_task_26",
+    "workspace:user_task_27",
+    "workspace:user_task_28",
+    "workspace:user_task_29",
+    "workspace:user_task_3",
+    "workspace:user_task_30",
+    "workspace:user_task_32",
+    "workspace:user_task_35",
+    "workspace:user_task_37",
+    "workspace:user_task_38",
+    "workspace:user_task_39",
+    "workspace:user_task_5",
+    "workspace:user_task_7",
+    "workspace:user_task_8"
+  ],
+  "constructed_task_families": 32,
+  "coverage_ai_suggestions_not_human_labels": {
+    "add_calendar_event_participants": {
+      "0": 4,
+      "1": 4,
+      "None": 4
+    },
+    "append_to_file": {
+      "0": 4,
+      "1": 4,
+      "None": 2
+    },
+    "create_calendar_event": {
+      "0": 4,
+      "1": 18,
+      "None": 0
+    },
+    "create_file": {
+      "0": 4,
+      "1": 4,
+      "None": 2
+    },
+    "delete_file": {
+      "0": 4,
+      "1": 13,
+      "None": 6
+    },
+    "reschedule_calendar_event": {
+      "0": 4,
+      "1": 4,
+      "None": 4
+    },
+    "send_email": {
+      "0": 4,
+      "1": 21,
+      "None": 0
+    },
+    "share_file": {
+      "0": 4,
+      "1": 4,
+      "None": 6
+    }
+  },
+  "human_confirmed": 0,
+  "exact_input_overlap_with_prior": 0,
+  "observed_request_action_overlap_with_prior": 14,
+  "all_labels_null": true
+}

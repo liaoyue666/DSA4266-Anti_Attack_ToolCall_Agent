@@ -13,7 +13,7 @@
     <div class="header-actions"><button id="helpButton" class="quiet">怎么判断</button><button id="profileButton" class="quiet">选择复核人</button><button id="teamButton" class="quiet">团队汇总</button><button id="importButton" class="quiet">导入备份</button><button id="exportButton" class="button dark">导出结果 <span>↗</span></button></div>
   </header>
   <div id="storageWarning" class="storage-warning" hidden>浏览器无法保存本机进度。请及时导出备份，关闭页面可能丢失未导出的内容。</div>
-  <div class="app-layout">
+  <!-- gap128-link --><div style="padding:14px 24px;background:#eaf4ee"><strong>第二批补缺已上线：</strong> <a href="gap128/">128条 · 四人各32条 · 进入新批复核 →</a>　第一批记录仍在本页。</div><div class="app-layout">
     <aside class="sidebar" aria-label="样本列表">
       <div class="sidebar-top"><div class="eyebrow">本批次</div><h1>公开调用复核</h1><p>400 条 · 四组各 100 条</p><div class="progress-track"><span id="progressBar"></span></div><div class="progress-label"><strong id="reviewedCount">0 / 100</strong><span>已确认</span></div></div>
       <div class="list-controls"><label class="batch-label" for="batchSelect">我的复核分组</label><select id="batchSelect" aria-label="复核分组"><option value="1">A 组 · 001—100</option><option value="2">B 组 · 101—200</option><option value="3">C 组 · 201—300</option><option value="4">D 组 · 301—400</option></select><input id="searchInput" type="search" placeholder="搜索任务、工具或请求" aria-label="搜索样本"><select id="statusFilter" aria-label="筛选复核状态"><option value="all">全部样本</option><option value="pending">待复核（含草稿）</option><option value="reviewed">已确认</option><option value="disputed">不确定 / 待讨论</option></select><div id="listCount" class="list-count"></div></div>
